@@ -1,1 +1,14 @@
 
+.button{
+	border: none;
+	display: inline-block;
+	outline: 0;
+	padding: 6px 16px;
+	vertical-align: middle;
+	overflow: hidden;
+	text-decoration: none;
+	color: #fff;
+	background-color: #000;
+	text-align: center;
+	white-space: nowrap
+}
