@@ -14,12 +14,12 @@
 }
 
 .button1 {
-    color: red;
+    color: white;
 }
 
 .button1:hover {
-    background-color: #4CAF50;
-    color: black;
+    background-color: black;
+    color: white;
 }
 
 /* Third image (Contact) */
