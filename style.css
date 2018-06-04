@@ -27,3 +27,14 @@
     background-image: url("screenshot3.png");
     background-color: black;
 }
+
+.bgimg-1 {
+    background-image: url("screenshot1.jpg");
+    background-color: black;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("screenshot2.jpg");
+    background-color: black;
+}
