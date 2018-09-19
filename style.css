@@ -81,8 +81,13 @@
 }
 
 .bgimg-7 {
-    background-image: url("media/midiKeyboard2.jpg");
+    background-image: url("media/midiKeyboard2.png");
     background-color: black;
+}
+
+.bgimg-8 {
+	background-image: url("media/ysmfatb.png");
+	background-color: black;
 }
 
 .bgimg-1 {
