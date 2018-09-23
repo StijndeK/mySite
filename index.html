@@ -14,85 +14,42 @@ body {font-size:18px;}
 </style>
 <body>
 
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar bgimg-8 w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:250px;font-weight:bold;" id="mySidebar"><br>
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
-  <div class="w3-container">
-    <h3 class="w3-padding-64"><b>MENU<br></b></h3>
-  </div>
-  <div class="w3-bar-block">
-    <!-- <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> -->
-    <a href="index.html" class="nav-tekst button button1"><h3>Home</h3></a>
-    <a href="csd.html" class="nav-tekst button button1"><h3>Software</h3></a>
-    <a href="composition.html" class="nav-tekst button button1"><h3>Composition</h3></a>
-    <a href="sounddesign.html" class="nav-tekst button button1"><h3>Sound Design</h3></a>
-    <a href="contact.html" class="nav-tekst button button1"><h3>Contact</h3></a>
-  </div>
-</nav>
-
-<!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
-  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
-  <span>Stijn de Koning</span>
-</header>
-
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
 <!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:340px;margin-right:40px">
+<div class="w3-content" style="max-width:1500px">
 
-  <!-- Header -->
-  <div class="w3-container" style="margin-top:80px" id="showcase">
-    <h1 class="w3-jumbo"><b>Stijn de Koning</b></h1>
+<!-- Header -->
+<header class="w3-panel w3-center" style="padding:128px 16px">
+  <h1 class="w3-jumbo"><b>Stijn de Koning</b></h1>
 
-    <div>  <h1 class="w3-container w3-xlarge w3-text-red"><b>This site is still under development.</b></h1>   </div>
+  <div> <h1 class="w3-container w3-xlarge w3-text-red"><b>This site is still under development.</b></h1> </div>
+  <h1 class="w3-xxxlarge w3-text-red"><b>About me</b></h1>
 
+  <!-- Photo grid (modal) -->
+    <div class="w3-container" id="services" style="margin-top:25px">
+  <!--     <hr style="width:50px;border:5px solid red" class="w3-round"> -->
+      <p>
+        I am Stijn de Koning, a composer, sound designer and (audio) software programmer.  <br/>
 
-    <h1 class="w3-xxxlarge w3-text-red"><b>About me</b></h1>
-  </div>
+          I am based in Amsterdam, but go to collage at the University of Arts in Utrecht, where I study Music & Technology. <br/>
+          On this website you will find projects im working on and have worked on.
+        </p>
+    </div>
 
-
-
-<!-- Photo grid (modal) -->
-  <div class="w3-container" id="services" style="margin-top:75px">
-<!--     <hr style="width:50px;border:5px solid red" class="w3-round"> -->
-    <p>
-      I am Stijn de Koning, a composer, sound designer and (audio) software programmer.  <br/>
-
-        I am based in Amsterdam, but go to collage at the University of Arts in Utrecht, where I study Music & Technology. <br/>
-        On this website you will find projects im working on and have worked on.
-      </p>
-
-       <div class="w3-col w3-left m6  w3-padding-large">
-      <img src="media/fotoik2.jpg" class="w3-round w3-image w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+  <div class="w3-padding-32">
+    <div class="w3-bar w3-border">
+      <a href="csd.html" class="w3-bar-item w3-button">Software</a>
+      <a href="composition.html" class="w3-bar-item w3-button">Composition</a>
+      <a href="sounddesign.html" class="w3-bar-item w3-button">Sound Design</a>
+      <a href="GameJamKorea.html" class="w3-bar-item w3-button">Applied Game Jam South Korea</a>
+      <a href="contact.html" class="w3-bar-item w3-button w3-hide-small">Contact</a>
     </div>
   </div>
+</header>
 
-<!-- End page content -->
 </div>
 
-
-<script>
-// Script to open and close sidebar
-function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
-    document.getElementById("myOverlay").style.display = "block";
-}
-
-function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-    document.getElementById("myOverlay").style.display = "none";
-}
-
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-</script>
+<!-- End Page Content -->
+</div>
 
 </body>
 </html>
