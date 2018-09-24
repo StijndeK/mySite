@@ -1,150 +1,203 @@
 <!DOCTYPE html>
 <html>
 <title>Stijn de Koning</title>
-<link rel="icon" type="image/png" href="media/logo2.png"
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 <style>
 body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
-body {font-size:18px;}
-.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
-.w3-half img:hover{opacity:1}
+body {font-size:22px;}
+
 </style>
-<body>
+<body class="w3-light-grey">
 
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar bgimg-4 w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:250px;font-weight:bold;" id="mySidebar"><br>
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-bar w3-border">
+    <a href="index.html" class="w3-bar-item w3-button">Home</a>
+
+    <a href="csd.html" class="w3-bar-item w3-button">Software</a>
+    <a href="composition.html" class="w3-bar-item w3-button">Composition</a>
+    <a href="sounddesign.html" class="w3-bar-item w3-button">Sound Design</a>
+    <a href="GameJamKorea.html" class="w3-bar-item w3-button">Applied Game Jam South Korea</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-hide-small">Contact</a>
+  </div>
+
+<!-- w3-content defines a container for fixed size centered content,
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+
+<!-- Header -->
+<img src="media/logo2.png" class="w3-image w3-hover-opacity-off" alt="LOGO" width="100" height="100" align = "right">
+<div class="w3-container w3-center" style="margin-top:80px" id="showcase">
+  <h1 class="w3-jumbo w3-text-black" align = "center"><b>Software development</b> </h1>
+</div>
+
+<!-- Grid -->
+<div class="w3-row">
+
+<!-- Blog entries -->
+<div class="w3-col ">
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <!-- <img src="media/fotoik.jpg" style="width:100%"> -->
+    <div class="w3-container">
+      <h1 class="w3-xxlarge"><b>About</b></h1>
+    </div>
+
+    <div class="w3-container">
+
+      <p>As a programmer I my main focusses are algorythmic composing, plugin development and researching the relation between picture and music.</p>
+    </div>
+  </div>
+  <hr>
+
+
+<!-- Blog entry -->
+<div class="w3-card-4 w3-margin w3-white">
   <div class="w3-container">
-    <h3 class="w3-padding-64"><b>MENU<br></b></h3>
-  </div>
-  <div class="w3-bar-block">
-    <!-- <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> -->
-    <a href="index.html" class="nav-tekst button button2"><h3>Home</h3></a>
-    <a href="csd.html" class="nav-tekst button button2"><h3>Software</h3></a>
-    <a href="composition.html" class="nav-tekst button button2"><h3>Composition</h3></a>
-    <a href="sounddesign.html" class="nav-tekst button button2"><h3>Sound Design</h3></a>
-    <a href="contact.html" class="nav-tekst button button2"><h3>Contact</h3></a>
-  </div>
-</nav>
-
-<!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
-  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
-  <span>Stijn de Koning</span>
-</header>
-
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:340px;margin-right:40px">
-
-  <!-- Header -->
-  <div class="w3-container" style="margin-top:80px" id="showcase">
-    <h1 class="w3-jumbo"><b>Software development</b> <img src="media/logo2.png" class="w3-image w3-hover-opacity-off" alt="LOGO" width="100" height="100" align = "right"></h1>
-    <!-- <h1 class="w3-xxxlarge w3-text-red"><b>About me</b></h1>
-    <hr style="width:50px;border:5px solid red" classc="w3-round"> -->
+    <h1 class="w3-xxlarge w3-text-black"><b>Languages</b></h1>
   </div>
 
-<!-- about -->
-  <div class="w3-container" id="services" style="margin-top:75px">
-    <h1 class="w3-xxlarge w3-text-red"><b>About</b></h1>
-
-<!--     <hr style="width:50px;border:5px solid red" class="w3-round"> -->
-    <p>As a programmer I my main focusses are algorythmic composing, plugin development and researching the relation between picture and music. <br/>
+  <div class="w3-container">
+    <p> For programming I mainly use C++ and Python, but I also have experience in the following languages: <br/>
+      Supercollider <br/>
+      Lisp <br/>
+      Unity <br/>
+      Processing <br/>
+      Max MSP <br/>
     </p>
+  </div>
+  <hr>
+</div>
 
+</div>
+
+
+<div class="w3-container w3-center" style="margin-top:80px" id="showcase">
+  <h1 class="w3-xxxlarge textPadding"><b>Projects</b> </h1>
+</div>
+
+<!-- Blog entries -->
+<div class="w3-col ">
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <div class="w3-container">
+      <h1 class="w3-xxlarge"><b>Drawing Music</b></h1>
+    </div>
+
+    <div class="w3-container">
+      <p>A desktop application which generates music based on your drawing. <br/>
+        Check it out on my GitHub <a href="https://github.com/StijndeK/CSD2/tree/master/blok4/DrawingMusic">here </a> <br/>
+        This app is still under development. Here's an early example of what it sounds like.
+      </p>
+      <video width="320" height="240" controls>
+        <source src="media/CSD2D_testfilm1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+    </div>
   </div>
 
-  <!-- coding languages -->
-  <div class="w3-container" id="services" style="margin-top:75px">
-  <h1 class="w3-xxlarge w3-text-red"><b>Languages</b></h1>
-  <p> For programming I mainly use C++ and Python, but I also have experience in the following languages: <br/>
-    Supercollider <br/>
-    Lisp <br/>
-    Unity <br/>
-    Processing <br/>
-    Max MSP <br/>
-  </p>
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <div class="w3-container">
+      <h1 class="w3-xxlarge w3-text-black"><b>Distortion Plugin</b></h1>
+    </div>
+
+    <div class="w3-container">
+      <p>A simple, yet effective distortion plugin VST. <br/>
+        Check it out on my GitHub <a href="https://github.com/StijndeK/CSD2/tree/master/blok3-deel2">here </a></p>
+      </p>
+
+    </div>
+  </div>
+
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <div class="w3-container">
+      <h1 class="w3-xxlarge w3-text-black"><b>Algorythmic Polysynth</b></h1>
+    </div>
+
+    <div class="w3-container">
+      <p>A polysynth created from the ground up in c++ <br/>
+        Check it out on my GitHub <a href="https://github.com/StijndeK/CSD2/tree/master/blok3/synthesizer_opdracht/Synth_code">here </a></p>
+        <video width="320" height="240" controls>
+      <source src="media/PolysynthFilmpje1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </video>
+    </div>
+  </div>
+
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <div class="w3-container">
+      <h1 class="w3-xxlarge w3-text-black"><b>Rule 150</b></h1>
+    </div>
+
+    <div class="w3-container">
+      <p>A program I created together with Dennis Dekker in Max MSP, which generates a composition based on the elementary cellular automaton rule 150.  <br/>
+        Check it out over here! </p>
+        <video width="320" height="240" controls>
+      <source src="media/rule150film1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </video>
+    </div>
+  </div>
+
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <div class="w3-container">
+      <h1 class="w3-xxlarge w3-text-black"><b>Beat Generator / sampler</b></h1>
+    </div>
+
+    <div class="w3-container">
+      <p>A simple beat generator made in python<br/>
+        Check it out on my GitHub <a href="https://github.com/StijndeK/CSD2/tree/master/blok1/sampler_final">here </a></p>
+      </p>
+
+    </div>
+  </div>
+
+
+  <!-- Blog entry -->
+  <!-- <div class="w3-card-4 w3-margin w3-white">
+    <div class="w3-container">
+      <h1 class="w3-xlarge w3-text-black"><b>Distortion Plugin</b></h1>
+      <h5>Title description, <span class="w3-opacity">April 2, 2014</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
+        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">2</span></span></p>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+<!-- END BLOG ENTRIES -->
 </div>
 
-  <!-- projects -->
+<!-- Introduction menu -->
 
-  <div class="w3-container"  style="margin-top:75px">
-  <h1 class="w3-xxlarge w3-text-red"><b>Projects</b></h1>
 
-  <div class="w3-left"  style="margin-top:50px">
-  <h1 class="w3-xlarge w3-text-black"><b>Drawing Music</b></h1>
-  <p>A desktop application which generates music based on your drawing. <br/>
-    Check it out on my GitHub <a href="https://github.com/StijndeK/CSD2/tree/master/blok4/DrawingMusic">here </a> <br/>
-    This app is still under development. Here's an early example of what it sounds like.
-  </p>
-  <video width="320" height="240"  controls>
-<source src="media/CSD2D_testfilm1.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
+<!-- END GRID -->
+</div><br>
 
-  <div class="w3-left" style="margin-top:50px">
-  <h1 class="w3-xlarge w3-text-black"><b>Distortion Plugin</b></h1>
-  <p>A simple, yet effective distortion plugin VST. <br/>
-    Check it out on my GitHub <a href="https://github.com/StijndeK/CSD2/tree/master/blok3-deel2">here </a></p>
-  </p>
-
-  <div class="w3-left"  style="margin-top:50px">
-  <h1 class="w3-xlarge w3-text-black"><b>Algorythmic Polysynth</b></h1>
-  <p>A polysynth created from the ground up in c++ <br/>
-    Check it out on my GitHub <a href="https://github.com/StijndeK/CSD2/tree/master/blok3/synthesizer_opdracht/Synth_code">here </a></p>
-    <video width="320" height="240" controls>
-  <source src="media/PolysynthFilmpje1.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
-  </p>
-
-  <div class="w3-left" style="margin-top:50px">
-  <h1 class="w3-xlarge w3-text-black"><b>Rule 150</b></h1>
-  <p>A program I created together with Dennis Dekker in Max MSP, which generates a composition based on the elementary cellular automaton rule 150.  <br/>
-    Check it out over here! </p>
-    <video width="320" height="240" controls>
-  <source src="media/rule150film1.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
-  </p>
-
-  <div class="w3-left" style="margin-top:50px">
-  <h1 class="w3-xlarge w3-text-black"><b>Beat Generator / sampler</b></h1>
-  <p>A simple beat generator made in python<br/>
-    Check it out on my GitHub <a href="https://github.com/StijndeK/CSD2/tree/master/blok1/sampler_final">here </a></p>
-  </p>
-
+<!-- END w3-content -->
 </div>
 
-<!-- End page content -->
-</div>
-
-<script>
-// Script to open and close sidebar
-function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
-    document.getElementById("myOverlay").style.display = "block";
-}
-
-function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-    document.getElementById("myOverlay").style.display = "none";
-}
-
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-</script>
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+  <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
+  <button class="w3-button w3-black w3-padding-large w3-margin-bottom">Next »</button>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
 
 </body>
 </html>
