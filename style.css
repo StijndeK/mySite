@@ -95,8 +95,11 @@
     background-color: black;
 }
 
-/* Second image (Portfolio) */
 .bgimg-2 {
     background-image: url("media/background22.jpg");
     background-color: black;
+}
+
+.logo {
+	
 }
