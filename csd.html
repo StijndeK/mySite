@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+
 <style>
 body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 body {font-size:20px;}
@@ -15,16 +16,24 @@ body {font-size:20px;}
 </style>
 <body>
 
-  <!-- Sidebar/menu -->
-  <div class="w3-bar w3-border w3-hide-small w3-hide-medium">
-  <a href="index.html" class="w3-bar-item w3-button">Home</a>
 
-  <a href="csd.html" class="w3-bar-item w3-button">Software</a>
-  <a href="composition.html" class="w3-bar-item w3-button">Composition</a>
-  <a href="sounddesign.html" class="w3-bar-item w3-button">Sound Design</a>
-  <a href="GameJamKorea.html" class="w3-bar-item w3-button">Applied Game Jam South Korea</a>
-  <a href="contact.html" class="w3-bar-item w3-button ">Contact</a>
+
+
+  <!-- menu -->
+  <div class="w3-top">
+    <div class="w3-bar w3-border w3-white w3-card w3-large w3-hide-small w3-hide-medium ">
+    <a href="index.html" class="w3-bar-item  w3-button">Home</a>
+    <a href="csd.html" class="w3-bar-item w3-button">Software</a>
+    <a href="composition.html" class="w3-bar-item w3-button">Composition</a>
+    <a href="sounddesign.html" class="w3-bar-item w3-button">Sound Design</a>
+    <a href="GameJamKorea.html" class="w3-bar-item w3-button">Applied Game Jam South Korea</a>
+    <a href="contact.html" class="w3-bar-item w3-button ">Contact</a>
+    <div class="w3-right">
+      <img src="media/logo2.png" class="w3-image w3-hover-opacity-off" alt="LOGO" width="60" height="60" align = "right">
+    </div>
+  </div>
 </div>
+
 
   <!-- Sidebar (hidden by default) -->
 <nav class="w3-sidebar w3-hide-large w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:5%;min-width:300px" id="mySidebar">
@@ -44,71 +53,89 @@ body {font-size:20px;}
 
 
 <!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:40px;margin-right:40px">
+<div class="w3-main ">
 
   <!-- Header -->
-  <div class="w3-container" style="margin-top:80px" id="showcase">
-    <h1 class="w3-jumbo"><b>Software development</b>     <img src="media/logo2.png" class="w3-image w3-hide-small w3-hover-opacity-off" alt="LOGO" width="100" height="100" align = "right">
-</h1>
-    <!-- <h1 class="w3-xxxlarge w3-text-red"><b>About me</b></h1>
-    <hr style="width:50px;border:5px solid red" classc="w3-round"> -->
+  <div class="w3-container" style="margin-top:120px; margin-bottom: 40px; margin-left:40px;margin-right:40px" id="showcase">
+    <h1 class="w3-jumbo"><b>Software development</b> </h1>
   </div>
 
-<!-- about -->
-  <div class="w3-container" id="services" style="margin-top:75px">
-    <h1 class="w3-xxlarge w3-text-red"><b>About</b></h1>
 
-<!--     <hr style="width:50px;border:5px solid red" class="w3-round"> -->
+
+
+  <!-- about -->
+  <div class="w3-container" id="services" style="margin-top:75px; margin-left:40px;margin-right:40px">
+    <h1 class="w3-xxlarge w3-text-black"><b>About</b></h1>
+    <hr style="width:50px;border:3px solid red" class="w3-round">
+
     <p>As a programmer I my main focusses are algorythmic composing, plugin development and researching the relation between picture and music. <br/>
     </p>
-
   </div>
 
+
   <!-- coding languages -->
-  <div class="w3-container" id="services" style="margin-top:75px">
-  <h1 class="w3-xxlarge w3-text-red"><b>Languages</b></h1>
-  <p> For programming I mainly use C++ and Python, but I also have experience in the following languages: <br/>
-    Supercollider <br/>
-    Lisp <br/>
-    Unity <br/>
-    Processing <br/>
-    Max MSP <br/>
-  </p>
+  <div class="w3-container" id="services" style="margin-top:75px; margin-left:40px;margin-right:40px">
+    <h1 class="w3-xxlarge w3-text-black"><b>Languages</b></h1>
+    <hr style="width:50px;border:3px solid red" class="w3-round">
+
+    <p> For programming I mainly use C++ and Python, but I also have experience in the following languages: <br/>
+      Supercollider <br/>
+      Lisp <br/>
+      Unity <br/>
+      Processing <br/>
+      Max MSP <br/>
+    </p>
+  </div>
+
+
+
+<div class="w3-container" style="margin-top:120px; margin-bottom: 40px; margin-left:40px;margin-right:40px" id="showcase">
+  <h1 class="w3-xxxlarge"><b>Projects</b> </h1>
+  <hr style="width:70px;border:4px solid red" class="w3-round">
+
 </div>
+
+
 
   <!-- projects -->
 
-  <div class="w3-container"  style="margin-top:75px">
-  <h1 class="w3-xxlarge w3-text-red"><b>Projects</b></h1>
+  <div class="w3-container"  style="margin-top:75px; margin-left:40px;margin-right:400px">
 
-  <div class="w3-left"  style="margin-top:50px">
-  <h1 class="w3-xlarge w3-text-black"><b>Drawing Music</b></h1>
-  <p>A desktop application which generates music based on your drawing. <br/>
-    Check it out on my GitHub <a href="https://github.com/StijndeK/CSD2/tree/master/blok4/DrawingMusic">here </a> <br/>
-    This app is still under development. Here's an early example of what it sounds like.
-  </p>
-  <video width="320" height="240"  controls>
-<source src="media/CSD2D_testfilm1.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
+    <!-- <h1 class="w3-xxlarge w3-text-red"><b>Projects</b></h1> -->
+    <div class="w3-left"  style="margin-top:50px; ">
+    <h1 class="w3-xlarge w3-text-black"><b>Drawing Music</b></h1>
+    <p>A desktop application which generates music based on your drawing. <br/>
+      Check it out on my GitHub <a href="https://github.com/StijndeK/CSD2/tree/master/blok4/DrawingMusic">here </a> <br/>
+      This app is still under development. Here's an early example of what it sounds like.
+    </p>
+    <video width="320" height="240"  controls>
+    <source src="media/CSD2D_testfilm1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </video>
+  </div>
 
-  <div class="w3-left" style="margin-top:50px">
-  <h1 class="w3-xlarge w3-text-black"><b>Distortion Plugin</b></h1>
-  <p>A simple, yet effective distortion plugin VST. <br/>
-    Check it out on my GitHub <a href="https://github.com/StijndeK/CSD2/tree/master/blok3-deel2">here </a></p>
-  </p>
 
-  <div class="w3-left"  style="margin-top:50px">
-  <h1 class="w3-xlarge w3-text-black"><b>Algorythmic Polysynth</b></h1>
-  <p>A polysynth created from the ground up in c++ <br/>
-    Check it out on my GitHub <a href="https://github.com/StijndeK/CSD2/tree/master/blok3/synthesizer_opdracht/Synth_code">here </a></p>
+  <div class="w3-left w3-container" style="margin-top:50px; margin-right:100px" >
+    <h1 class="w3-xlarge w3-text-black"><b>Distortion Plugin</b></h1>
+    <p>A simple, yet effective distortion plugin VST. <br/>
+      Check it out on my GitHub <a href="https://github.com/StijndeK/CSD2/tree/master/blok3-deel2">here </a></p>
+    </p>
+  </div>
+
+
+  <div class="w3-left w3-container"  style="margin-top:50px; margin-right:500px">
+    <h1 class="w3-xlarge w3-text-black" align = "left"><b>Algorythmic Polysynth</b></h1>
+    <p>A polysynth created from the ground up in c++ <br/>
+      Check it out on my GitHub <a href="https://github.com/StijndeK/CSD2/tree/master/blok3/synthesizer_opdracht/Synth_code">here </a></p>
     <video width="320" height="240" controls>
-  <source src="media/PolysynthFilmpje1.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
-  </p>
+    <source src="media/PolysynthFilmpje1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </video>
+      </p>
+  </div>
 
-  <div class="w3-left" style="margin-top:50px">
+
+  <div class="w3-left w3-container" style="margin-top:50px" >
   <h1 class="w3-xlarge w3-text-black"><b>Rule 150</b></h1>
   <p>A program I created together with Dennis Dekker in Max MSP, which generates a composition based on the elementary cellular automaton rule 150.  <br/>
     Check it out over here! </p>
@@ -117,17 +144,30 @@ Your browser does not support the video tag.
 Your browser does not support the video tag.
 </video>
   </p>
+</div>
 
-  <div class="w3-left" style="margin-top:50px">
+
+  <div class="w3-left w3-container" style="margin-top:50px" >
   <h1 class="w3-xlarge w3-text-black"><b>Beat Generator / sampler</b></h1>
   <p>A simple beat generator made in python<br/>
     Check it out on my GitHub <a href="https://github.com/StijndeK/CSD2/tree/master/blok1/sampler_final">here </a></p>
   </p>
 
 </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-xlarge">
+</footer>
+
 
 <!-- End page content -->
 </div>
+</div>
+
+
+
 
 <script>
 // Script to open and close sidebar
