@@ -13,6 +13,10 @@
 	white-space: nowrap;
 }
 
+.color1{
+	color: #F5F2F7;
+}
+
 .center{
     position:relative;
     max-width:1000px;
