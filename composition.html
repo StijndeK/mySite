@@ -11,124 +11,120 @@
 <style>
 body,h1,h2,h3,h4,h5 {font-family: "Garamond", sans-serif}
 body {font-size:18px;}
-.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img{margin-bottom:-6px;margin-top:16px;margin-left: 200px;margin-right: 20px;opacity:0.8;cursor:pointer}
 .w3-half img:hover{opacity:1}
 </style>
 <body>
 
 
-
-
   <!-- menu -->
   <div class="w3-top">
-    <div class="w3-bar w3-border w3-white w3-card w3-large w3-hide-small w3-hide-medium ">
-    <a href="index.html" class="w3-bar-item  w3-button">Home</a>
+    <div class="w3-bar w3-center w3-border w3-white w3-card w3-large w3-hide-small w3-hide-medium " >
+      <a href="index.html" class="w3-bar-item  w3-button" >Home</a>
+      <a href="csd.html" class="w3-bar-item w3-button">Software</a>
+      <a href="composition.html" class="w3-bar-item w3-button">Composition</a>
+      <a href="sounddesign.html" class="w3-bar-item w3-button">Sound Design</a>
+      <a href="GameJamKorea.html" class="w3-bar-item w3-button">Applied Game Jam South Korea</a>
+      <a href="contact.html" class="w3-bar-item w3-button ">Contact</a>
+      <div class="w3-right">
+        <img src="media/logo2.png" class="w3-image w3-hover-opacity-off" alt="LOGO" width="60" height="60" align = "right">
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Sidebar (hidden by default) -->
+  <nav class="w3-sidebar w3-hide-large w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:5%;min-width:300px" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Close Menu</a>
+    <a href="index.html" class="w3-bar-item w3-button">Home</a>
     <a href="csd.html" class="w3-bar-item w3-button">Software</a>
     <a href="composition.html" class="w3-bar-item w3-button">Composition</a>
     <a href="sounddesign.html" class="w3-bar-item w3-button">Sound Design</a>
     <a href="GameJamKorea.html" class="w3-bar-item w3-button">Applied Game Jam South Korea</a>
     <a href="contact.html" class="w3-bar-item w3-button ">Contact</a>
-    <div class="w3-right">
-      <img src="media/logo2.png" class="w3-image w3-hover-opacity-off" alt="LOGO" width="60" height="60" align = "right">
-    </div>
+  </nav>
+
+  <!-- Top menu for sidebar -->
+  <div class="w3-top">
+    <div class="w3-button w3-xlarge w3-hide-large w3-padding-16" style="margin:auto"align = "left"onclick="w3_open()">☰</div>
   </div>
-</div>
-
-  <!-- Sidebar (hidden by default) -->
-<nav class="w3-sidebar w3-hide-large w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:5%;min-width:300px" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Close Menu</a>
-  <a href="index.html" class="w3-bar-item w3-button">Home</a>
-  <a href="csd.html" class="w3-bar-item w3-button">Software</a>
-  <a href="composition.html" class="w3-bar-item w3-button">Composition</a>
-  <a href="sounddesign.html" class="w3-bar-item w3-button">Sound Design</a>
-  <a href="GameJamKorea.html" class="w3-bar-item w3-button">Applied Game Jam South Korea</a>
-  <a href="contact.html" class="w3-bar-item w3-button ">Contact</a>
-</nav>
-
-<!-- Top menu -->
-<div class="w3-top">
-  <div class="w3-button w3-xlarge w3-hide-large w3-padding-16" style="margin:auto"align = "left"onclick="w3_open()">☰</div>
-</div>
 
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:40px;margin-right:40px">
 
   <!-- Header -->
   <div class="w3-container" style="margin-top:80px" id="showcase">
-    <h1 class="w3-jumbo"><b>Composition for media</b>     
-</h1>
-    <!-- <h1 class="w3-xxxlarge w3-text-red"><b>About me</b></h1>
-    <hr style="width:50px;border:5px solid red" classc="w3-round"> -->
+    <h1 class="w3-jumbo"><b>Composition for media</b></h1>
+    <!-- <hr style="width:50px;border:5px solid red" classc="w3-round"> -->
   </div>
 
-<!-- Algemeen -->
+  <!-- Algemeen -->
   <div class="w3-container" id="services" style="margin-top:75px">
     <h1 class="w3-xxlarge w3-text-red"><b>    About</b></h1>
-<!--     <hr style="width:50px;border:5px solid red" class="w3-round"> -->
+    <!--     <hr style="width:50px;border:5px solid red" class="w3-round"> -->
     <p> As a composer I focus on music for different forms of Media. <br>
-      For example films, tv, games and commercials.
-    </p>
-
+      For example films, tv, games and commercials.</p>
   </div>
 
   <!-- D-Minor / Applied game jam Pohang University -->
   <div class="w3-container" style="margin-top:75px">
-  <a href="GameJamKorea.html" class="nav-tekst link" align="left"><h1 class="w3-xxlarge w3-text-red"><b>Global Game Jam South Korea</b></h1></a>
-  <img src="media/WhoAmI_BoxArt.png" class="w3-round w3-image w3-hover-opacity-off" align="right" width="300" height="133">
-  <p> Music for an applied game, created at a game jam at Pohang University in South Korea. An applied game is a game which in one way
-    or another betters society. For this game jam we formed 15 teams with 4 our 5 students from Korea, Japan, China and the Netherlands.
-     We were then all given 48 hours to create an applied game about the topic: Dementia.
-     <!-- I formed a group called D-minor (dementia-minor) with a programmer and a designer from korea and a researcher/planner from Japan (names). We made a game to raise awairness for Dementia
-     and to help prefent it by triggering the brain of the players. To achieve this goal whe made a puzzlegame with a strong narrative element.<br/>
-     The music in this game is made to go well with the genre of game (puzzle-platformers) and the audience(more experienced gamers). Because
-     we made this game for more experienced gamers, it had to be a soundtrack thats somewhat recognisable for gamers and really pulls them into the game. <br/>
-     At the end our game won two prices! Third price and the popularity price (what other students thought was the best game). -->
-     <a href="GameJamKorea.html" class="nav-tekst link" align="left"><h1 class="w3-large w3-text-black"><b> More information.. </b></h1></a>      <br/>
+    <a href="GameJamKorea.html" class="nav-tekst link" align="left"><h1 class="w3-xxlarge w3-text-red"><b>Global Game Jam South Korea</b></h1></a>
+    <img src="media/WhoAmI_BoxArt.png" class="w3-round w3-image w3-hover-opacity-off" align="right" width="300" height="133">
+    <p> Music for an applied game, created at a game jam at Pohang University in South Korea. An applied game is a game which in one way
+      or another betters society. For this game jam we formed 15 teams with 4 our 5 students from Korea, Japan, China and the Netherlands.
+       We were then all given 48 hours to create an applied game about the topic: Dementia.
+       <!-- I formed a group called D-minor (dementia-minor) with a programmer and a designer from korea and a researcher/planner from Japan (names). We made a game to raise awairness for Dementia
+       and to help prefent it by triggering the brain of the players. To achieve this goal whe made a puzzlegame with a strong narrative element.<br/>
+       The music in this game is made to go well with the genre of game (puzzle-platformers) and the audience(more experienced gamers). Because
+       we made this game for more experienced gamers, it had to be a soundtrack thats somewhat recognisable for gamers and really pulls them into the game. <br/>
+       At the end our game won two prices! Third price and the popularity price (what other students thought was the best game). -->
+       <a href="GameJamKorea.html" class="nav-tekst link" align="left"><h1 class="w3-large w3-text-black"><b> More information.. </b></h1></a>      <br/>
 
-    To download the game klick <a href="https://d-minor.itch.io/who-am-i">here </a> <br/>
-    Check out D-minors facebook page: <a href="https://www.facebook.com/Dementiaminor/">here </a> <br/>
+      To download the game klick <a href="https://d-minor.itch.io/who-am-i">here </a> <br/>
+      Check out D-minors facebook page: <a href="https://www.facebook.com/Dementiaminor/">here </a> <br/>
 
-  </p>
-  <audio controls>
-    <source src="media/MainMenu.wav" type="audio/wav">
-  Your browser does not support the audio element.
-  </audio>
-  <audio controls>
-    <source src="media/LevelMusic.wav" type="audio/wav">
-  Your browser does not support the audio element.
-  </audio>
-  <audio controls>
-    <source src="media/EndingMusic.wav" type="audio/wav">
-  Your browser does not support the audio element.
-  </audio>
+    </p>
+    <audio controls>
+      <source src="media/MainMenu.wav" type="audio/wav">
+    Your browser does not support the audio element.
+    </audio>
+    <audio controls>
+      <source src="media/LevelMusic.wav" type="audio/wav">
+    Your browser does not support the audio element.
+    </audio>
+    <audio controls>
+      <source src="media/EndingMusic.wav" type="audio/wav">
+    Your browser does not support the audio element.
+    </audio>
+  </div>
 
-<!-- Other projects -->
+
+  <!-- Other projects -->
   <div class="w3-container" id="services" style="margin-top:75px">
-  <h1 class="w3-xxlarge w3-text-red"><b>Other Projects</b></h1>
+    <h1 class="w3-xxlarge w3-text-red"><b>Other Projects</b></h1>
+  </div>
+
+
+  <!-- Trailertrack -->
+  <div class="w3-container" style="margin-top:50px">
+    <h1 class="w3-xlarge w3-text-black"><b>Trailertrack</b></h1>
+    <p>A retro-wave style 'trailertrack'. For this project I focused on creating original sounds and extreme contrasts. <br/>
+      For more information click <a href="https://drive.google.com/drive/folders/1kgk31MTfBMW3erCPWjBn3laDhv2ON2jV?usp=sharing">here </a></p>
+    </p>
+    <audio controls>
+      <source src="media/Trailertrack.wav" type="audio/wav">
+    Your browser does not support the audio element.
+    </audio>
+  </div>
+
+
+<!-- End page content -->
 </div>
 
-
-<!-- Trailertrack -->
-<div class="w3-container" style="margin-top:50px">
-<h1 class="w3-xlarge w3-text-black"><b>Trailertrack</b></h1>
-<p>A retro-wave style 'trailertrack'. For this project I focused on creating original sounds and extreme contrasts. <br/>
-  For more information click <a href="https://drive.google.com/drive/folders/1kgk31MTfBMW3erCPWjBn3laDhv2ON2jV?usp=sharing">here </a></p>
-</p>
-<audio controls>
-  <source src="media/Trailertrack.wav" type="audio/wav">
-Your browser does not support the audio element.
-</audio>
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-white w3-center w3-xlarge">
 </footer>
-
-<!-- End page content -->
-</div>
-</div>
-</div>
-
-
 
 
 <script>
