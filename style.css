@@ -13,6 +13,25 @@
 	white-space: nowrap;
 }
 
+.center{
+    position:absolute;
+    width:1200px;
+    /* height:1000px; */
+    left:50%;
+    /* top:50%; */
+    margin-left:-600px;
+    /* margin-top:-500px; */
+}
+
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .button1 {
     color: black;
 }
