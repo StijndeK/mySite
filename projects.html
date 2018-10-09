@@ -10,8 +10,11 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style>
-body,h1,h2,h3,h4,h5 {font-family: "Garamond", sans-serif}
-body {font-size:18px;}
+body,h5,h2,h3,h4 {font-family: 'Roboto', sans-serif;}
+h1{font-family: 'Lato', sans-serif;}
+body {font-size:16px;}
+body,h3{z-index: -1; position:relative;}
+body {background-color: white;}
 .w3-half img{margin:0 auto;opacity:0.8;cursor:pointer}
 .w3-half img:hover{opacity:1}
 </style>
@@ -22,18 +25,17 @@ body {font-size:18px;}
   <!-- Navbar -->
   <!-- Sidebar on click -->
   <!-- Footer -->
-  <footer class="w3-container w3-padding-32 w3-center  w3-black w3-xlarge">
+  <footer class="w3-container footerr w3-padding-32 w3-center w3-black w3-xlarge" >
   </footer>
-
   <!-- menu -->
-  <div class="w3-top " >
-    <div class="w3-bar w3-border w3-white center w3-card w3-large w3-hide-small w3-hide-medium " >
-      <a href="index.html" class="w3-bar-item  w3-button" >Home</a>
-      <a href="csd.html" class="w3-bar-item w3-button">Software</a>
-      <a href="composition.html" class="w3-bar-item w3-button">Composition</a>
-      <!-- <a href="sounddesign.html" class="w3-bar-item w3-button">Sound Design</a> -->
-      <a href="projects.html" class="w3-bar-item w3-button">Projects</a>
-      <a href="contact.html" class="w3-bar-item w3-button ">Contact</a>
+  <!-- <div class="w3-top" > -->
+    <div class="w3-bar w3-border center w3-white w3-card w3-large w3-hide-small w3-hide-medium w3-row" align="top" >
+      <a href="index.html" class="w3-bar-item button2" >Home</a>
+      <a href="csd.html" class="w3-bar-item  button2">Software</a>
+      <a href="composition.html" class="w3-bar-item  button2">Composition</a>
+      <a href="projects.html" class="w3-bar-item button2">Projects</a>
+
+      <a href="contact.html" class="w3-bar-item  button2 ">Contact</a>
       <div class="w3-right">
         <img src="media/logo2.png" class="w3-image w3-hover-opacity-off" alt="LOGO" width="60" height="60" align = "right">
       </div>
@@ -41,20 +43,21 @@ body {font-size:18px;}
   </div>
 
 
+
   <!-- Sidebar (hidden by default) -->
   <nav class="w3-sidebar w3-hide-large w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:5%;min-width:300px" id="mySidebar">
-    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Close Menu</a>
-    <a href="index.html" class="w3-bar-item  w3-button" >Home</a>
-    <a href="csd.html" class="w3-bar-item w3-button">Software</a>
-    <a href="composition.html" class="w3-bar-item w3-button">Composition</a>
-    <!-- <a href="sounddesign.html" class="w3-bar-item w3-button">Sound Design</a> -->
-    <a href="projects.html" class="w3-bar-item w3-button">Projects</a>
-    <a href="contact.html" class="w3-bar-item w3-button ">Contact</a>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item  button2">Close Menu</a>
+    <a href="index.html" class="w3-bar-item  w3-center button2" >Home</a>
+    <a href="csd.html" class="w3-bar-item  button2">Software</a>
+    <a href="composition.html" class="w3-bar-item  button2">Composition</a>
+    <!-- <a href="sounddesign.html" class="w3-bar-item  button2">Sound Design</a> -->
+    <a href="projects.html" class="w3-bar-item  button2">Projects</a>
+    <a href="contact.html" class="w3-bar-item  button2 ">Contact</a>
   </nav>
 
   <!-- Top menu for sidebar -->
   <div class="w3-top">
-    <div class="w3-button w3-xlarge w3-hide-large w3-padding-16" style="margin:auto"align = "left"onclick="w3_open()">☰</div>
+    <div class=" button2 w3-xlarge w3-hide-large w3-padding-16  w3-text-white" style="margin:auto"align = "left"onclick="w3_open()">☰</div>
   </div>
 
 
@@ -62,45 +65,44 @@ body {font-size:18px;}
 <!-- !PAGE CONTENT! -->
 <div class="w3-main center ">
 
+  <div class="w3-container " style="margin-left:10px; margin-right: 10px; margin-bottom: 50px; ">
+
   <!-- Header -->
-  <div class="w3-container " style="margin-top:120px; margin-bottom: 40px;" id="showcase">
-    <h1 class="w3-jumbo"><b>Projects</b> </h1>
+  <div class="w3-container w3-centered " style="margin-top:10px; margin-bottom: 40px; " id="showcase">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Projects</b> </h1>
+    <hr style="width:50px;border:3px solid black" class="w3-round">
   </div>
 
   <!-- about -->
   <div class="w3-container w3-card w3-white" id="services" style="margin-top:75px; ">
-    <h1 class="w3-xxlarge w3-text-red"><b>About</b></h1>
+    <h1 class="w3-xxlarge"><b>About</b></h1>
     <!-- <hr style="width:50px;border:3px solid black" class="w3-round"> -->
     <p>My projects... <br/>
     </p>
   </div>
 
-  <div class="w3-padding-32 ">
-    <div class="w3-bar w3-border">
-      <a href="csd.html#projects" class="w3-bar-item w3-button">Software</a>
-    </div>
+  <div class="w3-padding-16 ">
+      <a href="csd.html#projects" class="w3-bar-item w3-xlarge button2">Software</a>
   </div>
 
-  <div class="w3-padding-32 ">
-    <div class="w3-bar w3-border">
-      <a href="composition.html#projects" class="w3-bar-item w3-button">Composition</a>
-    </div>
+  <div class="w3-padding-16 ">
+      <a href="composition.html#projects" class="w3-bar-item w3-xlarge button2">Composition</a>
   </div>
 
-  <div class="w3-padding-32 ">
-    <div class="w3-bar w3-border">
-      <a href="GameJamKorea.html" class="w3-bar-item w3-button">Applied Game Jam South Korea</a>
-    </div>
+  <div class="w3-padding-16 ">
+      <a href="GameJamKorea.html" class="w3-bar-item w3-xlarge button2">Applied Game Jam South Korea</a>
   </div>
 
 
-  <!-- Footer -->
-  <footer class="w3-container  w3-white w3-xlarge">
-  </footer>
+
 
 <!-- End page content -->
 </div>
+</div>
 
+<!-- Footer -->
+<footer class="w3-container  w3-white w3-xlarge">
+</footer>
 
 
 <!-- Footer -->

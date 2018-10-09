@@ -13,6 +13,13 @@
 	white-space: nowrap;
 }
 
+.footerr {
+    /* position: absolute; */
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+
 @import url('https://fonts.googleapis.com/css?family=Lato:700|Roboto');
 
 .button2{
@@ -60,7 +67,7 @@
 
 
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
+ .bgimg-2, .bgimg-3 {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;

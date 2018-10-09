@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <title>Stijn de Koning</title>
@@ -8,25 +7,36 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <style>
-body,h1,h2,h3,h4,h5 {font-family: "Garamond", sans-serif}
-body {font-size:18px;}
-.w3-half img{margin-bottom:-6px;margin-top:16px;margin-left: 200px;margin-right: 20px;opacity:0.8;cursor:pointer}
+body,h5,h2,h3,h4 {font-family: 'Roboto', sans-serif; color:#181a82;}
+h1{font-family: 'Lato', sans-serif;}
+body,h6{color:#181a82;}
+body {font-size:16px;}
+body,h3{z-index: -1; position:relative;}
+body {background-color: white;}
+.w3-half img{margin:0 auto;opacity:0.8;cursor:pointer}
 .w3-half img:hover{opacity:1}
 </style>
-<body>
+<body id="myPage">
 
+  <!-- background -->
+  <!-- <body class="bgimg-4" > -->
+  <!-- Navbar -->
+  <!-- Sidebar on click -->
+  <!-- Footer -->
+  <footer class="w3-container footerr w3-padding-32 w3-center w3-black w3-xlarge" >
+  </footer>
+  <!-- menu -->
+  <!-- <div class="w3-top" > -->
+    <div class="w3-bar w3-border center w3-white w3-card w3-large w3-hide-small w3-hide-medium w3-row" align="top" >
+      <a href="index.html" class="w3-bar-item button2" >Home</a>
+      <a href="csd.html" class="w3-bar-item  button2">Software</a>
+      <a href="composition.html" class="w3-bar-item  button2">Composition</a>
+      <a href="projects.html" class="w3-bar-item button2">Projects</a>
 
-  <!-- menu -->
-  <!-- menu -->
-  <div class="w3-top " >
-    <div class="w3-bar w3-border w3-white center w3-card w3-large w3-hide-small w3-hide-medium " >
-      <a href="index.html" class="w3-bar-item  w3-button" >Home</a>
-      <a href="csd.html" class="w3-bar-item w3-button">Software</a>
-      <a href="composition.html" class="w3-bar-item w3-button">Composition</a>
-      <!-- <a href="sounddesign.html" class="w3-bar-item w3-button">Sound Design</a> -->
-      <a href="projects.html" class="w3-bar-item w3-button">Projects</a>
-      <a href="contact.html" class="w3-bar-item w3-button ">Contact</a>
+      <a href="contact.html" class="w3-bar-item  button2 ">Contact</a>
       <div class="w3-right">
         <img src="media/logo2.png" class="w3-image w3-hover-opacity-off" alt="LOGO" width="60" height="60" align = "right">
       </div>
@@ -34,42 +44,45 @@ body {font-size:18px;}
   </div>
 
 
+
   <!-- Sidebar (hidden by default) -->
   <nav class="w3-sidebar w3-hide-large w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:5%;min-width:300px" id="mySidebar">
-    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Close Menu</a>
-    <a href="index.html" class="w3-bar-item  w3-button" >Home</a>
-    <a href="csd.html" class="w3-bar-item w3-button">Software</a>
-    <a href="composition.html" class="w3-bar-item w3-button">Composition</a>
-    <!-- <a href="sounddesign.html" class="w3-bar-item w3-button">Sound Design</a> -->
-    <a href="projects.html" class="w3-bar-item w3-button">Projects</a>
-    <a href="contact.html" class="w3-bar-item w3-button ">Contact</a>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item  button2">Close Menu</a>
+    <a href="index.html" class="w3-bar-item  w3-center button2" >Home</a>
+    <a href="csd.html" class="w3-bar-item  button2">Software</a>
+    <a href="composition.html" class="w3-bar-item  button2">Composition</a>
+    <!-- <a href="sounddesign.html" class="w3-bar-item  button2">Sound Design</a> -->
+    <a href="projects.html" class="w3-bar-item  button2">Projects</a>
+    <a href="contact.html" class="w3-bar-item  button2 ">Contact</a>
   </nav>
 
   <!-- Top menu for sidebar -->
   <div class="w3-top">
-    <div class="w3-button w3-xlarge w3-hide-large w3-padding-16" style="margin:auto"align = "left"onclick="w3_open()">☰</div>
+    <div class=" button2 w3-xlarge w3-hide-large w3-padding-16  w3-text-white" style="margin:auto"align = "left"onclick="w3_open()">☰</div>
   </div>
 
 <!-- !PAGE CONTENT! -->
 <div class="w3-main center" >
 
+  <div class="w3-container " style="margin-left:10px; margin-right: 10px; margin-bottom: 50px; ">
+
   <!-- Header -->
-  <div class="w3-container" style="margin-top:120px; margin-bottom: 40px;" id="showcase">
-    <h1 class="w3-jumbo"><b>Composition for media</b></h1>
-    <!-- <hr style="width:50px;border:5px solid red" classc="w3-round"> -->
+  <div class="w3-container w3-centered " style="margin-top:10px; margin-bottom: 40px; " id="showcase">
+    <a href="csd.html" class="link" align="left"><h1 class="w3-xxxlarge w3-text-red"><b>Composition for media</b></h1></a>
+    <hr style="width:50px;border:3px solid black" class="w3-round">
   </div>
 
   <!-- Algemeen -->
-  <div class="w3-container w3-card w3-white" id="services" style="margin-top:75px">
-    <h1 class="w3-xxlarge w3-text-red"><b>    About</b></h1>
+  <div class="w3-container w3-card w3-white" id="services" style="margin-top:10px">
+    <h1 class="w3-xlarge w3-text-black"><b>    About</b></h1>
     <!--     <hr style="width:50px;border:5px solid red" class="w3-round"> -->
     <p> As a composer I focus on music for different forms of Media. <br>
       For example films, tv, games and commercials.</p>
   </div>
 
   <!-- D-Minor / Applied game jam Pohang University -->
-  <div class="w3-container w3-card w3-white" style="margin-top:75px" id="projects">
-    <a href="GameJamKorea.html" class="nav-tekst link" align="left"><h1 class="w3-xxlarge w3-text-red"><b>Global Game Jam South Korea</b></h1></a>
+  <div class="w3-container w3-card w3-white" style="margin-top:40px" id="projects">
+    <a href="GameJamKorea.html" class="nav-tekst link" align="left"><h1 class="w3-xlarge w3-text-black"><b>Global Game Jam South Korea</b></h1></a>
     <img src="media/WhoAmI_BoxArt.png" class="w3-round w3-image w3-hover-opacity-off" align="right" width="300" height="133">
     <p> Music for an applied game, created at a game jam at Pohang University in South Korea. An applied game is a game which in one way
       or another betters society. For this game jam we formed 15 teams with 4 our 5 students from Korea, Japan, China and the Netherlands.
@@ -101,13 +114,13 @@ body {font-size:18px;}
 
 
   <!-- Other projects -->
-  <div class="w3-container" id="services" style="margin-top:75px">
+  <div class="w3-container" id="services" style="margin-top:40px">
     <h1 class="w3-xxlarge w3-text-red"><b>Other Projects</b></h1>
   </div>
 
 
   <!-- Trailertrack -->
-  <div class="w3-container w3-card w3-white" style="margin-top:50px">
+  <div class="w3-container w3-card w3-white" style="margin-top:40px">
     <h1 class="w3-xlarge w3-text-black"><b>Trailertrack</b></h1>
     <p>A retro-wave style 'trailertrack'. For this project I focused on creating original sounds and extreme contrasts. <br/>
       For more information click <a href="https://drive.google.com/drive/folders/1kgk31MTfBMW3erCPWjBn3laDhv2ON2jV?usp=sharing">here </a></p>
@@ -119,7 +132,7 @@ body {font-size:18px;}
   </div>
 
   <!-- Atomic blonde -->
-  <div class="w3-container w3-card w3-white" style="margin-top:50px">
+  <div class="w3-container w3-card w3-white" style="margin-top:40px; margin-bottom:40px;">
     <h1 class="w3-xlarge w3-text-black"><b>Action Music</b></h1>
     <p> My own take on the soundtrack of an action sequence from the movie Atomic Blonde.
       In the original scene you hear a contrasting pop-song being played on the radio, while you watch the main character beat people up. <br/>
@@ -131,11 +144,12 @@ body {font-size:18px;}
 
 <!-- End page content -->
 </div>
+</div>
 
-
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-white w3-center w3-xlarge">
+<footer class="w3-container footerr w3-padding-32 w3-center w3-black w3-xlarge" >
 </footer>
+
+
 
 
 <script>
