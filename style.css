@@ -65,6 +65,11 @@
 
 }
 
+.logoimg-1 {
+    background-image: url("media/logov1.png");
+    background-color: black;
+}
+
 
 /* Create a Parallax Effect */
  .bgimg-2, .bgimg-3 {
