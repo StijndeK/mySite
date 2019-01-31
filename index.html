@@ -13,10 +13,29 @@
 body {font-family: "Roboto", sans-serif}
 body {background-color: black;}
 body {color: white;}
-h2 {font-size: 44px; line-height: 0px; background-color: red;}
-h3 {font-size: 18px;}
+h1 {font-size: 48px; line-height: 0px; background-color: red; margin-top: 80px; z-index: 0;}
+/* title */
+h2 {font-size: 24px; line-height: 0px; background-color: red; margin-top: 80px;}
+/* onder titel */
+h3 {font-size: 18px; letter-spacing: 1px;}
+/* onder titels */
+h4 {font-size: 18px; letter-spacing: 2px;}
+/* container titel */
+h5 {font-size: 20px; letter-spacing: 2px; color:black;}
+/* container text */
+h6 {font-size: 18px; letter-spacing: 0px; color:black;}
 </style>
 <body>
+
+<!-- title -->
+<div class = "toptitle-section">
+  <h1 class="w3-wide">
+    <p>
+      S.d.Koning
+    </p>
+  </h1>
+</div>
+
 
 <!-- Top menu -->
 <div class="dropdown">
@@ -29,9 +48,16 @@ h3 {font-size: 18px;}
   </div>
 </div>
 
+<!-- Top bar -->
+<!-- <div class="w3-top" style = "z-index: -5;"> -->
+  <!-- <div class="w3-bar w3-white">
+     <br>
+  </div> -->
+<!-- </div> -->
+
 <!-- logo -->
 <div class = "logo">
-  <img src="media/logo2small.png" class="w3-round w3-image w3-hover-opacity" alt="Photo of Me" width="100" height="100">
+  <img src="media/logo2small.png" class="w3-round w3-image w3-hover-opacity" alt="Photo of Me" width="80" height="80">
 </div>
 
 <!-- <div class="main-container">
@@ -40,14 +66,35 @@ h3 {font-size: 18px;}
   </div>
 </div> -->
 
+
+
 <!-- Page content -->
 <div class="w3-content centredTest w3-center" style="max-width:2000px;">
 
-  <!-- content -->
-  <h3>
-    <img src="media/fotoik2.jpg" class="w3-round w3-image w3-hover-opacity" alt="Photo of Me" width="500" height="333">
+  <div class="line"></div>
+
+  <!-- title -->
+  <h2 class="w3-wide">
     <p>
-      Hi, I am Stijn de Koning, a composer, sound designer and (audio) software programmer.  <br/>
+      ABOUT <br>
+    </p>
+  </h2>
+
+  <img src="media/fotoik2.jpg" class="w3-round w3-image w3-hover-opacity" alt="Photo of Me" width="500" height="333" style="margin-top: 30px;">
+
+
+  <!-- content -->
+  <h4>
+    <p>
+      Hi, I am Stijn de Koning, a composer, sound designer and (audio) software programmer.
+    </p>
+  <h4>
+
+
+
+
+  <h3>
+    <p>
       I am based in Amsterdam, but go to collage at the University of Arts in Utrecht, where I study Music & Technology. <br/>
       I am currently working on this website. <br/>
     </p>
@@ -63,6 +110,12 @@ h3 {font-size: 18px;}
   </div> -->
 
 <!-- End Page Content -->
+</div>
+
+<!-- footer -->
+<div class="line" style="margin-top: 100px">
+</div>
+<div class="footer">
 </div>
 
 </body>

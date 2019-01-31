@@ -10,13 +10,30 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
-body {font-family: "Roboto", sans-serif}
 body {background-color: black;}
 body {color: white;}
-h2 {font-size: 44px; line-height: 0px; background-color: red;}
-h3 {font-size: 18px;}
+h1 {font-size: 48px; line-height: 0px; background-color: red; margin-top: 80px; z-index: 0;}
+/* title */
+h2 {font-size: 24px; line-height: 0px; background-color: red; margin-top: 80px;}
+/* onder titel */
+h3 {font-size: 18px; letter-spacing: 1px;}
+/* onder titels */
+h4 {font-size: 18px; letter-spacing: 2px;}
+/* container titel */
+h5 {font-size: 26px; letter-spacing: 2px; color:black;}
+/* container text */
+h6 {font-size: 18px; letter-spacing: 0px; color:black; float:left;}
 </style>
 <body>
+
+<!-- title -->
+<div class = "toptitle-section">
+  <h1 class="w3-wide">
+    <p>
+      Software
+    </p>
+  </h1>
+</div>
 
 <!-- Top menu -->
 <div class="dropdown">
@@ -31,56 +48,99 @@ h3 {font-size: 18px;}
 
 <!-- logo -->
 <div class = "logo">
-  <img src="media/logo2small.png" class="w3-round w3-image w3-hover-opacity" alt="Photo of Me" width="100" height="100">
+  <img src="media/logo2small.png" class="w3-round w3-image w3-hover-opacity" alt="Photo of Me" width="80" height="80">
 </div>
 
 
 <!-- Page content -->
 <div class="w3-content centredTest w3-center" style="max-width:2000px;">
 
+  <div class="line"></div>
+
   <!-- title -->
   <h2 class="w3-wide">
     <p>
-      SOFTWARE
+      INFO
     </p>
   </h2>
 
-  <h3>
+  <h3 style="margin-top: 70px;">
     <p>
-    me as programmer. me as programmer. me as programmer.
+    As a programmer my main focus is audio. <br>
+    I work on projects like audio-plugins, audio applications and programs that study the relation between picture and sound. <br>
+    For audio i mainly use c++ and the JUCE framework but i'm also familiair with other languages like: <br>
+    Python, Processing, Lisp, Unity (c*), max msp, html/css and supercollider. <br>
+    <br>
+    Here you'll find some of my projects:
     </p>
   </h3>
 
-  <!-- The Band Section -->
-  <!-- <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="band"> -->
-  <!-- <div style="background-color: black; margin-top: 25px;">
-    <h2 class="w3-wide">THE BAND</h2>
-    <p class="w3-opacity"><i>We love music</i></p>
-    <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <div class="w3-row w3-padding-32">
-      <div class="w3-third">
-        <p>Name</p>
-        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-      <div class="w3-third">
-        <p>Name</p>
-        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-      <div class="w3-third">
-        <p>Name</p>
-        <img src="/w3images/bandmember.jpg" class="w3-round" alt="Random Name" style="width:60%">
-      </div>
-    </div> -->
-  <!-- </div> -->
 
+  <!-- blog entry -->
+  <div class="blog-container" >
+    <!-- titel -->
+    <h5>
+      <p>
+        Drawing Music<br>
+      </p>
+    </h5>
 
+    <!-- text -->
+    <div class="blogtext" >
+      <h6>
+        <p>A desktop application which generates music based on your drawing. <br/>
+          Check it out on my GitHub <a href="https://github.com/StijndeK/CSD2/tree/master/blok4/DrawingMusic">here </a> <br/>
+          This app is still under development. Here's an early example of what it sounds/looks like.
+        </p>
+      </h6>
+
+      <!-- media -->
+      <div class="blog-picture" >
+        <video width="440" height="240"  controls>
+          <source src="media/CSD2D_testfilm1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div>
+
+  <!-- blog entry -->
+  <div class="blog-container" >
+    <!-- titel -->
+    <h5>
+      <p>
+        Rule 150 <br>
+      </p>
+    </h5>
+
+    <!-- text -->
+    <div class="blogtext" >
+      <h6 style="float: left;">
+        <p>
+          A program I created together with Dennis Dekker in Max MSP,  <br/>
+          which generates a composition based on the elementary cellular automaton rule 150.
+        </p>
+      </h6>
+
+      <!-- media -->
+      <div class="blog-picture" >
+        <video width="440" height="240"  controls>
+          <source src="media/rule150film1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div>
 
 
 <!-- End Page Content -->
 </div>
 
+<!-- footer -->
+<div class="line" style="margin-top: 100px">
+</div>
+<div class="footer">
+</div>
 
 </body>
 </html>

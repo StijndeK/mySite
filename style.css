@@ -1,10 +1,40 @@
-div{
-  float:left;
-  margin-right:5px;
+
+body {background-color: black;}
+body {color: white;}
+h2 {font-size: 40px; line-height: 0px;}
+h3 {font-size: 18px;}
+h4 {font-size: 20px; letter-spacing: 2px;}
+h5 {font-size: 18px; letter-spacing: 2px; color:black;}
+
+.footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
 }
 
-.new_line{
-  clear:both;
+.toptitle-section {
+  position: absolute;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+  z-index: 0;
+}
+
+/* simple line */
+.line{
+width: 100%;
+height: 2px;
+/* border-bottom: 1px solid black; */
+position: relative;
+background-color: white;
+opacity: 0.5;
 }
 
 /* Dropdown Button */
@@ -40,6 +70,7 @@ div{
   z-index: 3;
 	right: 0;
 	font-size: 16px;
+  letter-spacing: 1.5px;
 }
 
 /* Links inside the dropdown */
@@ -58,7 +89,8 @@ div{
 
 
 .bgimg-1 {
-
+  background-image: url("media/logicproject.png");
+  background-color: black;
 }
 
 .button {
@@ -104,6 +136,28 @@ div{
   float: left;
   position: relative;
   left: -50%;
+  padding: 15px;
+}
+
+/* entry blog */
+.blog-container {
+  background-color: white;
+  position: relative;
+  float: left;
+  left: 15%;
+  width: 70%;
+  opacity: 0.8;
+  margin-top: 40px;
+}
+
+.blog-picture {
+  float: right;
+  position: relative;
+  margin: 5px;
+}
+
+.blogtext {
+  text-align: left;
   padding: 15px;
 }
 
