@@ -6,6 +6,32 @@ h3 {font-size: 18px;}
 h4 {font-size: 20px; letter-spacing: 2px;}
 h5 {font-size: 18px; letter-spacing: 2px; color:black;}
 
+/* button */
+.button3 {
+  background-color: black; /* Green */
+border: none;
+color: white;
+padding: 10px 10px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 18px;
+opacity: 0.8;
+border: 1px solid white /* Green */;
+width: 200px;
+height: 25px;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+vertical-align:middle;
+}
+
+.button3:hover {
+  background-color: grey;
+}
+
+
+/* top and footer */
 .footer {
   position: relative;
   left: 0;
@@ -129,7 +155,7 @@ opacity: 0.5;
 /* way to position in middle */
 .main-container {
   float: left;
-  position: relative;
+  position: absolute;
   left: 50%;
 }
 .fixer-container {

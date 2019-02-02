@@ -106,7 +106,18 @@ h6 {font-size: 18px; letter-spacing: 0px; color:black;}
 
       <!-- media -->
       <div class="blog-picture" >
-        <img src="media/WhoAmI_BoxArt.png" class="w3-round w3-image w3-hover-opacity" alt="Photo of Me" width="400" height="203" style="margin-top: 30px;">
+
+        <!-- slideshow -->
+        <div class="w3-content w3-display-container">
+          <img class="mySlides w3-hover-opacity" src="media/WhoAmI_BoxArt.png"  alt="Photo of Me" width="400" height="350" style="margin-top: 30px;">
+          <img class="mySlides w3-hover-opacity" src="media/D-minorLogo.png"  alt="Photo of Me" width="400" height="350" style="margin-top: 30px;">
+          <img class="mySlides w3-hover-opacity" src="media/uitreiking.jpg"  alt="Photo of Me" width="400" height="290" style="margin-top: 60px; margin-bottom: 30px;">
+
+          <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+          <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+
+
       </div>
     </div>
 
@@ -175,5 +186,25 @@ window.onclick = function(event) {
       }
     }
   }
+}
+
+
+// slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
 }
 </script>
