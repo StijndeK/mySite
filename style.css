@@ -1,7 +1,9 @@
 
 body {background-color: rgba(0,0,0,1)}
+/* <meta name="viewport" content="width=device-width, initial-scale=1"> */
 
 
+ /* background picture */
 .background-picture {
   background-image: url("media/koreapurple.jpg");
   opacity: 0.2;
@@ -192,10 +194,25 @@ opacity: 0.5;
 }
 
 .blogtext {
+  position: relative;
   text-align: left;
   padding: 15px;
   width: 50%;
   float: left;
+}
+
+@media screen and (max-width: 1400px) {
+    .blogtext {
+      padding: 15px;
+      width: 100%;
+      float: none;
+    }
+
+    .blog-picture {
+      float: left;
+      position: relative;
+      margin: 10px;
+    }
 }
 
 .fullLogo {
