@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>SdKoning</title>
+<link rel="icon" type="image/png" href="media/logo2small.png"
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+
+html, body {
+  height:80%%;
+  padding: 0;
+  margin: 0;
+}
+
+/* body:before {
+  background:url("media/koreapurple.jpg") no-repeat center center fixed;
+  display: block; content:""; position: absolute; z-index:-1;
+  top:112px; left: 0; right: 0; height: 80vh;
+  opacity:.1;
+} */
+
+body {font-family: "Roboto", sans-serif}
+body {background-color: black;}
+body {color: white;}
+
+h1 {font-size: 48px; line-height: 0px; background-color: red; margin-top: 60px; z-index: 0;}
+/* title */
+h2 {font-size: 24px; line-height: 0px; margin-top: 80px;}
+/* onder titel */
+h3 {font-size: 18px; letter-spacing: 1px;}
+/* onder titels */
+h4 {font-size: 18px; letter-spacing: 2px;}
+/* container titel */
+h5 {font-size: 20px; letter-spacing: 2px; color:black;}
+/* container text */
+h6 {font-size: 18px; letter-spacing: 0px; color:black;}
+</style>
+<body>
+
+<!-- title -->
+<div class = "toptitle-section">
+  <h1 class="w3-wide w3-hide-small">
+    <p>
+      S.d.Koning
+    </p>
+  </h1>
+</div>
+
+
+<!-- Top menu -->
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">☰</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="index.html" class="w3-bar-item  button2">Home</a>
+    <a href="software.html" class="w3-bar-item  button2">Software</a>
+    <a href="music.html" class="w3-bar-item  button2">Music/Sound</a>
+    <a href="contact.html" class="w3-bar-item  button2 ">Contact</a>
+  </div>
+</div>
+
+<!-- Top bar -->
+<!-- <div class="w3-top" style = "z-index: -5;"> -->
+  <!-- <div class="w3-bar w3-white">
+     <br>
+  </div> -->
+<!-- </div> -->
+
+<!-- logo -->
+<div class = "logo">
+  <img src="media/logo2small.png" class="w3-round w3-image w3-hover-opacity" alt="Photo of Me" width="60" height="80">
+</div>
+
+<!-- <div class="main-container">
+  <div class="fixer-container">
+    <img src="media/logov2long.png" class="w3-round w3-center w3-image w3-hover-opacity" alt="logo" width="200" height="500">
+  </div>
+</div> -->
+
+
+<!-- Page content -->
+<div class="w3-content centredTest w3-center" style="max-width:2000px; ">
+
+  <div class="line"></div>
+
+  <!-- slideshow -->
+  <div class="main-container" style="margin-top:30px;">
+    <div class="fixer-container">
+      <img class="mySlides w3-hover-opacity" src="media/fotoik2.jpg"  alt="Photo of Me" width="500" height="350" style="margin-top: 30px;">
+      <img class="mySlides w3-hover-opacity" src="media/GameJamGroup.JPG"  alt="Game Jam Photo" width="500" height="350" style="margin-top: 30px;">
+      <img class="mySlides w3-hover-opacity" src="media/uitreiking.JPG"  alt="Game Jam Photo 2" width="500" height="350" style="margin-top: 30px; ">
+    </div>
+  </div>
+
+  <!-- content -->
+  <h2 class="w3-wide" style="margin-top: 480px;">
+    <p>
+      Stijn de Koning <br>
+    </p>
+  </h2>
+
+  <h4>
+    <p>
+      composer, sound designer and (audio) software programmer.
+    </p>
+  <h4>
+
+    <h2 style="margin-top: 50px;">
+      <a href="software.html" class="button3" > Software </a>
+      <a href="music.html" class="button3" >Sound / Music </a>
+    </h2>
+
+
+  <!-- <h3>
+    <p>
+      I am based in Amsterdam, but go to collage at the University of Arts in Utrecht, where I study Music & Technology. <br/>
+      I am currently working on this website. <br/>
+    </p>
+  </h3> -->
+
+  <!-- background video -->
+  <!-- <div class = "video-container">
+    <div class = "video-overlay">
+      <video autoplay loop muted>
+        <source src="media/test.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div> -->
+
+<!-- End Page Content -->
+</div>
+
+<!-- footer -->
+<div class="line" style="margin-top: 100px">
+</div>
+<div class="footer">
+<iframe allowtransparency="true" scrolling="no" frameborder="no" src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Fstijn-de-koning&color=black_white&size=32" style="width: 32px; height: 32px;"></iframe>
+</div>
+
+</body>
+</html>
+
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+// automatic slideshow
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 4000); // Change image every 2 seconds
+}
+</script>
