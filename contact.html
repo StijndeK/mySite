@@ -1,98 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <title>SdKoning</title>
-<link rel="icon" type="image/png" href="media/logo2small.png"
 <meta charset="UTF-8">
+<link rel="icon" type="image/png" href="media/logo2small.png"
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 <style>
-html,body { height:100%; }
-body {background-color: black;}
-body {color: white;}
-h1 {font-size: 48px; line-height: 0px; background-color: red; margin-top: 60px; z-index: 0;}
-/* title */
-h2 {font-size: 24px; line-height: 0px; background-color: red; margin-top: 80px;}
-/* onder titel */
-h3 {font-size: 18px; letter-spacing: 1px;}
-/* onder titels */
-h4 {font-size: 18px; letter-spacing: 2px;}
-/* container titel */
-h5 {font-size: 26px; letter-spacing: 2px; color:black;}
-/* container text */
-h6 {font-size: 18px; letter-spacing: 0px; color:black; float:left;}
+body,h1,h2,h3,h4,h5 {font-family: "Roboto", sans-serif}
+h1{font-size: 40px; font-family: "Arial"}
 </style>
-</style>
-<body>
+<body class="w3-light-grey">
 
-<!-- title -->
-<div class = "toptitle-section">
-  <h1 class="w3-wide w3-hide-small">
-    <p>
-      Contact
-    </p>
-  </h1>
-</div>
 
-<!-- Top menu -->
-<div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn">☰</button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="index.html" class="w3-bar-item  button2">Home</a>
-    <a href="software.html" class="w3-bar-item  button2">Software</a>
-    <a href="music.html" class="w3-bar-item  button2">Music/Sound</a>
-    <a href="contact.html" class="w3-bar-item  button2 ">Contact</a>
+
+
+
+<!-- w3-content defines a container for fixed size centered content,
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px;">
+
+
+  <div style= "padding-bottom: : 16px;">
+  <div class="w3-row">
+  <div class="w3-bar w3-light-grey w3-border" >
+    <!-- <div  style= " margin-left: 60%;"> -->
+
+    <a href="index.html" class="w3-col s3 w3-bar-item w3-button">Home</a>
+    <a href="music.html" class="w3-col s3 w3-bar-item w3-button">Sound / Music</a>
+    <a href="software.html" class="w3-col s3 w3-bar-item w3-button">Software</a>
+    <a href="contact.html" class="w3-col s3 w3-bar-item w3-button">Contact</a>
   </div>
+<!-- </div> -->
 </div>
 
-<!-- logo -->
-<div class = "logo">
-  <img src="media/logo2small.png" class="w3-round w3-image w3-hover-opacity" alt="Photo of Me" width="60" height="80">
 </div>
 
+<!-- Header -->
+<header class=" w3-container w3-center w3-padding-16" style="margin-top: 15px">
+  <div class ="" >
+    <h1><b>Contact</b></h1>
+    <br>
+    <p>email: <span class="w3-tag"> sdk.stijn@gmail.com</span></p>
+    <p>based in: <span class="w3-tag"> Amsterdam, Netherlands</span></p>
 
-<!-- Page content -->
-<div class="w3-content centredTest w3-center" style="max-width:2000px; height: 70vh;">
-
-  <div class="line"></div>
-
-  <!-- title -->
-  <h2 class="w3-wide">
-    <p>
-      get in touch
-
-    </p>
-  </h2>
-
-
-  <!-- blog entry -->
-  <div class="blog-container" style="margin-top:5%;">
-    <!-- titel -->
-    <h5 style="font-size: 16px;">
-      <p>
-        email: sdk.stijn@gmail.com <br>
-        Amsterdam, Netherlands
-      </p>
-    </h5>
   </div>
+</header>
+
+<!-- Grid -->
+<div class="w3-row w3-center">
+  <img src="media/koreapurple.jpg" class = "w3-hover-opacity" style="width:80%; padding-left: 100px; padding-right: 100px;">
 
 
-<!-- End Page Content -->
+<!-- Blog entries -->
+<div class="w3-col l8 s12">
+
 </div>
 
-<!-- footer -->
-<div class="line" style="margin-top: 100px">
+<!-- Introduction menu -->
+<div class="w3-col l4">
+
+<!-- END Introduction Menu -->
 </div>
-<div class="footer">
-  <iframe allowtransparency="true" scrolling="no" frameborder="no" src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Fstijn-de-koning&color=black_white&size=32" style="width: 32px; height: 32px;"></iframe>
+
+<!-- END GRID -->
+</div><br>
+
+<!-- END w3-content -->
 </div>
+
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top w3-center">
+  <span class="w3-medium">Soundcloud </span> <iframe allowtransparency="true" scrolling="no" frameborder="no" src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Fstijn-de-koning&color=black_white&size=32" style="width: 32px; height: 32px;"></iframe>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
 
 </body>
 </html>
-
 
 <script>
 /* When the user clicks on the button,
@@ -113,5 +99,21 @@ window.onclick = function(event) {
       }
     }
   }
+}
+
+// automatic slideshow
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 4000); // Change image every 2 seconds
 }
 </script>
