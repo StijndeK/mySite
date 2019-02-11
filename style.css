@@ -201,7 +201,7 @@ opacity: 0.5;
   float: left;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 500px) {
     .blogtext {
       padding: 15px;
       width: 100%;
