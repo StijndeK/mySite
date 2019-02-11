@@ -190,13 +190,14 @@ opacity: 0.5;
   float: right;
   position: relative;
   margin: 10px;
+  width: 35%;
 }
 
 .blogtext {
   position: relative;
   text-align: left;
   padding: 15px;
-  width: 50%;
+  width: 60%;
   float: left;
 }
 
@@ -211,6 +212,8 @@ opacity: 0.5;
       float: left;
       position: relative;
       margin: 10px;
+      width: 100%;
+
     }
 }
 
