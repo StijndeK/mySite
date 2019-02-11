@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>SdKoning</title>
+<link rel="icon" type="image/png" href="media/logo2small.png"
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {background-color: black;}
+body {color: white;}
+h1 {font-size: 48px; line-height: 0px; background-color: red; margin-top: 60px; z-index: 0;}
+/* title */
+h2 {font-size: 24px; line-height: 0px; background-color: red; margin-top: 80px;}
+/* onder titel */
+h3 {font-size: 18px; letter-spacing: 1px;}
+/* onder titels */
+h4 {font-size: 18px; letter-spacing: 2px;}
+/* container titel */
+h5 {font-size: 26px; letter-spacing: 2px; color:black;}
+/* container text */
+h6 {font-size: 18px; letter-spacing: 0px; color:black;}
+</style>
+<body>
+
+<!-- title -->
+<div class = "toptitle-section">
+  <h1 class="w3-wide w3-hide-small">
+    <p>
+      Software
+    </p>
+  </h1>
+</div>
+
+<!-- Top menu -->
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">☰</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="index.html" class="w3-bar-item  button2">Home</a>
+    <a href="software.html" class="w3-bar-item  button2">Software</a>
+    <a href="music.html" class="w3-bar-item  button2">Music/Sound</a>
+    <a href="contact.html" class="w3-bar-item  button2 ">Contact</a>
+  </div>
+</div>
+
+<!-- logo -->
+<div class = "logo">
+  <img src="media/logo2small.png" class="w3-round w3-image w3-hover-opacity" alt="Photo of Me" width="60" height="80">
+</div>
+
+
+<!-- Page content -->
+<div class="w3-content centredTest w3-center" style="max-width:2000px;">
+
+  <div class="line"></div>
+
+  <!-- title -->
+  <h2 class="w3-wide">
+    <p>
+      INFO
+    </p>
+  </h2>
+
+  <h3 style="margin-top: 70px;">
+    <p>
+    As a programmer my main focus is audio. <br>
+    I work on projects like audio-plugins, audio applications and programs that study the relation between picture and sound. <br>
+    For audio i mainly use c++ and the JUCE framework but i'm also familiair with other languages like: <br>
+    Python, Processing, Lisp, Unity (c*), max msp, html/css and supercollider. <br>
+    <br>
+    Here you'll find some of my projects:
+    </p>
+  </h3>
+
+
+  <!-- blog entry -->
+  <div class="blog-container" >
+    <!-- titel -->
+    <h5>
+      <p>
+        Drawing Music<br>
+      </p>
+    </h5>
+
+    <!-- text -->
+    <div class="blogtext" >
+      <h6>
+        <p>A desktop application which generates music based on your drawing. <br/>
+          Check it out on my GitHub <a href="https://github.com/StijndeK/CSD2/tree/master/blok4/DrawingMusic">here </a> <br/>
+          This app is still under development. Here's an early example of what it sounds/looks like.
+        </p>
+      </h6>
+    </div>
+
+      <!-- media -->
+      <div class="blog-picture w3-hide-small">
+        <video width="400" height="200"  controls controlsList="nodownload">
+          <source src="media/CSD2D_testfilm1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <div class="blog-picture w3-hide-medium w3-hide-large">
+        <video width="280" height="120"  controls controlsList="nodownload">
+          <source src="media/CSD2D_testfilm1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+      </div>
+
+  </div>
+
+  <!-- blog entry -->
+  <div class="blog-container" >
+    <!-- titel -->
+    <h5>
+      <p>
+        Rule 150 <br>
+      </p>
+    </h5>
+
+    <!-- text -->
+    <div class="blogtext" >
+      <h6>
+        <p>
+          A program I created together with Dennis Dekker in Max MSP,  <br/>
+          which generates a composition based on the elementary cellular automaton rule 150.
+        </p>
+      </h6>
+    </div>
+
+      <!-- media -->
+      <div class="blog-picture w3-hide-small">
+        <video width="400" height="200"  controls controlsList="nodownload">
+          <source src="media/rule150film1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <div class="blog-picture w3-hide-medium w3-hide-large">
+        <video width="280" height="120"  controls controlsList="nodownload">
+          <source src="media/CSD2D_testfilm1.mp4" type="video/mp4">
+            <source src="media/rule150film1.mp4" type="video/mp4">
+        </video>
+      </div>
+  </div>
+
+
+  <!-- blog entry -->
+  <div class="blog-container" >
+    <!-- titel -->
+    <h5>
+      <p>
+        Art <br>
+      </p>
+    </h5>
+
+    <!-- text -->
+    <div class="blogtext" >
+      <h6>
+        <p>
+          Visuals created in OpenFrameworks.
+        </p>
+      </h6>
+    </div>
+
+      <!-- media -->
+      <div class="blog-picture w3-hide-small">
+        <img src="media/art1.png" class="w3-round w3-image w3-hover-opacity" alt="Photo of Me" width="400" height="203" style="margin-top: 30px;">
+      </div>
+  </div>
+
+
+<!-- End Page Content -->
+</div>
+
+<!-- footer -->
+<div class="line" style="margin-top: 100px">
+</div>
+<div class="footer">
+  <iframe allowtransparency="true" scrolling="no" frameborder="no" src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Fstijn-de-koning&color=black_white&size=32" style="width: 32px; height: 32px;"></iframe>
+</div>
+
+</body>
+</html>
+
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+// slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
