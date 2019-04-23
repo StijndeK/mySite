@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<title>SdKoning</title>
+<meta charset="UTF-8">
+<link rel="icon" type="image/png" href="media/newLogo3.png"
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="style.css">
+
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+h1{font-size: 34px; font-family: "Helvetica";}
+A {text-decoration: none;}
+body{height: 100%}
+</style>
+<body class="w3-white">
+
+
+
+
+
+
+<!-- w3-content defines a container for fixed size centered content,
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1000px;">
+
+
+  <div style= "padding-bottom: : 16px;">
+  <div class="w3-row">
+  <div class="w3-bar " >
+    <!-- <div  style= " margin-left: 60%;"> -->
+
+      <a href="index.html" class="w3-col s3 w3-bar-item w3-button">Home</a>
+      <a href="music.html" class="w3-col s3 w3-bar-item w3-button">Sound / Music</a>
+      <a href="software.html" class="w3-col s3 w3-bar-item w3-button">Software</a>
+      <a href="contact.html" class="w3-col s3 w3-bar-item w3-button">Contact</a>
+  </div>
+<!-- </div> -->
+</div>
+
+</div>
+
+<!-- Header -->
+<!-- <header class=" w3-container w3-center w3-padding-16" style="margin-top: 15px;">
+  <div class ="" >
+      <img src="media/newLogoBIG1.png" alt="Image" style="width: 30%" >
+  </div>
+</header> -->
+
+<!-- Header -->
+<header class=" w3-container w3-center w3-padding-16" style="margin-top: 15px">
+  <div class ="" >
+    <h1><b>  Stijn de Koning</b></h1>
+    <p>Sound / Music / Software<span class="w3-tag"></span></p>
+  </div>
+</header>
+
+<!-- Grid -->
+<div class="w3-row">
+
+
+
+<!-- Introduction menu -->
+<!-- <div class="w3-col l4"> -->
+  <!-- About Card -->
+  <div class="w3-card w3-margin w3-margin-top">
+    <img src="media/uitkrijgen2.png" class = "w3-hover-opacity" style="width:100%;">
+    <div class="w3-container w3-white">
+      <h4><b>About me</b></h4>
+      <p>Hi, im Stijn de Koning; composer, sound designer and (audio) software programmer. Im currently a student at the University Of Arts Utrecht, where i study Music and Technology
+      </p>
+    </div>
+  </div>
+  <hr>
+
+  <!-- Posts -->
+  <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>My portfolio</h4>
+    </div>
+    <ul class="w3-ul w3-hoverable w3-white">
+      <li class="w3-padding-16">
+        <img src="media/soundlogo.png" alt="Image" class="w3-left w3-margin-right" style="width:25px">
+        <a href="music.html">
+        <span class="w3-large">Sound / Music</span><br>
+         </a>
+      </li>
+      <li class="w3-padding-16">
+        <img src="media/softwarelogo2.jpg" alt="Image" class="w3-left w3-margin-right" style="width:25px">
+        <a href="software.html">
+        <span class="w3-large">Software</span><br>
+      </a>
+      </li>
+    </ul>
+  </div>
+  <hr>
+
+  <!-- Labels / tags -->
+  <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>Contact</h4>
+    </div>
+    <div class="w3-container w3-white">
+    <p>
+      <span class="w3-medium">sdk.stijn@gmail.com</span><br>
+      <span class="w3-medium">Amsterdam, Netherlands</span><br>
+      <span class="w3-medium">Music & Technology, University of Arts Utrecht <br></span>
+      <span class="w3-medium"><a style = "text-decoration: underline" href="https://soundcloud.com/stijn-de-koning">Soundcloud </a></span><br>
+    </p>
+    </div>
+  </div>
+
+<!-- END Introduction Menu -->
+</div>
+
+
+
+<!-- END GRID -->
+</div><br>
+
+<!-- Footer -->
+<footer class="w3-container w3-light-grey w3-padding-16 w3-margin-top w3-center">
+  <!-- <span class="w3-medium">Copyright © Stijn de Koning, 2018-2019 </span>  -->
+  <iframe allowtransparency="true" scrolling="no" frameborder="no" src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Fstijn-de-koning&color=black_white&size=32" style="width: 32px; height: 32px;"></iframe>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<!-- END w3-content -->
+</div>
+
+
+
+</body>
+</html>
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+// automatic slideshow
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 4000); // Change image every 2 seconds
+}
+</script>

@@ -2,6 +2,10 @@
 body {background-color: rgba(0,0,0,1)}
 /* <meta name="viewport" content="width=device-width, initial-scale=1"> */
 
+.noopac {
+  opacity: 1.0;
+}
+
 .bg {
   /* The image used */
   background-image: url("media/koreapurple.jpg");
