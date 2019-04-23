@@ -22,16 +22,17 @@ body, html {
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 {
   background-attachment: fixed;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  max-width: 1500px;
+margin: auto;
 }
 
 /* Second image (Portfolio) */
 .bgimg-2 {
   background-image: url('media/Banner-CultTag-Screen.png');
-  min-height: 300px;
-
+  min-height: 400px;
 }
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
@@ -77,7 +78,7 @@ body, html {
   </div>
   <!-- slideshow -->
 
-    <img class="w3-image mySlides" src="media/uitkrijgen2.png" alt="Me" width="1500" height="80%">
+    <img class="w3-image mySlides" src="media/uitkrijgen2.png" alt="Me" height="80%">
     <!-- <img class="w3-image mySlides" src="media/Banner-CultTag-Screen2.png" alt="Me" width="1500" height="80%"> -->
     <img class="w3-image mySlides" src="media/WhoAmI_BoxArt2.png" alt="Me" width="1500" height="200">
     <img class="w3-image mySlides" src="media/TheFarm.png" alt="Me" width="1500" height="200">
@@ -114,8 +115,13 @@ body, html {
 
 
 <!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-2 w3-display-container w3-opacity-min" id="portfolio">
+
+<div class=" w3-display-container w3-center w3-opacity-min" id="portfolio" >
+  <div class="bgimg-2">
+  </div>
 </div>
+
+
 
 
 <!-- Container (Portfolio Section) -->
