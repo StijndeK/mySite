@@ -18,32 +18,6 @@ body, html {
   line-height: 1.8;
   background-color: white;
 }
-
-/* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
-  background-attachment: fixed;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  max-width: 1500px;
-margin: auto;
-2  55}
-
-/* Second image (Portfolio) */
-.bgimg-2 {
-  background-image: url('media/Banner-CultTag-Screen.png');
-  min-height: 400px;
-}
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1600px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: scroll;
-    min-height: 400px;
-  }
-}
 </style>
 <body>
 
@@ -80,7 +54,6 @@ margin: auto;
     <img class="w3-image mySlides" src="media/WhoAmI_BoxArt2.png" alt="Me" width="1500" height="200">
     <img class="w3-image mySlides" src="media/TheFarm.png" alt="Me" width="1500" height="200">
     <img class="w3-image mySlides" src="media/Banner-Satisfy-Lord-Screen2.png" alt="Me" width="1500" height="200">
-
 </header>
 
 
@@ -110,14 +83,7 @@ margin: auto;
 </div>
 
 
-<!-- Second Parallax Image with Portfolio Text -->
-
-<div class=" w3-display-container w3-center w3-opacity-min"  >
-  <div class="bgimg-2">
-  </div>
-</div>
-
-
+<!-- Second image??-->
 
 
 <!-- Container (Portfolio Section) -->
@@ -132,38 +98,24 @@ margin: auto;
       <a href="music.html" class="w3-button w3-padding-large w3-light-grey  w3-large">MUSIC / SOUND</a>
       <a href="software.html" class="w3-button w3-padding-large w3-light-grey  w3-large">SOFTWARE</a>
 
-  <p class="w3-center" style="margin-top: 50px;"> Or listen to some of my latest music below. </p>
-<iframe width="100%" height="320" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/763496415&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/586368930&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/571278162&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-<iframe allowtransparency="true" scrolling="no" frameborder="no" src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Fstijn-de-koning&color=white_orange&size=56" style="width: 56px; height: 56px;"></iframe>  </div>
-
-</div>
-
-</div>
-</div>
-
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
+      <p class="w3-center" style="margin-top: 50px;"> Or listen to some of my latest music below. </p>
+      <iframe width="100%" height="320" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/763496415&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+      <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/586368930&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+      <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/571278162&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+      <iframe allowtransparency="true" scrolling="no" frameborder="no" src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Fstijn-de-koning&color=white_orange&size=56" style="width: 56px; height: 56px;"></iframe>  </div>
   </div>
 </div>
 
-
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-32 w3-opacity w3-hover-opacity-off" id='contact'>
-  <p class="w3-center">
-    E-mail: sdk.stijn@gmail.com <br>
-    Based in Amsterdam, Netherlands <br>
-    Music & Technology, University of the Arts Utrecht <br>
-  </p>
-  <div  class=" w3-text-grey">
-
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-</div>
+    <p class="w3-center">
+      E-mail: sdk.stijn@gmail.com <br>
+      Based in Amsterdam, Netherlands <br>
+      Music & Technology, University of the Arts Utrecht <br>
+    </p>
+    <div  class=" w3-text-grey">
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+    </div>
 
 </footer>
 
