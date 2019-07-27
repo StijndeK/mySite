@@ -2,6 +2,29 @@
 body {background-color: rgba(0,0,0,1)}
 /* <meta name="viewport" content="width=device-width, initial-scale=1"> */
 
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 38px;
+  right: 46px;
+  font-size: 30px;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .noopac {
   opacity: 1.0;
 }
