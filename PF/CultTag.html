@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- title -->
+<title>Cult Tag</title>
+<!-- icon -->
+<link rel="icon" type="image/png" href="../media/newLogo3.png">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="../style2.css">
+<head>
+<style>
+img {
+  width: 100%;
+}
+body, html {
+  background-color: black;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<!--
+TODO:
+- iets om urls te laten zien
+- betere video player
+-->
+
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top " >
+    <div class="w3-bar" id="myNavbar">
+      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="../index.html#portfolio" class="w3-bar-item w3-button">BACK</a>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+      <a href="index.html" class="w3-bar-item w3-button" onclick="toggleFunction()">BACK</a>
+    </div>
+  </div>
+
+
+  <div style="padding:100px">
+
+  <!-- portfolio -->
+  <div class="row" style="padding:10px">
+
+    <!-- left -->
+    <div class="column">
+
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="../media/Banner-CultTag-Screen.png" class=" image" alt="HTML5 Icon" >
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <video width="100%" class="w3-round"  controls controlsList="nodownload">
+            <source src="../media/CultTagPromo.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="../media/EYEGAMES.jpg" class=" image" alt="HTML5 Icon" >
+          <div class="text">Games exhibited at EYE Amsterdam</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+
+    </div>
+
+    <!-- right -->
+    <div class="column w3-center ">
+
+      <!-- title -->
+      <h5 class="w3-xxlarge">Cult Tag</h5>
+      <span class="w3-opacity" style="font-size: 16px"> Composition for Game, 10/4/2019 </span> <br> <br>
+      <span class="w3-opacity" style="font-size: 14px"> Imagine Film Festival, EYE Amsterdam</span> <br>
+
+      <!-- about -->
+      <p class="w3-center" style="color: white; padding: 25px; opacity: 0.8;">
+Music made for a game made for the Imagine Film Festival in EYE Amsterdam. As the theme of the festival was cults, this game is about getting as many people as possible into your basement.
+      </p>
+
+      <!-- links -->
+      <p class="w3-center" style="color: white; opacity: 1.0;">
+        References:
+      </p>
+      <div style="opacity: 0.8;">
+        <a href="https://imaginefilmfestival.nl/en/programma/item/videogames/">Imagine Film Festival Article</a> <br/>
+        <a href="https://imaginefilmfestival.nl/en/programma/item/videogames/">SoundCloud</a> <br/>
+        <a href="https://twitter.com/studioredroots">Studio Red Roots</a> <br/>
+      </div>
+    </div>
+
+  </div>
+
+
+<script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+</script>
+
+
+</body>
+</html>

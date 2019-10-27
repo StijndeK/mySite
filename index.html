@@ -1,363 +1,242 @@
 <!DOCTYPE html>
 <html>
-<title>SdKoning</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- title -->
+<title>SdKoning</title>
+<!-- icon -->
 <link rel="icon" type="image/png" href="media/newLogo3.png">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="style.css">
-
+<link rel="stylesheet" href="style2.css">
+<head>
 <style>
-body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
-h1{font-size: 34px; font-family: "Helvetica";}
-h2{font-size: 26px;}
+img {
+  width: 100%;
+}
 body, html {
-  height: 100%;
-  color: black;
-  line-height: 1.8;
-  background-color: white;
-
+  background-color: black;
 }
 </style>
+</head>
 <body>
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top " >
-  <div class="w3-bar" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
-    <a href="#home" class="w3-bar-item w3-button">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button w3-hide-small">ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"> PORTFOLIO</a>
-    <a href="Composing for Games as a Film Composer - Stijn de Koning v3.pdf" class="w3-bar-item w3-button w3-hide-small"> LITERATURE</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"> CONTACT</a>
-  </div>
-
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-    <a href="Composing for Games as a Film Composer - Stijn de Koning v3.pdf" class="w3-bar-item w3-button" onclick="toggleFunction()">LITERATURE</a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-  </div>
-</div>
-
-<!-- Header -->
-<header class="w3-display-container w3-content w3-center " style="margin-top: 50px; max-width:1500px" id="home" >
-    <img class="w3-image mySlides" src="media/uitkrijgen2.png" alt="Me" height="80%">
-    <img class="w3-image mySlides" src="media/WhoAmI_BoxArt2.png" alt="Me"  height="200">
-    <img class="w3-image mySlides" src="media/TheFarm.png" alt="Me"  height="200">
-    <img class="w3-image mySlides" src="media/Banner-Satisfy-Lord-Screen2.png" alt="Me"  height="200">
-    <img class="w3-image mySlides" src="media/cover.png" alt="Me"  height="200">
-
-    <div class="w3-container w3-center w3-dark-grey w3-padding w3-xlarge " style=" max-width:1500px">
-
-    </div>
-
-</header>
-<!-- Slideshow next/previous buttons -->
-
-
-
-<!-- Container (About Section) -->
-<!-- <div class="w3-display-top w3-padding-large  w3-wide w3-text-black w3-center w3-white" >
-</div> -->
-
-<div class="w3-content w3-container " id="about" style="padding:50px; max-width:1500px; background-color: white">
-
-  <div class="w3-row">
-
-    <div class="w3-col m6 w3-center w3-padding-large">
-      <img src="media/ikingriekenland2.jpeg" class="w3-round w3-hide-small w3-image w3-hover-opacity" alt="Photo of Me" width="500" height="333" style="margin-top:25px;">
-    </div>
-
-    <!-- Hide this text on small devices -->
-    <div class="w3-col m6  w3-padding-large">
-      <h1 class=" w3-hide-small w3-xxlarge " style="margin-top: 50px;">S.d.Koning </h1>
-      <hr style="width:100px;border:3px solid black" class="w3-round">
-
-
-      <p style="font-size: 18px"> <br/> Composer, sound designer and (audio) software programmer. Currently a student at the University of the Arts Utrecht, studying Music and Technology. <br/>
-      <!-- As a composer, producer and sound designer. My focus lies on music and sound for different forms of Media,
-          such as films, tv, games and commercials.
-          I enjoy making and designing adaptive music systems. <br/>
-          As an audio programmer, I work on projects such as audio-plugins, desktop applications and programs that study the relation between picture and sound.
-          For audio i mainly use c++ and the JUCE framework but i'm also familiair with other languages such as:
-          Python, Processing, Lisp, Unity (c*), max msp, html/css and supercollider. -->
-</p>
-    </div>
-  </div>
-</div>
-
 <!--
-<div class="w3-center w3-padding-64">
-  <span class="w3-xxlarge w3-bottombar w3-border-dark-grey w3-padding-16"> My skillset</span>
-</div> -->
+TODO:
+- Programming portfolio switch, of ook aan toevoegen
+- mobiel onder elkaar mooier
+- insta linken
+- plug naar ocarime
+- header plaatjes mooier
+-->
 
-<!-- Grid -->
-<!-- <div class="w3-row w3-container w3-center w3-content" style="max-width:1200px; padding-top: 50px; padding-bottom: 50px;"> -->
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top" >
+    <div class="w3-bar" id="myNavbar" style="color: white">
+      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="#home" class="w3-bar-item w3-button">HOME</a>
+      <a href="#about" class="w3-bar-item w3-button w3-hide-small">ABOUT</a>
+      <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"> PORTFOLIO</a>
+      <a href="Composing for Games as a Film Composer - Stijn de Koning v3.pdf" class="w3-bar-item w3-button w3-hide-small"> LITERATURE</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-hide-small"> CONTACT</a>
+    </div>
 
-  <!-- <div class="w3-col l4 m6 w3-light-grey w3-container w3-padding-16">
-    <h3>(Media) Composition</h3>
-    <p> for games, films, tv and other media.</p>
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+      <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+      <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+      <a href="Composing for Games as a Film Composer - Stijn de Koning v3.pdf" class="w3-bar-item w3-button" onclick="toggleFunction()">LITERATURE</a>
+      <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    </div>
   </div>
 
-  <div class="w3-col l4 m6 w3-grey w3-container w3-padding-16">
-    <h3>Sound Design</h3>
-    <p> for games, films, tv and other media.</p>
-  </div>
 
-  <div class="w3-col l4 m6 w3-dark-grey w3-container w3-padding-16">
-    <h3>Software </h3>
-    <p> audio-plugins, applications, etc.</p>
-  </div> -->
-
-  <!-- <div class="w3-col l3 m6 w3-black w3-container w3-padding-16">
-    <h3>Promises</h3>
-    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-  </div> -->
-<!-- </div> -->
-
-
-<!-- Second image??-->
-<!-- Header -->
-
-<!-- <header class="w3-display-container w3-content w3-center " style="margin-top: 50px; max-width:1000px; padding-bottom:50px">
-  <h1 class="w3-hide-medium w3-hide-small w3-xxlarge " >portfolio</h1>
-</header> -->
-
-<!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-32" id="portfolio"  style="background-color: white; max-width:1500px; padding: 50px;">
-
-
-  <!-- <div class="w3-center">
-    <span class="w3-xxlarge w3-text-black w3-wide" >Portfolio</span>
-  </div> -->
-  <!-- <p class="w3-center"> Click to go to the full page on music and sound or software. </p> -->
-
-  <div class="w3-row-padding w3-center w3-section" >
-    <div class="w3-center" >
-
-      <!-- <h1 class="w3-hide-medium w3-hide-small w3-xxlarge " style="margin-top: 50px;">Portfolio </h1> -->
-
-
-      <!-- <a href="music.html" class="w3-button w3-padding-large w3-light-grey  w3-large">MUSIC / SOUND</a>
-      <a href="software.html" class="w3-button w3-padding-large w3-light-grey  w3-large">SOFTWARE</a> -->
-
-
-      <!-- button click test -->
-      <!-- <div class="container">
-      <div class="w3-button" >
-        <img src="media/Banner-Limb-Loser-Screen2.png" class="w3-round w3-hide-small w3-image w3-hover-opacity" alt="Photo of Me" width="100%" height="350px" scrolling="no">
-        <div class="bottom-right">Red Roots Games</div>
-      </div>
+  <!-- Header -->
+  <a href="index.html#portfolio">
+    <div class="container ">
+      <header class="w3-display-container w3-content w3-center " style=" max-width:1500px" id="home" >
+        <img class="w3-image mySlides" src="media/uitkrijgen2.png" alt="Me" height="80%">
+        <img class="w3-image mySlides" src="media/Banner-Satisfy-Lord-Screen2.png" alt="Me"  height="200">
+        <img class="w3-image mySlides" src="media/forzandaHeader.png" alt="Me"  height="200">
+        <img class="w3-image mySlides" src="media/WhoAmI_BoxArt2.png" alt="Me"  height="200">
+        <img class="w3-image mySlides" src="media/TheFarm.png" alt="Me"  height="200">
+      </header>
+      <!-- about section over image -->
+      <!-- <div class="centered">
+        <div class="textBox">
+          <h1 class=" w3-hide-small w3-xxxlarge " style="margin-top: 10px; margin-bottom: 10px; padding:50px;">S.d.Koning </h1>
+        </div>
       </div> -->
-
-      <!-- <div class="w3-center w3-padding-64">
-        <span class="w3-xxlarge w3-bottombar w3-border-dark-grey w3-padding-16"> Playlist of recent works</span>
-      </div> -->
-
-      <!-- soundcloud -->
-      <div class="w3-content w3-container w3-padding-32" id="portfolio"  style="background-color: white; max-width:1200px; padding: 50px;">
-      <iframe width="100%" height="350" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/834476195%3Fsecret_token%3Ds-Rxsfv&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
     </div>
-      <!-- projects -->
+  </a>
+
+  <div class="w3-content w3-container " id="about" style="padding:50px; max-width:1100px; background-color: black">
+
+    <div class="w3-row">
+
+      <div class="w3-col m6 w3-center w3-padding-large">
+        <img src="media/ProfFoto.jpg" class="w3-round w3-hide-small w3-image w3-hover-opacity" alt="Photo of Me" width="500" height="333" style="margin-top:25px;">
+      </div>
+
+      <div class="w3-col m6  w3-padding-large">
+        <h1 class=" w3-xxlarge" style="margin-top: 50px; color: white; opacity: 1;">S.d.Koning</h1>
+        <hr style="width:100px;border:3px solid white; opacity: 0.8;" class="w3-round">
+        <p style="font-size: 16px; color: white; opacity: 0.8;"> <br/> Stijn is a media composer and sound designer for games and films and a audio software programmer. He combines his skills in these different fields in his work and enjoys finding new exciting ways to produce professional audio.  </p>
+      </div>
     </div>
-
-
-
-
-    <!-- <div class="w3-center w3-padding-64">
-      <span class="w3-xxlarge w3-bottombar w3-border-dark-grey w3-padding-16"> Recent/current projects</span>
-    </div> -->
-      <!-- entry -->
-      <div class="w3-container " >
-        <div class="blogtext">
-          <h2>Who am I?  </h2>
-          <span class="w3-opacity" style="font-size: 18px"> Music for Game</span>
-          <p style = "font-size: 14px">Music for an applied game, created at a game jam at Pohang University in South Korea.
-            For this game jam we formed 15 teams with 4 or 5 students from Korea, Japan, China and the Netherlands.
-         We were then all given 48 hours to create an applied game about the topic: Dementia. <br>
-         <a href="https://d-minor.itch.io/who-am-i">download the game</a> <br/>
-          </p>
-
-        </div>
-        <div class="blog-picture"  style="float: bottom" >
-          <video width="100%" style="margin-top: 30px;" class="w3-round"  controls controlsList="nodownload">
-            <source src="media/WhoAmI_Promoclip.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-          </video>
-        </div>
-      </div>
-      <!-- entry -->
-      <div class="w3-container">
-        <div class="blogtext">
-          <h2>Cult Tag  </h2>
-          <span class="w3-opacity" style="font-size: 16px"> Music for Game</span>
-          <p style = "font-size: 14px">Music made for a game made for the Imagine Film Festival in EYE Amsterdam. As the theme of the festival was cults, this game is about getting as many people as possible into your basement.  <br>
-         <a href="https://soundcloud.com/stijn-de-koning/sets/red-roots">full soundtrack on Soundcloud</a> <br/>
-          </p>
-
-        </div>
-        <div class="blog-picture"  style="float: bottom" >
-          <video width="100%" style="margin-top: 30px;" class="w3-round"  controls controlsList="nodownload">
-            <source src="media/CultTagPromo.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-          </video>
-        </div>
-      </div>
-      <!-- entry -->
-      <div class="w3-container">
-        <div class="blogtext">
-          <h2>Limb Loser  </h2>
-          <span class="w3-opacity" style="font-size: 16px"> Music for Game</span>
-          <p style = "font-size: 14px">Music made for a game made for the Imagine Film Festival in EYE Amsterdam. As another theme of the festival was gore, this game is about defeating your opponents in different bloody ways.  <br>
-         <a href="https://soundcloud.com/stijn-de-koning/sets/red-roots">full soundtrack on Soundcloud</a> <br/>
-          </p>
-
-        </div>
-        <div class="blog-picture"  style="float: bottom" >
-          <video width="100%" style="margin-top: 30px;" class="w3-round"  controls controlsList="nodownload">
-            <source src="media/LimbLoserPromo.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-          </video>
-        </div>
-      </div>
-      <!-- entry -->
-      <div class="w3-container ">
-        <div class="blogtext">
-          <h2>Forzanda Ursa, Earths Maze</h2>
-          <span class="w3-opacity" style="font-size: 16px"> Music for String Quartet</span>
-          <p>A piece written for string quartet. <br/>
-            Performed by Keuris Ensemble: Bob van der Ent (1st violin), Casper Donker(2nd violin), Ian de Jong(viola), Rebecca Smit(cello) and Henry Kelder (artistic leader)
-           </p>
-
-        </div>
-        <div class="blog-picture"  style="float: bottom" >
-          <img src="media/strijkvertel.jpg" class="w3-round w3-image w3-hover-opacity" alt="Photo of Me" width="100%" height="203" style="margin-top: 30px;">
-
-        </div>
-      </div>
-      <!-- entry -->
-      <div class="w3-container">
-        <div class="blogtext">
-          <h2>Interpretation: The Pursuit of Happyness </h2>
-          <span class="w3-opacity" style="font-size: 16px"> Music for Film</span>
-          <p style = "font-size: 14px">An interpratation of an origanily unscored part of the 2006 movie The Pursuit of Happyness.   <br>
-          </p>
-
-        </div>
-        <div class="blog-picture"  style="float: bottom; margin-top: 30px;" >
-  <iframe src="https://drive.google.com/file/d/1sI_UFRaG5DJBiCh_QJfj_F0sIaViO6xH/preview" width="100%" height="250"></iframe>
-        </div>
-      </div>
-
-
-
-      <!-- entry -->
-      <div class="w3-container ">
-        <div class="blogtext">
-          <h2>Drawing Music</h2>
-          <span class="w3-opacity" style="font-size: 16px"> Desktop apllication (C++)</span>
-          <p>A desktop application which generates music based on your drawing. <br/>
-            Check it out on my  <a href="https://github.com/StijndeK/CSD2/tree/master/blok4/DrawingMusic">GitHub</a> <br/>
-            This app is still under development. Here is an early example of what it sounds/looks like.
-          </p>
-
-        </div>
-        <div class="blog-picture"  style="float: bottom" >
-          <video width="100%" style="margin-top: 30px;" class="w3-round"  controls controlsList="nodownload">
-            <source src="media/CSD2D_testfilm1.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-          </video>
-        </div>
-
-    </div>
-    <!-- entry -->
-    <!-- <div class="w3-container">
-      <div class="blogtext">
-        <h2>Interpretation: No Country for Old Men </h2>
-        <span class="w3-opacity" style="font-size: 16px"> Music for Film</span>
-        <p style = "font-size: 14px">An interpratation of music for the 2007 movie No Country for Old Men.   <br>
-        </p>
-
-      </div>
-      <div class="blog-picture"  style="float: bottom" >
-        <video width="100%" style="margin-top: 30px;" class="w3-round"  controls controlsList="nodownload">
-          <source src="media/western.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-      </div>
-    </div> -->
   </div>
-</div>
+
+  <!-- portfolio -->
+  <div class="row" id="portfolio">
+
+    <!-- left -->
+    <div class="column">
 
 
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-32 w3-opacity w3-hover-opacity-off" id='contact'>
-    <p class="w3-center">
-      E-mail: sdk.stijn@gmail.com <br>
-      Based in Amsterdam, Netherlands <br>
-      Music & Technology, University of the Arts Utrecht <br>
-    </p>
-<iframe allowtransparency="true" scrolling="no" frameborder="no" src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Fstijn-de-koning&color=orange_white&size=32" style="width: 32px; height: 32px;"></iframe>
+      <!-- portfolio item -->
+      <a href="https://soundcloud.com/stijn-de-koning/forzanda-ursa-earths-maze" target="_blank">
+        <div class="container imageContainer">
+          <img src="media/forzandaposter.png" class=" image" alt="HTML5 Icon" >
+          <div class="overlay" style=" background-color: brown">
+            <div class="overlayText" >
+              Forzanda Ursa, Earths Maze
+            </div>
+          </div>
+        </div>
+      </a>
 
-</footer>
 
-<script>
+      <!-- portfolio item -->
+      <a href="PF/LimbLoser.html" target="_blank">
+        <div class="container imageContainer">
+          <img src="media/Banner-Limb-Loser-Screen.png" class=" image" alt="HTML5 Icon" >
+          <div class="overlay" style=" background-color: red">
+            <div class="overlayText" >
+              Limb Loser
+            </div>
+          </div>
+        </div>
+      </a>
 
-function myFunction() {
-  document.getElementById("demo").innerHTML = "Hello World";
-}
 
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
+      <!-- portfolio item -->
+        <a href="https://soundcloud.com/stijn-de-koning/sentence" target="_blank">
+          <div class="container imageContainer">
+            <img src="media/sentence_picturev1.png" class="image" alt="HTML5 Icon" width= "50%" >
+            <div class="overlay" style=" background-color: purple">
+              <div class="overlayText" >
+                Sentence
+              </div>
+            </div>
+          </div>
+        </a>
 
-// Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-    }
-}
+        <!-- portfolio item -->
+        <a href="Composing for Games as a Film Composer - Stijn de Koning v3.pdf" target="_blank">
+          <div class="container imageContainer">
+            <img src="media/Literature.png" class=" image" alt="HTML5 Icon" >
+            <div class="overlay" style=" background-color: black">
+              <div class="overlayText" style="color:grey;">
+                Literature
+              </div>
+            </div>
+          </div>
+        </a>
 
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
+    </div>
 
-// automatic slideshow
-var myIndex = 0;
-carousel();
+  <!-- right -->
+    <div class="column">
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
+      <!-- portfolio item -->
+      <a href="PF/WhoAmI%3F.html">
+        <div class="container imageContainer">
+          <img src="media/WhoAmI_BoxArt.png" class=" image" alt="HTML5 Icon">
+          <div class="overlay" style=" background-color: black">
+            <div class="overlayText" >
+              Who Am I?
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- portfolio item -->
+      <a href="PF/CultTag.html" target="_blank">
+        <div class="container imageContainer">
+          <img src="media/Banner-CultTag-Screen.png" class=" image" alt="HTML5 Icon" >
+          <div class="overlay" style=" background-color: orange">
+            <div class="overlayText" >
+              Cult Tag
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- portfolio item -->
+      <a href="PF/OtherProjects.html" target="_blank">
+        <div class="container imageContainer">
+          <img src="media/otherProjects.png" class=" image" alt="HTML5 Icon" >
+          <div class="overlay" style=" background-color: black">
+            <div class="overlayText" style="color:grey;">
+              Unreleased or older projects
+            </div>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-center w3-black w3-padding-32 w3-opacity w3-hover-opacity-off" id='contact'>
+      <p class="w3-center">
+        sdk.stijn@gmail.com <br>
+        Based in Amsterdam, Netherlands <br>
+        Music & Technology, University of the Arts Utrecht <br>
+      </p>
+  <iframe allowtransparency="true" scrolling="no" frameborder="no" src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Fstijn-de-koning&color=orange_white&size=32" style="width: 32px; height: 32px;"></iframe>
+  </footer>
+
+
+  <script>
+  // Change style of navbar on scroll
+  window.onscroll = function() {myFunction()};
+  function myFunction() {
+      var navbar = document.getElementById("myNavbar");
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+          navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+      } else {
+          navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+      }
   }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}
-  x[myIndex-1].style.display = "block";
-  setTimeout(carousel, 4000); // Change image every 2 seconds
-}
-</script>
+
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function toggleFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+      } else {
+          x.className = x.className.replace(" w3-show", "");
+      }
+  }
+
+  // automatic slideshow
+  var myIndex = 0;
+  carousel();
+
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 4000); // Change image every 2 seconds
+  }
+  </script>
 
 </body>
 </html>
