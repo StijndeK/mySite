@@ -162,13 +162,26 @@
 }
 
 
+/* portfolio item */
+
+.item {
+   padding:5px;
+}
+
+
 /* IMAGE CONTAINERS */
 
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
   float: left;
   width: 100%;
+  /* padding:15px; */
 }
+
+
+
+
+
 
 /* Clear floats after image containers */
 .row::after {
