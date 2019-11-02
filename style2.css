@@ -1,6 +1,6 @@
 /* button */
 .button {
-  background-color: grey; /* Green */
+  background-color: RGB(32,37,45); /* Green */
   border: none;
   color: white;
   padding: 15px 32px;
@@ -8,6 +8,30 @@
   text-decoration: none;
   display: inline-block;
   font-size: 20px;
+}
+
+.imgButton {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  height: 20px;
+  width: 300px;
+}
+
+.logoButton {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  height: 20px;
+  width: 32px;
 }
 
 /* Container holding the image and the text */
