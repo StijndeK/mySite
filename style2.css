@@ -1,15 +1,30 @@
 /* screen differences */
 /* For Mobile */
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 740px) {
     .view {
         padding: 0px;
     }
 }
 
 /* For Tablets */
-@media screen and (min-width: 540px) {
+@media screen and (min-width: 740px) {
     .view {
         padding: 50px;
+      }
+}
+
+/* screen differences */
+/* For Mobile */
+@media screen and (max-width: 740px) {
+    .viewPF {
+        padding: 0px;
+    }
+}
+
+/* For Tablets */
+@media screen and (min-width: 740px) {
+    .viewPF {
+        padding: 100px;
       }
 }
 
