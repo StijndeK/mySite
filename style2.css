@@ -1,3 +1,19 @@
+/* screen differences */
+/* For Mobile */
+@media screen and (max-width: 540px) {
+    .view {
+        padding: 0px;
+    }
+}
+
+/* For Tablets */
+@media screen and (min-width: 540px) {
+    .view {
+        padding: 50px;
+      }
+}
+
+
 /* button */
 .button {
   background-color: RGB(32,37,45); /* Green */
@@ -229,6 +245,8 @@
   width: 100%;
   height: auto;
 }
+
+
 
 .overlay {
   position: absolute;
