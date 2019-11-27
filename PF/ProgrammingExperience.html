@@ -59,7 +59,7 @@ img {
   <!-- title and intro-->
   <div class="w3-content" style="max-width: 1000px">
     <h5 class="w3-xxxlarge">Audio Software</h5>
-    <hr style="width:100px;border:2px solid white; opacity: 0.8; margin-bottom: 50px;" class="w3-round w3-content w3-center">
+    <hr style="width:100px;border:2px solid white; opacity: 0.8; margin-bottom: 100px;" class="w3-round w3-content w3-center">
     <span style="font-size: 16px; opacity: 0.8;">
       As an audio programmer, I work on projects such as audio-plugins, desktop applications and programs that study the relation between picture and sound and introduce visuals to the 'audio world'.
       For audio i mainly use C++, but I am also experienced with other languages.
@@ -314,6 +314,18 @@ img {
       y.style.display = "none";
     }
   }
+
+  var i = 0;
+var txt = 'Lorem ipsum typing effect!'; /* The text */
+var speed = 50; /* The speed/duration of the effect in milliseconds */
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
 </script>
 
 
