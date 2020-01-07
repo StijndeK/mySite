@@ -6,33 +6,31 @@
 <title>SdKoning</title>
 <!-- icon -->
 <link rel="icon" type="image/png" href="media/Stijn_NPC.png">
+<!-- stylesheets -->
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="style2.css">
+<link rel="stylesheet" href="style3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <head>
 <style>
 img {
-  /* width: 100%; */
 }
 body, html {
-  background-color: rgb(1,4,8);
-
-  /* background-image: url('media/myFace.png'); */
-  /* background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover; */
-
-  /* font-family:verdana; */
-  color: rgb(239, 234, 230);
+  background-color: rgb(247, 245, 245);
+  color: rgb(20, 20, 20);
+  font-family: "Roboto", Times, serif;
 }
 p {
   font-family: "Roboto", Times, serif;
-  color: rgb(239, 234, 230);
+  color: rgb(20, 20, 20);
 }
 h1 {
   font-family: "Arial", Times, serif;
-  color: rgb(239, 234, 230);
-    /* color: #CCCCDC; */
+  color: rgb(40, 40, 40);
+}
+h2 {
+  font-family: "Arial", Times, serif;
+  color: rgb(40, 40, 40);
+  font-size: 20px;
 }
 i {
   width: 35px;
@@ -41,14 +39,10 @@ i {
 </head>
 <body>
 
-<!--
-TODO:
-
--->
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top" >
-  <div class="w3-bar " id="myNavbar" style="color: white;">
+  <div class="w3-bar " id="myNavbar" style="color: black;">
     <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
@@ -67,32 +61,16 @@ TODO:
 </div>
 
 
-
-<div class="w3-content w3-container view" id="about" style="max-width:1000px; ">
-
-  <div class="w3-row">
-
-    <div class="w3-col m6 w3-center w3-padding-large" >
-      <div style="margin-top:20px; padding:30px;">
-      <img src="media/ProfFoto3.png" class="w3-round w3-hide-small w3-image" alt="Photo of Me" width="500" height="333" style="margin-top:20px;   ">
+<!-- title -->
+<div class="w3-container w3-content w3-center box" style="max-width:1400px; padding-top: 100px;" id="band">
+  <h1><span data-shadow-text="Text-Shadow" class="box">Stijn de Koning</span><br> </h1>
+  <h1 class="box2">Music, Sound Design, Software</h1>
 </div>
-    </div>
 
-    <div class="w3-col m6 w3-padding-large " >
-      <h1 class=" w3-xxxlarge" style="margin-top: 50px;  opacity: 1;">Stijn de Koning</h1>
-      <hr style="width:100px;border:2px solid white; opacity: 0.8;" class="w3-round">
-      <p style="font-size: 16px; opacity: 0.8; font-family:sans-serif;"> <br/> Stijn is a media composer and sound designer for game and film and an (audio) software designer/programmer. He combines his skills in these different fields in his work and enjoys finding new exciting ways to produce professional audio and software.  </p>
-      <iframe allowtransparency="true" scrolling="no" frameborder="no" src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Fstijn-de-koning&color=white_transparent&size=32" style="width: 32px; height: 32px;"></iframe>
-      <a href="https://www.instagram.com/dekoningstijn/" target="_blank">
-        <i class="fa fa-instagram w3-hover-opacity" style="font-size: 32px; color: white; opacity: 0.8;"></i>
-      </a>
-    </div>
-  </div>
-</div>
+
 
 <!-- links-->
-<div class="w3-content w3-container view" id="ocarime" style=" max-width:1100px; ">
-
+<div class="w3-content w3-container view box3" id="ocarime" style="padding-top:150px; max-width:1100px; ">
   <div class="w3-center w3-hide-medium w3-hide-large" >
     Audio
   </div>
@@ -101,12 +79,15 @@ TODO:
 
     <div class="w3-third w3-center" style="padding-top:15px; padding: 15px;">
       <div class="container imageContainer">
-        <a href="PF/AudioDesign.html">
-          <img src="media/WhoAmI_Logo.png" class=" image w3-hover-opacity" width= "50%" alt="HTML5 Icon" style="  border-radius: 3%;">
-        </a>
         <div class="w3-hide-small">
-          Audio Design
+          <h2>
+            Audio Design
+          </h2>
         </div>
+        <a href="PF/AudioDesign.html">
+          <img src="media/WhoAmI_Logo.png" class=" image w3-hover-opacity "  alt="HTML5 Icon" style="  border-radius: 3%;">
+        </a>
+
       </div>
     </div>
 
@@ -116,12 +97,15 @@ TODO:
 
     <div class="w3-third w3-center" style="padding-top:15px; padding: 15px;">
       <div class="container imageContainer">
+        <div class="w3-hide-small">
+          <h2>
+            Ocarime
+          </h2>
+        </div>
         <a href="https://ocarime.com/"  target="_blank">
           <img src="media/OcarimeLogoWhite2.png" class=" image w3-hover-opacity" width= "50%" alt="HTML5 Icon" style="  border-radius: 3%;">
         </a>
-        <div class="w3-hide-small">
-          Ocarime
-        </div>
+
       </div>
     </div>
 
@@ -131,12 +115,15 @@ TODO:
 
     <div class="w3-third w3-center" style="padding-top:15px; padding: 15px;">
       <div class="container imageContainer">
+        <div class="w3-hide-small">
+          <h2>
+            Software
+          </h2>
+        </div>
         <a href="PF/ProgrammingExperience.html">
           <img src="media/TFXEnvelopes.png" class=" image w3-hover-opacity" width= "50%" alt="HTML5 Icon" style="  border-radius: 3%;">
         </a>
-        <div class="w3-hide-small">
-          Software
-        </div>
+
       </div>
     </div>
 
@@ -144,16 +131,17 @@ TODO:
 </div>
 
 
+
+
 <!-- portfolio -->
-<div class="row w3-content w3-center" id="portfolio" style=" max-width:1200px; padding-top: 100px; padding-bottom: 100px;">
+<div class="row w3-content w3-center box3" id="portfolio" style=" max-width:1200px; padding-top: 100px; padding-bottom: 100px;">
+
+  <!-- title -->
+  <div class="AnimContainer w3-center">
+    <span class="text1"> Recent works</span>
+  </div>
 
 
-<div class="w3-center w3-hide-medium w3-hide-large w3-xxlarge" style="padding-bottom: 20px;">
-  MY WORK
-</div>
-<div class="w3-centerw3-hide-small w3-xxlarge" style="padding-bottom: 20px;">
-  Recent works
-</div>
   <!-- left -->
   <div class="column ">
 
@@ -277,23 +265,11 @@ TODO:
       </a>
     </div>
 
-
   </div>
 </div>
 
 
-<!-- Footer -->
-<footer class="w3-center w3-padding-32 w3-opacity w3-hover-opacity-off" id='contact'>
-    <p class="w3-center">
-      sdk.stijn@gmail.com <br>
-      Based in Amsterdam, Netherlands <br>
-      Music & Technology, University of the Arts Utrecht <br>
-    </p>
-    <iframe allowtransparency="true" scrolling="no" frameborder="no" src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Fstijn-de-koning&color=white_transparent&size=32" style="width: 32px; height: 32px;"></iframe>
-    <a href="https://www.instagram.com/dekoningstijn/" target="_blank">
-      <i class="fa fa-instagram w3-hover-opacity" style="font-size: 32px"></i>
-    </a>
-</footer>
+
 
 
 <script>
@@ -316,22 +292,6 @@ function toggleFunction() {
     } else {
         x.className = x.className.replace(" w3-show", "");
     }
-}
-
-// automatic slideshow
-var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}
-  x[myIndex-1].style.display = "block";
-  setTimeout(carousel, 4000); // Change image every 2 seconds
 }
 </script>
 
