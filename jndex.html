@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- title -->
+<title>SdKoning</title>
+<!-- icon -->
+<link rel="icon" type="image/png" href="media/Stijn_NPC.png">
+<!-- stylesheets -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="style3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+<style>
+img {
+}
+body, html {
+  background-color: rgb(247, 245, 245);
+  color: rgb(20, 20, 20);
+  font-family: "Roboto", Times, serif;
+}
+p {
+  font-family: "Roboto", Times, serif;
+  color: rgb(20, 20, 20);
+}
+h1 {
+  font-family: "Arial", Times, serif;
+  color: rgb(40, 40, 40);
+}
+h2 {
+  font-family: "Arial", Times, serif;
+  color: rgb(40, 40, 40);
+  font-size: 20px;
+}
+i {
+  width: 35px;
+}
+</style>
+</head>
+<body>
+
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top" >
+  <div class="w3-bar " id="myNavbar" style="color: black;">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"> PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"> CONTACT</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+  </div>
+</div>
+
+
+<!-- title -->
+<div class="w3-container w3-content w3-center box" style="max-width:1400px; padding-top: 100px;" id="band">
+  <h1><span data-shadow-text="Text-Shadow" class="box">Stijn de Koning</span><br> </h1>
+  <h1 class="box2">Music, Sound Design, Software</h1>
+</div>
+
+
+
+<!-- links-->
+<div class="w3-content w3-container view" id="ocarime" style="padding-top:150px; max-width:1100px; ">
+  <div class="w3-center w3-hide-medium w3-hide-large" >
+    Audio
+  </div>
+
+  <div class="w3-row" >
+
+    <div class="w3-third w3-center" style="padding-top:15px; padding: 15px;">
+      <div class="container imageContainer">
+        <div class="w3-hide-small">
+          <h2>
+            Audio Design
+          </h2>
+        </div>
+        <a href="PF/AudioDesign.html">
+          <img src="media/WhoAmI_Logo.png" class=" image w3-hover-opacity "  alt="HTML5 Icon" style="  border-radius: 3%;">
+        </a>
+
+      </div>
+    </div>
+
+    <div class="w3-center w3-hide-medium w3-hide-large" >
+      Ocarime
+    </div>
+
+    <div class="w3-third w3-center" style="padding-top:15px; padding: 15px;">
+      <div class="container imageContainer">
+        <div class="w3-hide-small">
+          <h2>
+            Ocarime
+          </h2>
+        </div>
+        <a href="https://ocarime.com/"  target="_blank">
+          <img src="media/OcarimeLogoWhite2.png" class=" image w3-hover-opacity" width= "50%" alt="HTML5 Icon" style="  border-radius: 3%;">
+        </a>
+
+      </div>
+    </div>
+
+    <div class="w3-center w3-hide-medium w3-hide-large" >
+      Software
+    </div>
+
+    <div class="w3-third w3-center" style="padding-top:15px; padding: 15px;">
+      <div class="container imageContainer">
+        <div class="w3-hide-small">
+          <h2>
+            Software
+          </h2>
+        </div>
+        <a href="PF/ProgrammingExperience.html">
+          <img src="media/TFXEnvelopes.png" class=" image w3-hover-opacity" width= "50%" alt="HTML5 Icon" style="  border-radius: 3%;">
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+<!-- portfolio -->
+<div class="row w3-content w3-center" id="portfolio" style=" max-width:1200px; padding-top: 100px; padding-bottom: 100px;">
+
+  <!-- title -->
+  <div class="AnimContainer w3-center">
+    <span class="text1"> Recent works</span>
+  </div>
+
+
+  <!-- left -->
+  <div class="column ">
+
+    <!-- portfolio item -->
+    <div class="item">
+    <a href="PF/ProgrammingExperience.html#TFX">
+      <div class="container imageContainer">
+        <img src="media/TFXMain.png" class=" image " alt="HTML5 Icon" width= "85%" style="  border-radius: 3%;">
+        <div class="overlay" >
+          <div class="overlayText w3-hide-small" >
+            TransitionFX VST-Instrument
+          </div>
+        </div>
+      </div>
+    </a>
+    </div>
+
+    <!-- portfolio item -->
+    <div class="item">
+    <a href="https://soundcloud.com/stijn-de-koning/forzanda-ursa-earths-maze" target="_blank">
+      <div class="container imageContainer">
+        <img src="media/forzandaposter.png" class=" image" alt="HTML5 Icon" width= "85%" style="  border-radius: 3%;">
+        <div class="overlay" >
+          <div class="overlayText w3-hide-small" >
+            Forzanda Ursa, Earths Maze
+          </div>
+        </div>
+      </div>
+    </a>
+    </div>
+
+
+
+    <!-- portfolio item -->
+    <div class="item">
+    <a href="PF/LimbLoser.html">
+      <div class="container imageContainer">
+        <img src="media/Banner-Limb-Loser-Screen.png" class=" image" alt="HTML5 Icon" width= "85%" style="  border-radius: 3%;">
+        <div class="overlay">
+          <div class="overlayText w3-hide-small" >
+            Limb Loser
+          </div>
+        </div>
+      </div>
+    </a>
+    </div>
+
+
+    <!-- portfolio item -->
+    <div class="item">
+    <a href="https://soundcloud.com/stijn-de-koning/new-wave" target="_blank">
+      <div class="container imageContainer">
+        <img src="media/New_Wave.png" class=" image" alt="HTML5 Icon" width= "85%" style="  border-radius: 3%;">
+        <div class="overlay">
+          <div class="overlayText w3-hide-small" >
+            NEW_WAVE
+          </div>
+        </div>
+      </div>
+    </a>
+    </div>
+
+      <!-- portfolio item -->
+      <!-- <div class="item">
+      <a href="Composing for Games as a Film Composer - Stijn de Koning v3.pdf" target="_blank">
+        <div class="container imageContainer">
+          <img src="media/Literature.png" class=" image" alt="HTML5 Icon" style="  border-radius: 3%;">
+          <div class="overlay">
+            <div class="overlayText" style="color:white;">
+              Literature
+            </div>
+          </div>
+        </div>
+      </a>
+      </div> -->
+
+  </div>
+
+<!-- right -->
+  <div class="column">
+
+    <!-- portfolio item -->
+    <div class="item">
+    <a href="PF/WhoAmI%3F.html">
+      <div class="container imageContainer">
+        <img src="media/WhoAmI_BoxArt.png" class=" image" alt="HTML5 Icon" width= "85%" style="  border-radius: 3%;">
+        <div class="overlay">
+          <div class="overlayText w3-hide-small" >
+            Who Am I?
+          </div>
+        </div>
+      </div>
+    </a>
+    </div>
+
+    <!-- portfolio item -->
+    <div class="item">
+    <a href="PF/CultTag.html">
+      <div class="container imageContainer">
+        <img src="media/Banner-CultTag-Screen.png" class=" image" alt="HTML5 Icon" width= "85%" style="  border-radius: 3%;">
+        <div class="overlay">
+          <div class="overlayText w3-hide-small" >
+            Cult Tag
+          </div>
+        </div>
+      </div>
+    </a>
+    </div>
+
+    <!-- portfolio item -->
+    <div class="item">
+      <a href="https://soundcloud.com/stijn-de-koning/sentence" target="_blank">
+        <div class="container imageContainer">
+          <img src="media/sentence_picturev1.png" class="image" alt="HTML5 Icon" width= "85%" style="  border-radius: 3%;">
+          <div class="overlay">
+            <div class="overlayText w3-hide-small" >
+              Sentence
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+<script>
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
