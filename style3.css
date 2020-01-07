@@ -1,3 +1,26 @@
+
+.titleText {
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  background-color: rgb(247, 245, 245);
+}
+
+/* image reveal 2 */
+@keyframes mymove4 {
+  0%   {    opacity: 0;}
+  30%   {    opacity: 0;}
+}
+@-webkit-keyframes mymove4 {
+  0%   {    color: white;}
+}
+
+.box4 {
+  position :relative;
+  -webkit-animation: mymove4 3s ; /* Safari 4.0 - 8.0 */
+  animation: mymove4 3s ;
+}
+
+
 /* image reveal */
 @keyframes mymove3 {
   0%   {    opacity: 0;}
@@ -245,6 +268,12 @@ span {
   transform: translate(-50%, -50%);
 }
 
+.centered2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 /* SLIDESHOW */
 
