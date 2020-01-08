@@ -6,37 +6,43 @@
 <title>Limb Loser</title>
 <!-- icon -->
 <link rel="icon" type="image/png" href="../media/Stijn_NPC.png">
+<!-- stylesheets -->
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="../style2.css">
+<link rel="stylesheet" href="../style3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <head>
 <style>
 img {
   width: 100%;
 }
 body, html {
-  background-color: black;
-  color: rgb(239, 234, 230);
+  background-color: rgb(247, 245, 245);
+  color: rgb(20, 20, 20);
+  font-family: "Roboto", Times, serif;
 }
 p {
   font-family: "Roboto", Times, serif;
-  color: rgb(239, 234, 230);
+  color: rgb(20, 20, 20);
 }
-h5{
+h1 {
   font-family: "Arial", Times, serif;
-  color: rgb(239, 234, 230);
+  color: rgb(40, 40, 40);
 }
-a:hover {
-  background-color: white;
-  color: black;
-  text-decoration: none;
+h2 {
+  font-family: "Arial", Times, serif;
+  color: rgb(40, 40, 40);
+  font-size: 20px;
 }
-a:link {
-  text-decoration: none;
+i {
+  width: 35px;
 }
+
 </style>
 </head>
 <body>
 
+
+<!-- =================================== -->
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top " >
@@ -44,7 +50,7 @@ a:link {
     <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
-    <a href="../jndex.html#portfolio" class="w3-bar-item w3-button">BACK</a>
+    <a href="../jndex.html" class="w3-bar-item w3-button">BACK</a>
   </div>
 
   <!-- Navbar on small screens -->
@@ -53,10 +59,15 @@ a:link {
   </div>
 </div>
 
-<div class = "viewPF">
+<!-- =================================== -->
 
+
+
+<!-- =================================== -->
+
+<div class = "viewPF ">
   <!-- portfolio -->
-  <div class="w3-center w3-content" style="padding:10px; max-width: 1200px">
+  <div class="w3-center w3-content" style="padding:10px; ">
 
     <!-- Slideshow container -->
     <div class="slideshow-container">
@@ -94,44 +105,69 @@ a:link {
       <span class="dot" onclick="currentSlide(3)"></span>
     </div>
 
+
+
     <!-- title -->
-    <h5 class="w3-xxlarge">Limb Loser</h5>
-    <span class="w3-opacity" style="font-size: 16px"> Composition for Game, 10/4/2019 </span> <br>
-    <span class="w3-opacity" style="font-size: 14px"> Imagine Film Festival, EYE Amsterdam</span> <br>
-
-    <!-- about -->
-    <p class="w3-center w3-content" style="color: white; padding: 25px; opacity: 0.8; max-width: 900px;">
-      One of two games made for the Imagine Film Festival in EYE Amsterdam.
-      As a second theme of the festival was gore, this game is about defeating your opponents in different bloody ways.
-      <br>
-      <br>
-      The music for this game is mainly focused on creating a scary futuristic setting, while still conecting to the main 'cult' theme of the festival.
-      Creating scary music is very much inside my comferzone, but combining the older cult feeling elements with the modern sci-fi setting was an interesting challenge.
-      I eventually decided to do this by combining different types of sounds and instruments.
-      <div style="opacity: 0.8; font-size: 16px">
-        <a href="CultTag.html">Check out the second game: Cult Tag</a> <br/>
-        <a href="https://soundcloud.com/stijn-de-koning/sets/red-roots">Full Soundtrack</a> <br/>
-      </div>
-
-      <div class= "w3-content"style="opacity:0.6; padding: 40px;font-size:14px; max-width: 700px;">
-        I sadly got involved quite late and there wasn't the time to do the sound design and implement it in the game before the deadline of the festival.
-      </div>
-    </p>
-
-
-    <!-- links -->
-    <p class="w3-center" style="color: white; opacity: 1.0;">
-      References
-    </p>
-    <div style="opacity: 0.8; font-size: 14px">
-      <a href="https://imaginefilmfestival.nl/en/programma/item/videogames/">Imagine Film Festival Article</a> <br/>
-      <a href="https://imaginefilmfestival.nl/en/programma/item/videogames/">SoundCloud</a> <br/>
-      <a href="https://twitter.com/studioredroots">Studio Red Roots</a> <br/>
+    <div class="w3-container w3-content w3-center box" style="max-width:1400px; padding-top: 30px; padding-bottom: 30px;" id="band">
+      <h1 class="box2" style="font-size: 40px">Limb Loser</h1>
     </div>
-  </div>
+    <div class="box3">
+      <span class="w3-opacity" style="font-size: 16px"> Composition for Game, 10/4/2019 </span> <br>
+      <span class="w3-opacity" style="font-size: 14px"> Imagine Film Festival, EYE Amsterdam</span> <br>
 
+
+
+          <!-- about -->
+          <p class="w3-center w3-content" style=" padding: 25px; opacity: 0.8; max-width: 900px;">
+            One of two games made for the Imagine Film Festival in EYE Amsterdam.
+            As a second theme of the festival was gore, this game is about defeating your opponents in different bloody ways.
+            <br>
+            <br>
+            The music for this game is mainly focused on creating a scary futuristic setting, while still conecting to the main 'cult' theme of the festival.
+            Creating scary music is very much inside my comferzone, but combining the older cult feeling elements with the modern sci-fi setting was an interesting challenge.
+            I eventually decided to do this by combining different types of sounds and instruments.
+            <div style="opacity: 0.8; font-size: 16px">
+              <a href="CultTag.html">Check out the second game: Cult Tag</a> <br/>
+              <a href="https://soundcloud.com/stijn-de-koning/sets/red-roots">Full Soundtrack</a> <br/>
+            </div>
+
+            <div class= "w3-content"style="opacity:0.6; padding: 40px;font-size:14px; max-width: 700px;">
+              I sadly got involved quite late and there wasn't the time to do the sound design and implement it in the game before the deadline of the festival.
+            </div>
+          </p>
+
+
+          <!-- links -->
+          <div class="AnimContainer w3-center" style="padding-top: 20px; padding-bottom: 10px;">
+            <span class="text1"> References</span>
+          </div>
+          <div style="opacity: 0.8; font-size: 14px">
+            <a href="https://imaginefilmfestival.nl/en/programma/item/videogames/">Imagine Film Festival Article</a> <br/>
+            <a href="https://imaginefilmfestival.nl/en/programma/item/videogames/">SoundCloud</a> <br/>
+            <a href="https://twitter.com/studioredroots">Studio Red Roots</a> <br/>
+          </div>
+        </div>
+
+    </div>
+
+  </div>
 </div>
 
+
+
+
+<!-- Footer -->
+<footer class="w3-center w3-padding-32 w3-opacity w3-hover-opacity-off" id='contact'>
+    <p class="w3-center">
+      sdk.stijn@gmail.com <br>
+      Based in Amsterdam, Netherlands <br>
+      Music & Technology, University of the Arts Utrecht <br>
+    </p>
+    <iframe allowtransparency="true" scrolling="no" frameborder="no" src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Fstijn-de-koning&color=black_transparent&size=32" style="width: 32px; height: 32px;"></iframe>
+    <a href="https://www.instagram.com/dekoningstijn/" target="_blank">
+      <i class="fa fa-instagram w3-hover-opacity" style="font-size: 32px"></i>
+    </a>
+</footer>
 
 <script>
   var slideIndex = 1;
@@ -161,6 +197,7 @@ a:link {
     dots[slideIndex-1].className += " active";
   }
 </script>
+
 
 
 </body>

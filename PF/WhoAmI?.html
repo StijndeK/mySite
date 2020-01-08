@@ -3,39 +3,46 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- title -->
-<title>Who Am I?</title>
+<title>Who am I?</title>
 <!-- icon -->
 <link rel="icon" type="image/png" href="../media/Stijn_NPC.png">
+<!-- stylesheets -->
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="../style2.css">
+<link rel="stylesheet" href="../style3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <head>
 <style>
 img {
   width: 100%;
 }
 body, html {
-  background-color: black;
-  color: rgb(239, 234, 230);
+  background-color: rgb(247, 245, 245);
+  color: rgb(20, 20, 20);
+  font-family: "Roboto", Times, serif;
 }
 p {
   font-family: "Roboto", Times, serif;
-  color: rgb(239, 234, 230);
+  color: rgb(20, 20, 20);
 }
-h5{
+h1 {
   font-family: "Arial", Times, serif;
-  color: rgb(239, 234, 230);
+  color: rgb(40, 40, 40);
 }
-a:hover {
-  background-color: white;
-  color: black;
-  text-decoration: none;
+h2 {
+  font-family: "Arial", Times, serif;
+  color: rgb(40, 40, 40);
+  font-size: 20px;
 }
-a:link {
-  text-decoration: none;
+i {
+  width: 35px;
 }
+
 </style>
 </head>
 <body>
+
+
+<!-- =================================== -->
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top " >
@@ -43,7 +50,7 @@ a:link {
     <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
-    <a href="../jndex.html#portfolio" class="w3-bar-item w3-button">BACK</a>
+    <a href="../jndex.html" class="w3-bar-item w3-button">BACK</a>
   </div>
 
   <!-- Navbar on small screens -->
@@ -52,15 +59,18 @@ a:link {
   </div>
 </div>
 
+<!-- =================================== -->
 
-<div class = "viewPF">
 
+
+<!-- =================================== -->
+
+<div class = "viewPF ">
   <!-- portfolio -->
-  <div class="w3-center w3-content" style="padding:10px; max-width: 1200px">
-
+  <div class="w3-center w3-content" style="padding:10px; ">
 
     <!-- Slideshow container -->
-    <div class="slideshow-container">
+    <div class="slideshow-container ">
 
       <div class="mySlides fade">
         <div class="numbertext">1 / 5</div>
@@ -107,42 +117,61 @@ a:link {
 
 
     <!-- title -->
-    <h5 class="w3-xxlarge">Who Am I?</h5>
-    <span class="w3-opacity" style="font-size: 16px"> Composition for Game, 10/4/2019 </span> <br>
-    <span class="w3-opacity" style="font-size: 14px"> Global Applied Game Jam, Postech University</span> <br>
-    <span class="w3-opacity" style="font-size: 14px"> South-Korea</span>
+    <div class="w3-container w3-content w3-center box" style="max-width:1400px; padding-top: 30px; padding-bottom: 30px;" id="band">
+      <h1 class="box2" style="font-size: 40px">Who am I?</h1>
+    </div>
+    <div class="box3">
+      <span class="w3-opacity" style="font-size: 16px"> Composition for Game, 10/4/2019 </span> <br>
+      <span class="w3-opacity" style="font-size: 14px"> Global Applied Game Jam, Postech University</span> <br>
+      <span class="w3-opacity" style="font-size: 14px"> South-Korea</span>
 
-    <!-- about -->
-    <p class="w3-center w3-content" style="color: white; padding: 25px; opacity: 0.8; max-width: 900px;">
-        Music for an applied game, created at a game jam at Postech University in Pohang, South Korea.
-        For this game jam we formed 15 teams with 4 or 5 students from Korea, Japan, China and the Netherlands.
-        We were then all given 48 hours to create an applied game about the topic: Dementia.
-        <br>
-        <br>
-        My team (D-Minor) and I decided to make a serious and more challenging game for a younger audience, to raise awareness about dementia.
-        We also decided to use puzzle elements to train the memory of the players to help prevent dementia.
-        <br>
-        <br>
-        Because of all the elements of the game jam, I fased the interesting challenge of creating a fitting soundtrack in a very short amount of time.
-        I decided to focus on the 'happy' artstyle of the game, but also added some sad dramatic music in the final cutscene, with a rising noise respresenting the loss of life.
-    </p>
 
-    <!-- links -->
-    <p class="w3-center" style="color: white; opacity: 1.0;">
-      References
-    </p>
-    <div  style="opacity: 0.9; font-size: 14px">
-      <a href="https://d-minor.itch.io/who-am-i" target="_blank">download the game</a> <br/>
-      <a href="https://www.youtube.com/watch?v=kqeZGC9fucI" target="_blank">Watch a review</a> <br/>
-      <a href="https://www.facebook.com/VivaceCorp/" target="_blank">D-Minor Development Team</a> <br/>
-      <a href="https://www.facebook.com/GAGJ18/" target="_blank">Global Applied Game Jam Postech</a> <br/>
+      <!-- about -->
+      <p class="w3-center w3-content" style="padding: 25px; opacity: 0.8; max-width: 900px;">
+          Music for an applied game, created at a game jam at Postech University in Pohang, South Korea.
+          For this game jam we formed 15 teams with 4 or 5 students from Korea, Japan, China and the Netherlands.
+          We were then all given 48 hours to create an applied game about the topic: Dementia.
+          <br>
+          <br>
+          My team (D-Minor) and I decided to make a serious and more challenging game for a younger audience, to raise awareness about dementia.
+          We also decided to use puzzle elements to train the memory of the players to help prevent dementia.
+          <br>
+          <br>
+          Because of all the elements of the game jam, I fased the interesting challenge of creating a fitting soundtrack in a very short amount of time.
+          I decided to focus on the 'happy' artstyle of the game, but also added some sad dramatic music in the final cutscene, with a rising noise respresenting the loss of life.
+      </p>
+
+      <!-- links -->
+      <div class="AnimContainer w3-center" style="padding-top: 20px; padding-bottom: 10px;">
+        <span class="text1"> References</span>
+      </div>
+      <div  style="opacity: 0.9; font-size: 14px">
+        <a href="https://d-minor.itch.io/who-am-i" target="_blank">download the game</a> <br/>
+        <a href="https://www.youtube.com/watch?v=kqeZGC9fucI" target="_blank">Watch a review</a> <br/>
+        <a href="https://www.facebook.com/VivaceCorp/" target="_blank">D-Minor Development Team</a> <br/>
+        <a href="https://www.facebook.com/GAGJ18/" target="_blank">Global Applied Game Jam Postech</a> <br/>
+      </div>
+
     </div>
 
-
   </div>
-
 </div>
 
+
+
+
+<!-- Footer -->
+<footer class="w3-center w3-padding-32 w3-opacity w3-hover-opacity-off" id='contact'>
+    <p class="w3-center">
+      sdk.stijn@gmail.com <br>
+      Based in Amsterdam, Netherlands <br>
+      Music & Technology, University of the Arts Utrecht <br>
+    </p>
+    <iframe allowtransparency="true" scrolling="no" frameborder="no" src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Fstijn-de-koning&color=black_transparent&size=32" style="width: 32px; height: 32px;"></iframe>
+    <a href="https://www.instagram.com/dekoningstijn/" target="_blank">
+      <i class="fa fa-instagram w3-hover-opacity" style="font-size: 32px"></i>
+    </a>
+</footer>
 
 <script>
   var slideIndex = 1;
@@ -172,6 +201,7 @@ a:link {
     dots[slideIndex-1].className += " active";
   }
 </script>
+
 
 
 </body>
