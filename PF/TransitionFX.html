@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- title -->
+<title>TransitionFX</title>
+<!-- icon -->
+<link rel="icon" type="image/png" href="../media/Stijn_NPC.png">
+<!-- stylesheets -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="../style3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+<style>
+img {
+  width: 100%;
+}
+body, html {
+  background-color: rgb(247, 245, 245);
+  color: rgb(20, 20, 20);
+  font-family: "Roboto", Times, serif;
+}
+p {
+  font-family: "Roboto", Times, serif;
+  color: rgb(20, 20, 20);
+}
+h1 {
+  font-family: "Arial", Times, serif;
+  color: rgb(40, 40, 40);
+}
+h2 {
+  font-family: "Arial", Times, serif;
+  color: rgb(40, 40, 40);
+  font-size: 20px;
+}
+i {
+  width: 35px;
+}
+
+</style>
+</head>
+<body>
+
+
+<!-- =================================== -->
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top " >
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="../jndex.html" class="w3-bar-item w3-button">BACK</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="jndex.html" class="w3-bar-item w3-button" onclick="toggleFunction()">BACK</a>
+  </div>
+</div>
+
+<!-- =================================== -->
+
+
+
+<!-- =================================== -->
+
+<div class = "viewPF ">
+  <!-- portfolio -->
+  <div class="w3-center w3-content" style="padding:10px; ">
+
+    <div class="row"  id="TFX">
+      <div class="column">
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 5</div>
+            <img src="../media/TransitionFX.png" class=" image" alt="HTML5 Icon" >
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 5</div>
+            <img src="../media/TFX1.png" class=" image" alt="HTML5 Icon" >
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 5</div>
+            <img src="../media/TFX2.png" class=" image" alt="HTML5 Icon" >
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">4 / 5</div>
+            <img src="../media/TFX3.png" class=" image" alt="HTML5 Icon" >
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">5 / 5</div>
+            <img src="../media/TFX4.png" class=" image" alt="HTML5 Icon" >
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      </div>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+      </div>
+
+      <div class="column w3-center " style="padding-left:20px; padding-right: 20px;">
+        <!-- title -->
+        <div class="w3-container w3-content w3-center box" style="max-width:1400px; padding-top: 30px; padding-bottom: 30px;" id="band">
+          <h1 class="box2" style="font-size: 40px">TFX</h1>
+        </div>
+        <div class="box3">
+          <span class="w3-opacity" style="font-size: 16px"> Digital Synthesiser, 18/1/2019 </span> <br>
+          <span class="w3-opacity" style="font-size: 14px"> Internship Audio Ease</span> <br>
+
+
+          <span style="font-size: 14px; opacity: 0.8">
+            During my internship at audio-software company Audio Ease, I designed and worked on TransitionFX.
+            TransitionFX is a synthesiser optimalised for creating certain effects often used in media composition/sound design such as: risers, whooshes, stings, etc.
+            <br>
+            <br>
+            The synthesiser is made in C++ using the JUCE framework.
+            <br>
+            <br>
+          </span>
+
+          <div id="buttonDIV">
+            <button  onclick="showMore()" class="readMoreButton"> Read more..  </button>
+          </div>
+
+          <div id="textDIV">
+            <span class="w3-opacity" style="font-size: 14px; ">
+              Developing a synthesiser from the ground up was a very interesting but heavy task, which I had grossly underestimated.
+              I came across a lot of very interesting and challenging obstacles, from which I have learned a lot.
+              One great example of this is that when I started coding the project I had originally given myself one week to make an amplitude envelope.
+              However I found out about so many options and ways to do this that I had created more then 10 different types before I was finished(picture 2).
+              <br>
+              <br>
+              After the 3 month internship it was of no surprise that I hadn't been able to finish the synthesiser to the point that I wanted to.
+              However I am still continuing to develop it and am currently testing with some sound designers and further designing the GUI.
+              <br>
+              <br>
+              Please feel free to contact me with any questions or for updates on the project!
+            </span>
+          </div>
+
+
+              <!-- links -->
+              <!-- <div class="AnimContainer w3-center" style="padding-top: 20px; padding-bottom: 10px;">
+                <span class="text1"> References</span>
+              </div>
+              <div style="opacity: 0.8; font-size: 14px">
+                <a href="https://imaginefilmfestival.nl/en/programma/item/videogames/">Imagine Film Festival Article</a> <br/>
+                <a href="https://imaginefilmfestival.nl/en/programma/item/videogames/">SoundCloud</a> <br/>
+                <a href="https://twitter.com/studioredroots">Studio Red Roots</a> <br/>
+              </div> -->
+            </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+    </div>
+
+  </div>
+</div>
+
+
+
+
+<!-- Footer -->
+<footer class="w3-center w3-padding-32 w3-opacity w3-hover-opacity-off" id='contact'>
+    <p class="w3-center">
+      sdk.stijn@gmail.com <br>
+      Based in Amsterdam, Netherlands <br>
+      Music & Technology, University of the Arts Utrecht <br>
+    </p>
+    <iframe allowtransparency="true" scrolling="no" frameborder="no" src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Fstijn-de-koning&color=black_transparent&size=32" style="width: 32px; height: 32px;"></iframe>
+    <a href="https://www.instagram.com/dekoningstijn/" target="_blank">
+      <i class="fa fa-instagram w3-hover-opacity" style="font-size: 32px"></i>
+    </a>
+</footer>
+
+<script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+
+
+    document.getElementById("textDIV").style.display = "none";
+
+    function showMore() {
+      var x = document.getElementById("textDIV");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+      var y = document.getElementById("buttonDIV");
+      if (x.style.display === "none") {
+        y.style.display = "block";
+      } else {
+        y.style.display = "none";
+      }
+    }
+</script>
+
+
+
+</body>
+</html>
