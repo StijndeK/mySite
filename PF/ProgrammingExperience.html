@@ -5,10 +5,10 @@
 <!-- title -->
 <title>Audio Programming</title>
 <!-- icon -->
-<link rel="icon" type="image/png" href="../media/Stijn_NPC.png">
+<link rel="icon" type="image/png" href="../media/LogoSmall.png">
 <!-- stylesheets -->
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="../style3.css">
+<link rel="stylesheet" href="../style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <head>
 <style>
@@ -18,26 +18,31 @@ img {
 body, html {
   background-color: rgb(247, 245, 245);
   color: rgb(20, 20, 20);
-  font-family: "Roboto", Times, serif;
+  font-family: "Futura", Times, serif;
 }
 p {
-  font-family: "Roboto", Times, serif;
+  font-family: "Arial", Times, serif;
   color: rgb(20, 20, 20);
 }
-h1 {
-  font-family: "Arial", Times, serif;
-  color: rgb(40, 40, 40);
-}
 h2 {
-  font-family: "Arial", Times, serif;
+  font-family: "Futura", Times, serif;
   color: rgb(40, 40, 40);
   font-size: 20px;
 }
 i {
   width: 35px;
 }
+/* title */
+h1 {
+    font: 600 1.5em/1 'Futura', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+}
 
-
+span {
+    font-size: 4em;
+}
 </style>
 </head>
 <body>
@@ -51,12 +56,12 @@ i {
     <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
-    <a href="../jndex.html" class="w3-bar-item w3-button">BACK</a>
+    <a href="../index.html" class="w3-bar-item w3-button">BACK</a>
   </div>
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="jndex.html" class="w3-bar-item w3-button" onclick="toggleFunction()">BACK</a>
+    <a href="index.html" class="w3-bar-item w3-button" onclick="toggleFunction()">BACK</a>
   </div>
 </div>
 
@@ -84,8 +89,6 @@ i {
       <br>
       <br>
 
-    </span>
-    <br> <br>
   </div>
 
   <!-- =================================== -->
@@ -163,12 +166,12 @@ i {
 
 
     <!-- right -->
-    <div class="column w3-center " style="padding-left:20px; padding-right: 20px;">
+    <div class="column" style="padding-left:20px; padding-right: 20px;">
 
       <!-- title -->
       <h5 class="w3-xxlarge">'Whoosh' Synthesiser</h5>
       <br>
-      <span style="font-size: 16px; opacity: 0.8">
+      <span style="font-size: 18px; opacity: 0.8">
         During my internship at audiosoftware company Audio Ease, I designed and programmed on TransitionFX.
         TransitionFX is a synthesiser optimalised for creating certain effects often used in media composition/sound design such as: risers, whooshes, stings, etc.
         <br>
@@ -196,20 +199,46 @@ i {
           Please feel free to contact me with any questions or for updates on the project!
         </span>
       </div>
-
        <br> <br>
-
-
 
       <a href="../Stageverslag_AudioEase_SdKoning_3.pdf" target="_blank" class = "linkButton">
         About TFX and the internship at Audio Ease
       </a>
-
-
     </div>
   </div>
 
   <!-- =================================== -->
+
+  <!-- title -->
+  <div class="AnimContainer w3-center" style="padding-top: 100px; ">
+    <span class="text1"> Systems Design & Implementation</span>
+  </div>
+
+  <!-- Implementation -->
+  <div class="row" style="padding:10px; margin-top: 20px;">
+
+
+    <!-- left -->
+    <div class="column">
+      <!-- title -->
+      <h5 class="w3-xxlarge"> Interactive Audio</h5>
+      <br>
+      <span style="font-size: 18px; opacity: 0.8;">
+        As a audio programmer I enjoying designing game audio systems and implementing them.
+        For this I mainly work with FMOD and Unity, but am currently working on a system of my own.
+        The images show the progress of a soundtrack in FMOD and its system design for Evasion, a (student) game.
+        <br>
+        <br>
+      </span>
+    </div>
+
+
+    <!-- right -->
+    <div class="column w3-center " style="padding-left:20px; padding-right: 20px;">
+      <img src="../media/evasionGIF.gif" class=" image" alt="HTML5 Icon" >
+    </div>
+  </div>
+
 
   <!-- title -->
   <div class="AnimContainer w3-center" style="padding-top: 100px; ">
@@ -223,101 +252,40 @@ i {
 
     <!-- left -->
     <div class="column w3-center " style="padding-left:20px; padding-right:20px;">
-
-      <!-- title -->
-        <h5 class="w3-xxlarge"> Visuals to Audio </h5>
-        <br>
-        <span style="font-size: 16px; opacity: 0.8">
-          Musart is a project which I have been using to research the relation between visuals and audio.
-          The application allows the user to draw freely like in programs such as Paint.
-          Based on the visuals, the application then generates audio using samples and synthesis.
-          Visual parameters the application currently analyses at are: shapes, colors and density.
-          <br>
-          <br>
-        </span>
-        <div id="buttonDIV2">
-          <button  onclick="showMore2()" class="readMoreButton"> Read more..  </button>
-        </div>
-        <div id="textDIV2">
-          <span class = "w3-opacity" style="font-size: 14px;">
-            I am still updating  Musart and adding more features and parameters to analyse.
-            Something I found out very early on while working on this project is that the possibilities really are endless.
-            <br>
-            <br>
-            Musart has been created using C++ and the Open Frameworks framework.
-          </span> <br> <br>
-        </div>
+        <video width="100%" class="w3-round"  controls controlsList="nodownload">
+          <source src="../media/CSD2D_testfilm1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
     </div>
-
-
 
     <!-- right -->
     <div class="column">
-      <video width="100%" class="w3-round"  controls controlsList="nodownload">
-        <source src="../media/CSD2D_testfilm1.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-      </video>
-    </div>
-  </div>
-
-
-  <!-- title -->
-  <div class="AnimContainer w3-center" style="padding-top: 100px; ">
-    <span class="text1"> Systems Design / Implementation</span>
-  </div>
-
-  <!-- Implementation -->
-  <div class="row" style="padding:10px; margin-top: 20px;">
-
-
-    <!-- left -->
-    <div class="column">
-        <img src="../media/evasionGIF.gif" class=" image" alt="HTML5 Icon" >
-        <!-- <img src="../media/evasionDesign.png" class=" image" alt="HTML5 Icon" style="padding:25px; "> -->
-    </div>
-
-
-    <!-- right -->
-    <div class="column w3-center " style="padding-left:20px; padding-right: 20px;">
-
       <!-- title -->
-        <h5 class="w3-xxlarge"></h5>
+      <h5 class="w3-xxlarge"> Visuals to Audio </h5>
+      <br>
+      <span style="font-size: 18px; opacity: 0.8">
+        Musart is a project which I have been using to research the relation between visuals and audio.
+        The application allows the user to draw freely like in programs such as Paint.
+        Based on the visuals, the application then generates audio using samples and synthesis.
+        Visual parameters the application currently analyses at are: shapes, colors and density.
         <br>
-        <span style="font-size: 16px; opacity: 0.8;">
-          As a audio programmer I enjoying designing game audio systems and implementing them.
-          For this I mainly work with FMOD and Unity, but am currently working on a system of my own.
-          The images show the progress of a soundtrack in FMOD and its system design for Evasion, a (student) game.
+        <br>
+      </span>
+      <div id="buttonDIV2">
+        <button  onclick="showMore2()" class="readMoreButton"> Read more..  </button>
+      </div>
+      <div id="textDIV2">
+        <span class = "w3-opacity" style="font-size: 14px;">
+          I am still updating  Musart and adding more features and parameters to analyse.
+          Something I found out very early on while working on this project is that the possibilities really are endless.
           <br>
           <br>
-        </span>
-        <span class="w3-opacity" style="font-size: 14px; ">
-        </span>
-
-        <a href="../jndex.html#portfolio" target="_blank" class = "linkButton">
-          Showreels of implementation (and music & sound design)
-        </a>
+          Musart has been created using C++ and the Open Frameworks framework.
+        </span> <br> <br>
+      </div>
     </div>
   </div>
 
-  </div>
-
-</div>
-
-
-
-
-<!-- Footer -->
-<footer class="w3-center w3-padding-32 w3-opacity w3-hover-opacity-off" id='contact'>
-    <p class="w3-center">
-      sdk.stijn@gmail.com <br>
-      Based in Amsterdam, Netherlands <br>
-      Music & Technology, University of the Arts Utrecht <br>
-    </p>
-    <iframe allowtransparency="true" scrolling="no" frameborder="no" src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Fstijn-de-koning&color=black_transparent&size=32" style="width: 32px; height: 32px;"></iframe>
-    <a href="https://www.instagram.com/dekoningstijn/" target="_blank">
-      <i class="fa fa-instagram w3-hover-opacity" style="font-size: 32px"></i>
-    </a>
-</footer>
 
 <script>
   var slideIndex = 1;
