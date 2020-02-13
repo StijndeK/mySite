@@ -1,27 +1,11 @@
-/* #navbar {
-  background-color: #333;
-  position: fixed;
-  top: -50px;
-  width: 100%;
-  display: block;
-  transition: top 0.3s;
+/* audio player */
+.bottomPlayer {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  bottom: 0;
 }
 
-#navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 15px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-#navbar a:hover {
-  background-color: #ddd;
-  color: black;
-} */
-
+/* SIZING */
 /* For Mobile */
 @media screen and (max-width: 740px) {
     .view {
@@ -34,6 +18,21 @@
     .view {
         padding-left: 200px;
         padding-right: 200px;
+      }
+}
+
+/* For Mobile */
+@media screen and (max-width: 740px) {
+    .viewWorks {
+      padding-left: 0px;
+      padding-right: 0px;    }
+}
+
+/* For Tablets */
+@media screen and (min-width: 740px) {
+    .viewWorks {
+        padding-left: 400px;
+        padding-right: 400px;
       }
 }
 
@@ -225,7 +224,7 @@ ul.topnav {
   width: 100%;
   top: -60px;
   transition: top 0.3s;
-} 
+}
 
 ul.topnav li {
   float: left;
