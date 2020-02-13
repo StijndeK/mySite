@@ -252,7 +252,7 @@ ul.topnav li a.active {
 /* Centered text */
 .contactAlign {
   position: absolute;
-  top: 55%;
+  top: 50%;
   left: 60%;
   transform: translate(-50%, -50%);
 }
