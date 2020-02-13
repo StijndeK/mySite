@@ -22,6 +22,35 @@
   color: black;
 } */
 
+/* For Mobile */
+@media screen and (max-width: 740px) {
+    .view {
+      padding-left: 0px;
+      padding-right: 0px;    }
+}
+
+/* For Tablets */
+@media screen and (min-width: 740px) {
+    .view {
+        padding-left: 200px;
+        padding-right: 200px;
+      }
+}
+
+/* For Mobile */
+@media screen and (max-width: 740px) {
+    .fontView {
+      font-size: 10px;
+    }
+}
+
+/* For Tablets */
+@media screen and (min-width: 740px) {
+    .fontView {
+        font-size: 25px;
+      }
+}
+
 .item {
    padding:15px;
 }
