@@ -225,7 +225,7 @@ ul.topnav {
   width: 100%;
   top: -60px;
   transition: top 0.3s;
-}
+} 
 
 ul.topnav li {
   float: left;
