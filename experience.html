@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- title -->
+<title>SdKoning</title>
+<!-- icon -->
+<link rel="icon" type="image/png" href="Media/LogoSmall.png">
+<!-- stylesheets -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="style.css">
+<head>
+<style>
+img {
+}
+/* body is default */
+body, html {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  background-color: rgb(194, 210, 214, 0.1);
+}
+/* p is default text*/
+p {
+  font-family:  "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 16px;
+}
+/* h1 wordt gebruikt voor titels */
+h1 {
+  font-family:  "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 45px;
+}
+/* h2 wordt gebruikt voor ondertitels (etc met h3 enz.)*/
+h2 {
+  font-family:  "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 35px;
+  color: black;
+}
+h3 {
+  font-family:  "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 16px;
+  color: white;
+}
+h5 {
+  font-family:  "Roboto", "Lucida Grande", sans-serif;
+  color: black;
+  opacity: 0.7;
+}
+span {
+  font-family:  "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 14px;
+}
+ul {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+</style>
+</head>
+<body>
+
+  <!-- =================================== -->
+
+  <ul class="topnav w3-hide-small" id="navbar">
+    <li><a href="index.html#home">Home</a></li>
+    <li><a href="works.html">Works</a></li>
+    <!-- <li><a href="index.html#about">Experience</a></li> -->
+    <li><a href="experience.html#contact">Contact</a></li>
+  </ul>
+  <!-- =================================== -->
+
+  <!-- header -->
+  <img src="Media/EvasionHeader.jpg" width= "100%" alt="HTML5 Icon" id="home" >
+
+  <div class= "w3-content w3-container w3-center"style="max-width: 1200px">
+    <div class="view">
+
+    <img src="Media/LogoTransparant.png" width= "100%" alt="HTML5 Icon" id="home" style="margin-bottom: 50px; padding-left:70px; padding-right:70px;">
+
+    <!-- title -->
+    <h2 style="margin-top:75px; margin-bottom:25px" id="Music" > Music for Media </h2>
+
+    <!-- Composition -->
+    <div class="row" style="padding:10px; margin-top: 40px;">
+
+    <!-- left -->
+    <div class="column w3-center " style="padding-left:20px; padding-right:20px;">
+
+
+      <!-- title -->
+      <h5 class="w3-xlarge">Game & film</h5>
+        <span>
+          Experienced in both non-linear and linear visual media. Game audio has been my main focus for the last few years. It allows combining my passion for systems design with audio design and I find the added context of interaction very interesting to work with.
+          <br>
+ I have written a paper on the difference between composing for films and for games.
+        </span>
+        <a href="Composing for Games as a Film Composer - Stijn de Koning v3.pdf" target="_blank" class = "linkButton">
+          Composing for Games as a Film Composer
+        </a>
+      </div>
+
+      <!-- right -->
+      <div class="column">
+        <a href="WhoAmI%3F.html">
+          <div class="container imageContainer">
+            <img src="media/WhoAmI_BoxArt.png" class=" image" alt="HTML5 Icon" style="  border-radius: 3%;">
+            <div class="overlay">
+              <div class="overlayText" >
+                Who Am I?
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- =================================== -->
+
+    <h2 style="margin-top:75px; margin-bottom:25px" id="SD"> Sound Design </h2>
+
+    <!-- Sound Design -->
+    <div class="row" style="padding:10px; margin-top: 40px;">
+
+      <div class="column">
+        <img src="Media/MXSD2.png" class=" image" alt="HTML5 Icon" >
+      </div>
+
+      <div class="column w3-center " style="padding-left:20px; padding-right:20px;">
+        <h5 class="w3-xlarge">Game</h5>
+        <span>
+          Experienced in both synthesis/processing and (studio) foley for game audio. For synthesis I mainly use Massive (X), because of their amazing routing functionalities and noise profiles.
+          I love creating dynamic modular systems to bring the audio to life in its world. I often use middleware such as FMOD for implementation.
+        </span>
+      </div>
+    </div>
+
+    <!-- =================================== -->
+
+    <h2 style="margin-top:75px; margin-bottom:25px" id="AP"> Audio Programming </h2>
+
+      <!-- about -->
+      <div class = "portfolioText w3-content w3-center"  style=" max-width:700px;">
+        <p>
+          <b> Audio-plugins</b>, <b> standalone applications </b> and (software for) <b> game audio implementation</b>.
+          I mainly develop in <b> C++ </b> and <b> C*</b>, but am also experienced with other languages.
+        </p>
+      </div>
+
+      <!-- Implementation -->
+      <div class="row" style="padding:10px; margin-top: 20px;" id="implementation">
+
+        <!-- left -->
+        <div class="column">
+          <!-- title -->
+          <h5 class="w3-xlarge"> Non-linear Systems</h5>
+          <span>
+          Experienced designing, developing and implementing non-linear game audio systems. For which I am experienced with mainstream middleware (FMOD, Wwise) and game engines (UE4, Unity).
+          Currently I am developing  a 'non-linear game audio design' tool called
+          <a href="https://github.com/StijndeK/VASD" target="_blank">
+            VASD
+          </a>
+          using the FMOD low level API, for my thesis at HKU.
+          </span>
+        </div>
+
+        <!-- right -->
+        <div class="column w3-center " style="padding-left:20px; padding-right: 20px;">
+          <img src="media/evasionGIF.gif" class=" image" alt="HTML5 Icon" >
+        </div>
+      </div>
+
+      <!-- MUSART -->
+      <div class="row" style="padding:10px; margin-top: 40px;">
+
+        <!-- left -->
+        <div class="column w3-center " style="padding-left:20px; padding-right:20px;">
+          <a href="PF/TransitionFX.html">
+            <div class="container imageContainer">
+              <img src=" media/TFXMain.png" class=" image" alt="HTML5 Icon" width= "100%" style="  border-radius: 3%;">
+              <div class="overlay" >
+                <div class="overlayText w3-hide-small" >
+                  TransitionFX
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- right -->
+        <div class="column">
+          <!-- title -->
+          <h5 class="w3-xlarge">Plugins</h5>
+          <span>
+            During an internship at audiosoftware company Audio Ease, I developed TransitionFX.
+            TransitionFX is a synthesiser optimalised for creating certain effects often used in media composition/sound design such as: risers, whooshes, stings, etc.
+          </span>
+        </div>
+      </div>
+
+      <!-- RULE150 -->
+      <div class="row" style="padding:10px; margin-top: 40px;">
+
+        <!-- left -->
+        <div class="column w3-center " style="padding-left:20px; padding-right:20px;">
+          <!-- title -->
+          <h5 class="w3-xlarge"> Sonification</h5>
+          <span>
+            Sonifying data, such as this project in MAX MSP that sonfies elementary cellular automaton rule 150.
+            Created in collaboration with
+            <a href="https://danaedekker.com/" target="_blank" >
+              <span > Danae Dekker. </span>
+            </a>
+            The algorithm analyses data in horizontal lines to generate lines of music.
+          </span>
+        </div>
+
+        <!-- right -->
+        <div class="column">
+          <video width="100%" class="w3-round"  controls controlsList="nodownload">
+            <source src="Media/rule150.mov" type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
+
+        </div>
+      </div>
+
+      <!-- MUSART -->
+      <div class="row" style="padding:10px; margin-top: 40px;">
+
+        <!-- left -->
+        <div class="column w3-center " style="padding-left:20px; padding-right:20px;">
+            <video width="100%" class="w3-round"  controls controlsList="nodownload">
+              <source src="media/CSD2D_testfilm1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <!-- right -->
+        <div class="column">
+          <!-- title -->
+          <h5 class="w3-xlarge"> Visuals to Audio </h5>
+          <span>
+            I am very interested in the relation between visuals and audio, which I often work with in my work as composer and sound designer.
+            Musart is a project that allows the user to draw freely like in programs such as Paint.
+            Based on the visuals, the application then generates audio using samples and synthesis.
+          </span>
+        </div>
+      </div>
+
+  </div>
+  </div>
+
+  <!-- footer -->
+  <div class="container" style="margin-top: 100px; padding: 50px; background-color: black" id="contact">
+    <div class="w3-container w3-content " >
+      <div class="w3-row">
+          <div class="column">
+            <img src="Media/LogoSmall.png" width= "30%" alt="HTML5 Icon" id="home" style="float: right; margin-right: 50px;">
+          </div>
+          <div class="column">
+            <h2 style="color: white"> Contact </h2>
+            <h3>sdk.stijn@gmail.com <br>
+            Amsterdam, Netherlands <br>
+            Music & Technology, University of the Arts Utrecht</h3>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>
+
+<script>
+// When the user scrolls down 20px from the top of the document, slide down the navbar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+}
+</script>

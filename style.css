@@ -23,8 +23,6 @@
   color: white;
 }
 
-
-
 /* audio player */
 .bottomPlayer {
   position: -webkit-sticky; /* Safari */
@@ -88,7 +86,6 @@
   width: 100%;
   /* padding:15px; */
 }
-
 
 /* Clear floats after image containers */
 .row::after {
@@ -312,6 +309,12 @@ ul.topnav li a.active {
   transform: translate(-50%, -50%);
 }
 
+.contactPicAlign {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
 
 /* Bottom left text */
 .bottom-left {
@@ -361,7 +364,7 @@ ul.topnav li a.active {
 
 .overlayText {
   color: white;
-  font-size: 30px;
+  font-size: 20px;
   letter-spacing: 4px;
   position: absolute;
   top: 50%;
