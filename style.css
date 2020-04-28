@@ -59,6 +59,14 @@ ul {
   height: 30vh;
 }
 
+.stack-image {
+  display: block;
+  object-fit: cover;
+  width: 90%;
+  height: 10%;
+  padding: 4px;
+}
+
 .page-cover-image-header {
   display: block;
   object-fit: cover;

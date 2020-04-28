@@ -42,7 +42,7 @@
 <div class="w3-container w3-content" style="max-width: 900px;">
 
   <!-- header image -->
-  <img class="page-cover-image" src="../Media/NADT_Screenshot.png" style="object-position:center 50%; margin-top: 40px;"/>
+  <img class="page-cover-image" src="../Media/NADT_Screenshot4.png" style="object-position:center 50%; margin-top: 40px;"/>
 
   <!-- title -->
   <h1> Nonlinear Audio Systems Design Tools </h1>
@@ -52,36 +52,40 @@
   <hr>
 
   <p> 
-    <strong>As a game audio designer I am hindered during my creative process, due to the discrepancy between the nonlinearity of my work and the linear character of standard audio production software. </strong>
+    <strong> As a game audio designer I am hindered during my creative process, due to the discrepancy between the nonlinearity of my work and the linear character of standard audio production software. </strong>
   </p>
 
   <div class="row">
     <div class="column" style="margin-top: 20px;">  
-      <img style="width:90%;" src="../Media/PI.png"/>
-      <img style="width:90%;" src="../Media/PI.png"/>
-      <img style="width:90%;" src="../Media/PI.png"/>
+      <img class="stack-image" src="../Media/terminal.png"/>
+      <img class="stack-image" src="../Media/NADT_Screenshot2.png"/>
+      <img class="stack-image" src="../Media/PI.png"/>
     </div>
 
     <div class="column">    
       <p>
-        Standard linear audio production tools offer little to none nonlinear sequencing, transitioning, parameter adaption and probability functionalities. Furthermore, linear sequencers are not optimised to provide a visual representation of nonlinear systems. Existing standard middleware solutions focus less on tackling the obstructions in the design stage of a project. These issues cause testing and prototyping to take unnecessary amounts of time and obscures communication with collaborators. This obstructs the workflow and discourages innovation.
+        Standard linear audio production tools offer little to none nonlinear sequencing, transitioning, parameter adaption and probability functionalities. 
+        Furthermore, linear sequencers are not optimised to provide a visual representation of nonlinear systems. 
+        Current standard middleware solutions focus less on tackling the obstructions in the design stage of a project. 
+        These issues cause testing and prototyping to take unnecessary long and obscures communication with collaborators. This obstructs the workflow and discourages innovation.
       </p>
     </div>
   </div>
 
   <p>
-    For these reasons I started development on Nonlinear Audio Design Tools or NASDT, a range of experiments in the form of tools and prototypes to tackle these issues, for my thesis on Tools for Designing Nonlinear Audio for Games. By developing and prototyping various tools that tackle  issues caused by the non-linearity of video games in relation to the linearity of audio production software, I hope to improve the process. 
+    Nonlinear Audio Design Tools or NASDT, is a range of experiments in the form of tools and prototypes to tackle these issues. 
+    By developing and prototyping various tools to tackle issues caused by the non-linearity of video games in relation to the linearity of audio production software, I hope to improve the process. 
   </p>
 
   <h3>
     Three main issues
   </h3>
   <p>
-    The current issues that arise while designing non-linear audio systems for games are divisible into 3 main subjects: 
+    The current issues that arise when designing non-linear audio systems for games are divisible into 3 main subjects: 
     <ul style = "text-transform: lowercase;">
       <li>Not being able to quickly test and prototype audio systems with their audio</li>
       <li>The lack of overview current standard tools provide, which also hinders communication</li>
-      <li>The lack of visual and interaction context. When producing audio for a movie, the visuals can be constantly available during production, but with a game this isnt the case and game also has the added context of interaction</li>
+      <li>The lack of context of visuals and interaction</li>
     </ul>
   </p>
 
@@ -90,12 +94,12 @@
   </h3>
 
   <p>
-    So far, three experiments have been done. Each with a different approach to tackling different issues. 
-    For every tool the approach has been to test out certain possible solutions as efficiently and quickly as possible, instead of getting hung up on details per project, to allow for trying different methods and seeing how they do.
+    So far, three experiments have been done.
+    With an approach that favors resting out possible solutions efficiently and quickly so that multiple different avenues can be taken, instead of developing 1 full fledged tool and getting hang up on the details. 
     <ol type="1">
-      <li> <a href="https://github.com/StijndeK/N.A.D.AutomaticSoundloader"> Automatic sound loading and parsing in Pyton </a></li>
+      <li> <a href="https://github.com/StijndeK/N.A.D.AutomaticSoundloader"> Automatic Sound Loading and parsing in Pyton </a></li>
       <li> <a href="https://github.com/StijndeK/N.A.D.VisualParameterAdaption"> Visual Parameter Adaption in Unity </a></li>
-      <li> <a href="https://github.com/StijndeK/N.A.D.ProcederalAudioSystem"> Procedural audio system design and implementation </a></li>
+      <li> <a href="https://github.com/StijndeK/N.A.D.ProcederalAudioSystem"> Procedural Audio System design and implementation </a></li>
     </ol>
   </p>
 
@@ -105,19 +109,20 @@
   <h2> <a href="https://github.com/StijndeK/N.A.D.AutomaticSoundloader"> Automatic sound loading and parsing</a> </h2>
 
   <p>        
-    The first experiment is a terminal application that allows the user to quickly test a horizontal nonlinear system. Export audio directly into a folder with specific file names and it will automatically be sequenced based on the given possibilities.
+    The first experiment is a terminal application that allows the user to quickly test a horizontal nonlinear system. 
+    Export audio directly into a folder with specific file names and it will automatically be sequenced based with the given possibilities.
   </p>
 
   <div class="row">
     <div class="column">  
       <p>
-        This project tackles the issue of the amount of time and disturbance in workflow caused by the time it takes from creating audio to being able to hear and test it in its nonlinear system. 
-        Quick testing by directly bouncing the audio with specific names, saves time and tackles this disruption in workflow. 
+        This project is meant to tackle the amount of time and disturbance caused by the time it takes from creating audio to being able to hear and test it in its nonlinear system. 
+        Quick testing by directly loading the audio with given data in the filename, allows for quicker testing. 
         The video shows this experiment demonstrated on a early musical concept for Rookery, a game that I am currently working on.
       </p>
     </div>
 
-    <div class="column"  style="margin-top: 5px;">    
+    <div class="column" >    
       <div class="w3-container w3-content w3-center">
         <div style="width:90%;height:0px;position:relative;padding-bottom:65.691%;"><iframe src="https://streamable.com/e/reu4v?loop=0" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>          </div>
     </div>
@@ -136,18 +141,18 @@
     <div class="column"  >    
       <div class="w3-container w3-content">
         <p>
-          Using a visual approach with the automatic file loading carried over from the previous experiment. 
-          VPA is used to investigate using a more visual approach te upgrade the process of testing and prototyping and improving (interdisciplinary) communication. 
-          Because audio is a nonvisual medium and therefore always is experienced linearely, it can be hard to fully understand nonlinear audio systems design.
-          The video shows the project applied to test a concept for Rookery.
+          Using a visual approach along with the automatic file loading funcitonality carried over from the previous experiment,  
+          VPA is used to investigate a more visual approach to upgrading the process of prototyping nonlinear systems and improving (interdisciplinary) communication. 
+          Because audio is a nonvisual medium and therefore always is experienced linearely, it can prove difficult to fully understand nonlinear audio systems design.
+          The video shows the project used to test a concept for project Rookery.
         </p>
       </div>
     </div>
   </div>
 
   <p>
-    A dynamic system has been used which makes it easy to add and change certain components. 
-    For now there is the Fileloader, spawner controler and sequencer.
+    A dynamic system has been used to be able to quickly and easily add and change components. 
+    For now there is the Fileloader, Spawner, Controler and Sequencer as seen in the diagram bellow.
   </p>
 
   <div class="w3-container w3-content w3-center">
@@ -247,6 +252,7 @@
         <a href="https://www.linkedin.com/in/stijn-koning-de-196aab133/"><i class="fa fa-linkedin" style="font-size:40px; padding:10px;"></i></a>
         <a href="https://www.instagram.com/dekoningstijn/"><i class="fa fa-instagram" style="font-size:40px; padding:10px"></i></a>
         <a href="https://github.com/StijndeK"><i class="fa fa-github" style="font-size:40px; padding:10px;"></i></a>
+        <a href="https://soundcloud.com/stijn-de-koning"><i class="fa fa-soundcloud" style="font-size:30px; padding:10px;"></i></a>
         <p> Copyright © Stijn de Koning, 2020 </p>
       </div>
 
