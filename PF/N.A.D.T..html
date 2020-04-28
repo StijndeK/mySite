@@ -35,6 +35,9 @@
   </div>
 </div>
 
+<!-- header image -->
+<!-- <img class="page-cover-image-header" src="../Media/NADT_Screenshot.png" style="object-position:center 50%;"/> -->
+
 <!-- page content -->
 <div class="w3-container w3-content" style="max-width: 900px;">
 
@@ -101,15 +104,16 @@
   <!-- subtitle -->
   <h2> <a href="https://github.com/StijndeK/N.A.D.AutomaticSoundloader"> Automatic sound loading and parsing</a> </h2>
 
-  <p>
+  <p>        
+    The first experiment is a terminal application that allows the user to quickly test a horizontal nonlinear system. Export audio directly into a folder with specific file names and it will automatically be sequenced based on the given possibilities.
   </p>
 
   <div class="row">
     <div class="column">  
       <p>
-        The first test was a terminal application that allows the user to quickly test a horizontal nonlinear system that doesn't require any input (doesn't adapt to game parameters). Export audio directly into a folder with specific fil names and it will automatically be sequenced based on the given possibilities.
-        This project tackles the issue of the amount of time and disturbance in workflow caused by the time it takes from creating audio to being able to hear and test it in its nonlinear system. Quick testing by directly bouncing the audio with specific names, saves time and tackles the disruption in workflow. 
-        iets over application rookery
+        This project tackles the issue of the amount of time and disturbance in workflow caused by the time it takes from creating audio to being able to hear and test it in its nonlinear system. 
+        Quick testing by directly bouncing the audio with specific names, saves time and tackles this disruption in workflow. 
+        The video shows this experiment demonstrated on a early musical concept for Rookery, a game that I am currently working on.
       </p>
     </div>
 
@@ -130,50 +134,107 @@
     </div>
 
     <div class="column"  >    
-      <div class="w3-container w3-content w3-center">
+      <div class="w3-container w3-content">
         <p>
-          VPA is a tool designed to improve the process of testing and prototyping nonlinear audio for games with quick sound implementing functionality and a visual representation based interface. The time it takes to implement audio into nonlinear audio systems before being able to test it obstructs the workflow, which reduces the ability to experiment and try different things. Using a visual aproach, VPA allows for quick prototyping and improves interdisciplinary communication. Because audio is a nonvisual medium and is always experienced linearely, it can be hard to fully understand nonlinear audio system designs. Files are loaded automatically from a specific folder with certain parameters based on their names, using a functionality caried over from the previous experiment.
-          - iets over application rookery
-          - iets over dataflow
+          Using a visual approach with the automatic file loading carried over from the previous experiment. 
+          VPA is used to investigate using a more visual approach te upgrade the process of testing and prototyping and improving (interdisciplinary) communication. 
+          Because audio is a nonvisual medium and therefore always is experienced linearely, it can be hard to fully understand nonlinear audio systems design.
+          The video shows the project applied to test a concept for Rookery.
         </p>
       </div>
     </div>
   </div>
 
-    <p>
-    </p>
+  <p>
+    A dynamic system has been used which makes it easy to add and change certain components. 
+    For now there is the Fileloader, spawner controler and sequencer.
+  </p>
 
-    <div class="w3-container w3-content w3-center">
-      <img style="width:90%;" src="../Media/VASD_Dataflow.png"/>
-    </div>
+  <div class="w3-container w3-content w3-center">
+    <img style="width:90%;" src="../Media/VASD_Dataflow.png"/>
+  </div>
+
+  <p>
+    As an investigation into using a visual approach to upgrade the process of designing nonlinear audio for games and communicating about them, VPA has achieved its goal.
+    However, The project only scratches the surface of nonlinear gameaudio possibilities and its current version conditions the user quite heavily into using certain techniques.
+  </p>
 
   <hr>
 
   <!-- subtitle -->
   <h2> <a href="https://github.com/StijndeK/N.A.D.ProcederalAudioSystem"> Procedural audio system design and implementation </a> </h2>
 
-    <p>
-      PAS (working title) is a framework/tool designed to improve procedural (game)music systems prototyping and implementing. Even though procedural sound design has become standard in gameaudio, procedural music is still relatively underrepresented. It can be difficult to prototype, test and implement. PAS allows for quick testing and implementing procedural audio, using a sample-based sequencer. 
-    </p>
-    <p>
-      PAS is a general framework/tool for procedural nonlinear audio, but is also simultaneously being used for and tested on 'Procedural Imagination'. A game that is currently being developed, which generates envirnonments whilst exploring.
-    </p>
+  <p>
+    The third experiment is a framework and tool designed to improve procedural music systems prototyping and implementing. 
+    Even though procedural sound design has become standard in gameaudio, I find that procedural music is still relatively underrepresented. 
+    This is partly the case because it can be difficult to prototype, test and implement. 
+    PAS allows for quick testing and implementing procedural audio, using a sample-based sequencer. 
+    The automatic file loading functionally has again been carried over from the first experiment. 
+   Even though the visual approach from last experiment got positive feedback, this project shys away from the visual approach so that more focus can be put on quick implementation and building a general framework.
+  </p>
 
-    <div class="w3-container w3-content w3-center">
-      <img style="padding:10px;" src="../Media/PI.png"/>
-      <img style="padding:10px" src="../Media/PI2.png"/>
+  <div class="w3-container w3-content w3-center">
+    <img style="padding:10px;" src="../Media/PI.png"/>
+    <img style="padding:10px" src="../Media/PI2.png"/>
+  </div>
+
+  <p>
+    PAS is made as a general framework/tool, but is also used for and tested on 'Procedural Imagination'. 
+    A game that is currently being developed, which generates environments whilst exploring.
+  </p>
+
+  <h3>
+    Systems design
+  </h3>
+
+  <p>
+    Parameters received from the game are used to trigger and generate data cycles, which set audio parameters for layers, that are triggered in the sequencer. 
+  </p>
+
+  <div class="row">
+    <div class="columnAdaptive third">  
+      <p> 
+        Musical values for layers are divided into a 'rythm' and a 'tonal' layer. 
+        The rythm decides on which tick audio needs to be played. 
+        The tonal layer decides what notes need to be played based on the layertype and the available samples within the layer. 
+        This data is then parsed to a cycle, which will set layer data when triggered.
+      </p>
     </div>
 
-    <p>
-      This experiment again uses a adapted functionality carried over from the first expirment to allow for automatic file reading and parsing.
-    </p>
-
-    <h3>
-      Systems Design
-    </h3>
-
-
+    <div class="columnAdaptive twothird" style="margin-top: 20px;" >   
+      <img style="width:90%;" src="../Media/PI_musicalValues.png"/>
+    </div>
   </div>
+
+  <div class="row">
+    <div class="columnAdaptive twothird">  
+      <img style="width:90%;" src="../Media/PI_cycles.png"/>
+    </div>
+
+    <div class="columnAdaptive third" >   
+      <p>
+        A cycle holds the parameters (rythm, On/Off toggle, etc) it needs to adapt and for what layers they need to adapt. Cycles are triggerd by external data, or by the sequencer (timed cycles). An important future functionality is to have cycles hold data on how the parameters need to adapt.
+      </p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="columnAdaptive third">  
+      <p> 
+        The following diagram depicts the working of the layer classes. A layer can be a vertical looping layer or sound effect. The adaptable data that layers currently hold can be added to in the future, for a more dynamic procedural system.
+      </p>
+    </div>
+
+    <div class="columnAdaptive twothird" style="margin-top: 20px;" >   
+      <img style="width:90%;" src="../Media/PI_layers.png"/>
+    </div>
+  </div>
+
+  <p>
+    For more information find the project on <a href="https://github.com/StijndeK/N.A.D.ProcederalAudioSystem">github</a> or check out <a href="../Media/PI_dataflow.png">the full dataflow diagram</a>.
+  </p>
+
+
 </div>
 
 <!-- footer -->

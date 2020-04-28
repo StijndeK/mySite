@@ -10,7 +10,37 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+<head>
+  <style>
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #4CAF50;
+  }
+  </style>
+  </head>
 <body>
 
 <!-- NAVBAR -->
@@ -25,13 +55,14 @@
 <img src="Media/foresthuntHeader.png" width= "100%" alt="HTML5 Icon" id="home" >
 
 <div class= "w3-content w3-container w3-center"style="max-width: 900px">
+  <img src="Media/LogoTransparant.png" width= "80%" alt="HTML5 Icon" id="home" style="padding-left:70px; padding-right:70px;">
+</div>
 
-  <!-- ABOUT SECTION -->
-  <img src="Media/LogoTransparant.png" width= "100%" alt="HTML5 Icon" id="home" style="margin-bottom: 50px; padding-left:70px; padding-right:70px;">
-
+<div class= "w3-content w3-container w3-center"style="max-width: 900px">
   <!-- SKILLS SECTION -->
-  <div class="w3-container w3-content w3-center" style="padding-top: 50px;" id="about" >
+  <div class="w3-container w3-content w3-center" style="padding-top: 50px; margin-top: 50px; " id="about" >
     <!-- <h1>EXPERIENCE</h1> -->
+    <h2> About </h2>
 
   <div class="w3-container w3-content w3-center" style="max-width: 500px; ">
     <!-- <h2> About </h2> -->
@@ -43,12 +74,12 @@
     <div class="w3-third w3-center" style="padding-top:15px;">
       <div class="container">
         <div class="w3-hide-small">
-          <p style="color: black;">
+          <h5 style="color: black;">
             Music
-          </p>
+          </h5>
         </div>
         <a href="experience.html#Music">
-          <img src="media/WhoAmI_Logo.png" class="w3-hover-opacity" width= "100%" alt="HTML5 Icon" style="  border-radius: 3%;">
+          <img src="media/WhoAmI_Logo.png" class="w3-hover-opacity" width= "100%" alt="HTML5 Icon">
         </a>
       </div>
     </div>
@@ -56,12 +87,12 @@
     <div class="w3-third w3-center" style="padding-top:15px;">
       <div class="container">
         <div class="w3-hide-small">
-          <p style="color: black;">
+          <h5 style="color: black;">
             Audio Programming
-          </p>
+          </h5>
         </div>
         <a href="experience.html#AP">
-          <img src="media/TFXEnvelopes.png" class="w3-hover-opacity" width= "100%" alt="HTML5 Icon" style="  border-radius: 3%;">
+          <img src="media/TFXEnvelopes.png" class="w3-hover-opacity" width= "100%" alt="HTML5 Icon">
         </a>
       </div>
     </div>
@@ -69,12 +100,12 @@
     <div class="w3-third w3-center" style="padding-top:15px;">
       <div class="container">
         <div class="w3-hide-small">
-          <p style="color: black;">
+          <h5 style="color: black;">
             Sound Design
-          </p>
+          </h5>
         </div>
         <a href="experience.html#SD">
-          <img src="media/FMODSD.png" class="w3-hover-opacity" width= "100%" alt="HTML5 Icon" style="  border-radius: 3%;">
+          <img src="media/FMODSD.png" class="w3-hover-opacity" width= "100%" alt="HTML5 Icon">
         </a>
       </div>
     </div>
@@ -82,9 +113,9 @@
     <!-- ocarime -->
       <a href="https://ocarime.com/"  target="_blank" id="ocarime" style="margin-top: 50px; text-decoration: none;">
         <div style="margin-top:220px">
-          <p style="color: black;">
+          <h5 style="color: black;">
             Ocarime Network
-          </p>
+          </h5>
           <img src="media/OcarimeLogo.png" class="borderImage hoverOpacity" width= "100%" alt="HTML5 Icon" >
       </div>
       </a>
@@ -93,7 +124,7 @@
   <!-- PORTFOLIO -->
   <div class="row w3-content w3-center" id="portfolio" style="padding-top: 100px;">
 
-    <h2> Current Projects </h2>
+    <h2> Current projects </h2>
 
     <!-- left -->
     <div class="column">
@@ -134,26 +165,12 @@
   </div>
 
   <!-- PORTFOLIO -->
-  <div class="row w3-content w3-center" id="portfolio" style="padding-top: 100px; padding-bottom: 100px;">
+  <div class="row w3-content w3-center" id="portfolio" padding-bottom: 100px;">
 
-    <h2> Recent Projects </h2>
+    <h2> Recent projects </h2>
 
     <!-- left -->
     <div class="column">
-
-      <!-- portfolio item -->
-      <div class="item">
-        <a href="PF/ForesthuntDysphoriaDog.html">
-          <div class="container imageContainer">
-            <img src=" Media/foresthunt.png" class=" image " alt="HTML5 Icon" width= "100%" style="  border-radius: 3%;">
-            <div class="overlay" >
-              <div class="overlayText w3-hide-small" >
-                Foresthunt
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
 
       <!-- portfolio item -->
       <div class="item">
@@ -215,20 +232,6 @@
 
   <!-- right -->
     <div class="column">
-
-      <!-- portfolio item -->
-      <div class="item">
-        <a href="PF/Evasion.html">
-          <div class="container imageContainer">
-            <img src=" Media/Evasion.jpg" class=" image " alt="HTML5 Icon" width= "100%" style="  border-radius: 3%;">
-            <div class="overlay" >
-              <div class="overlayText w3-hide-small" >
-                Evasion
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
 
       <!-- portfolio item -->
       <div class="item">
