@@ -9,308 +9,304 @@
 <!-- stylesheets -->
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="style.css">
-<head>
-<style>
-img {
-}
-/* body is default */
-body, html {
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  background-color: rgb(194, 210, 214, 0.1);
-}
-/* p is default text*/
-p {
-  font-family:  "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  font-size: 16px;
-}
-/* h1 wordt gebruikt voor titels */
-h1 {
-  font-family:  "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  font-size: 45px;
-}
-/* h2 wordt gebruikt voor ondertitels (etc met h3 enz.)*/
-h2 {
-  font-family:  "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  font-size: 30px;
-  color: black;
-}
-h3 {
-  font-family:  "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  font-size: 16px;
-  color: white;
-}
-ul {
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  font-size: 20px;
-  text-transform: uppercase;
-}
-</style>
-</head>
-
-<!--
-TODO:
-- responsive active signaling on navbar
-- showreels per skill
-- topbar overheen laten gaan
--->
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <body>
-  <!-- <div id="navbar">
-    <a href="#home">Home</a>
-    <a href="#news">News</a>
-    <a href="#contact">Contact</a>
-  </div> -->
 
-  <!-- NAVBAR -->
-  <ul class="topnav w3-hide-small" id="navbar">
-    <li><a href="#home">Home</a></li>
-    <li><a href="works.html">Works</a></li>
-    <li><a href="#about">Experience</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
+<!-- NAVBAR -->
+<ul class="topnav w3-hide-small" id="navbar">
+  <li><a href="#home">Home</a></li>
+  <li><a href="works.html">Works</a></li>
+  <li><a href="#about">Experience</a></li>
+  <li><a href="#contact">Contact</a></li>
+</ul>
 
+<!-- header -->
+<img src="Media/foresthuntHeader.png" width= "100%" alt="HTML5 Icon" id="home" >
 
-  <!-- header -->
-  <img src="Media/foresthuntHeader.png" width= "100%" alt="HTML5 Icon" id="home" >
+<div class= "w3-content w3-container w3-center"style="max-width: 900px">
 
-  <div class= "w3-content w3-container w3-center"style="max-width: 1200px">
-    <div class="view">
+  <!-- ABOUT SECTION -->
+  <img src="Media/LogoTransparant.png" width= "100%" alt="HTML5 Icon" id="home" style="margin-bottom: 50px; padding-left:70px; padding-right:70px;">
 
-      <!-- ABOUT SECTION -->
-      <img src="Media/LogoTransparant.png" width= "100%" alt="HTML5 Icon" id="home" style="margin-bottom: 50px; padding-left:70px; padding-right:70px;">
+  <!-- SKILLS SECTION -->
+  <div class="w3-container w3-content w3-center" style="padding-top: 50px;" id="about" >
+    <!-- <h1>EXPERIENCE</h1> -->
 
-      <!-- SKILLS SECTION -->
-      <div class="w3-container w3-content w3-center" style="padding-top: 50px;" id="about" >
-        <!-- <h1>EXPERIENCE</h1> -->
+  <div class="w3-container w3-content w3-center" style="max-width: 500px; ">
+    <h2> About </h2>
+    <p style="opacity: 0.7">Composer, sound designer and developer specialised on game (and film) audio. I combine my skills in these different fields to achieve new and interesting results and involve myself in different aspects of media audio.  </p>
+  </div>
 
-      <div class="w3-container w3-content w3-center" style="max-width: 500px; ">
-        <h2> About </h2>
-        <p style="opacity: 0.7">Composer, sound designer and developer specialised on game (and film) audio. I combine my skills in these different fields to achieve new and interesting results and involve myself in different aspects of media audio.  </p>
+  <div class="w3-row" style = "padding-left:50px; padding-right: 50px;">
+
+    <div class="w3-third w3-center" style="padding-top:15px;">
+      <div class="container">
+        <div class="w3-hide-small">
+          <p style="color: black;">
+            Music
+          </p>
+        </div>
+        <a href="experience.html#Music">
+          <img src="media/WhoAmI_Logo.png" class="w3-hover-opacity" width= "100%" alt="HTML5 Icon" style="  border-radius: 3%;">
+        </a>
+      </div>
+    </div>
+
+    <div class="w3-third w3-center" style="padding-top:15px;">
+      <div class="container">
+        <div class="w3-hide-small">
+          <p style="color: black;">
+            Audio Programming
+          </p>
+        </div>
+        <a href="experience.html#AP">
+          <img src="media/TFXEnvelopes.png" class="w3-hover-opacity" width= "100%" alt="HTML5 Icon" style="  border-radius: 3%;">
+        </a>
+      </div>
+    </div>
+
+    <div class="w3-third w3-center" style="padding-top:15px;">
+      <div class="container">
+        <div class="w3-hide-small">
+          <p style="color: black;">
+            Sound Design
+          </p>
+        </div>
+        <a href="experience.html#SD">
+          <img src="media/FMODSD.png" class="w3-hover-opacity" width= "100%" alt="HTML5 Icon" style="  border-radius: 3%;">
+        </a>
+      </div>
+    </div>
+
+    <!-- ocarime -->
+      <a href="https://ocarime.com/"  target="_blank" id="ocarime" style="margin-top: 50px; text-decoration: none;">
+        <div style="margin-top:220px">
+          <p style="color: black;">
+            Ocarime Network
+          </p>
+          <img src="media/OcarimeLogo.png" class="borderImage hoverOpacity" width= "100%" alt="HTML5 Icon" >
+      </div>
+      </a>
+  </div>
+
+  <!-- PORTFOLIO -->
+  <div class="row w3-content w3-center" id="portfolio" style="padding-top: 100px;">
+
+    <h2> Current Projects </h2>
+
+    <!-- left -->
+    <div class="column">
+
+      <!-- portfolio item -->
+      <div class="item">
+        <a href="PF/ForesthuntDysphoriaDog.html">
+          <div class="container imageContainer">
+            <img src=" Media/foresthunt.png" class=" image " alt="HTML5 Icon" width= "100%" style="  border-radius: 3%;">
+            <div class="overlay" >
+              <div class="overlayText w3-hide-small" >
+                Foresthunt
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+  <!-- right -->
+    <div class="column">
+
+      <!-- portfolio item -->
+      <div class="item">
+        <a href="PF/Evasion.html">
+          <div class="container imageContainer">
+            <img src=" Media/Evasion.jpg" class=" image " alt="HTML5 Icon" width= "100%" style="  border-radius: 3%;">
+            <div class="overlay" >
+              <div class="overlayText w3-hide-small" >
+                Evasion
+              </div>
+            </div>
+          </div>
+        </a>
       </div>
 
-      <div class="w3-row" style = "padding-left:50px; padding-right: 50px;">
+    </div>
+  </div>
 
-        <div class="w3-third w3-center" style="padding-top:15px;">
-          <div class="container">
-            <div class="w3-hide-small">
-              <p style="color: black;">
-                Music
-              </p>
+  <!-- PORTFOLIO -->
+  <div class="row w3-content w3-center" id="portfolio" style="padding-top: 100px; padding-bottom: 100px;">
+
+    <h2> Recent Projects </h2>
+
+    <!-- left -->
+    <div class="column">
+
+      <!-- portfolio item -->
+      <div class="item">
+        <a href="PF/ForesthuntDysphoriaDog.html">
+          <div class="container imageContainer">
+            <img src=" Media/foresthunt.png" class=" image " alt="HTML5 Icon" width= "100%" style="  border-radius: 3%;">
+            <div class="overlay" >
+              <div class="overlayText w3-hide-small" >
+                Foresthunt
+              </div>
             </div>
-            <a href="experience.html#Music">
-              <img src="media/WhoAmI_Logo.png" class="w3-hover-opacity" width= "100%" alt="HTML5 Icon" style="  border-radius: 3%;">
-            </a>
+          </div>
+        </a>
+      </div>
+
+      <!-- portfolio item -->
+      <div class="item">
+        <a href="PF/TransitionFX.html">
+          <div class="container imageContainer">
+            <img src=" media/TFXMain.png" class=" image" alt="HTML5 Icon" width= "100%" style="  border-radius: 3%;">
+            <div class="overlay" >
+              <div class="overlayText w3-hide-small" >
+                TransitionFX
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- portfolio item -->
+      <div class="item">
+        <a href="https://soundcloud.com/stijn-de-koning/forzanda-ursa-earths-maze" target="_blank">
+          <div class="container imageContainer">
+            <img src=" media/forzandaposter.png" class=" image" alt="HTML5 Icon" width= "100%" style="  border-radius: 3%;">
+            <div class="overlay" >
+              <div class="overlayText w3-hide-small" >
+                Forzanda Ursa, Earths Maze
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- portfolio item -->
+      <div class="item">
+      <a href="PF/LimbLoser.html">
+        <div class="container imageContainer">
+          <img src=" media/Banner-Limb-Loser-Screen.png" class=" image" alt="HTML5 Icon" width= "100%" style="  border-radius: 3%;">
+          <div class="overlay">
+            <div class="overlayText w3-hide-small" >
+              Limb Loser
+            </div>
           </div>
         </div>
-
-        <div class="w3-third w3-center" style="padding-top:15px;">
-          <div class="container">
-            <div class="w3-hide-small">
-              <p style="color: black;">
-                Audio Programming
-              </p>
-            </div>
-            <a href="experience.html#AP">
-              <img src="media/TFXEnvelopes.png" class="w3-hover-opacity" width= "100%" alt="HTML5 Icon" style="  border-radius: 3%;">
-            </a>
-          </div>
-        </div>
-
-        <div class="w3-third w3-center" style="padding-top:15px;">
-          <div class="container">
-            <div class="w3-hide-small">
-              <p style="color: black;">
-                Sound Design
-              </p>
-            </div>
-            <a href="experience.html#SD">
-              <img src="media/FMODSD.png" class="w3-hover-opacity" width= "100%" alt="HTML5 Icon" style="  border-radius: 3%;">
-            </a>
-          </div>
-        </div>
-
-        <!-- ocarime -->
-          <a href="https://ocarime.com/"  target="_blank" id="ocarime" style="margin-top: 50px; text-decoration: none;">
-            <div style="margin-top:220px">
-              <p style="color: black;">
-                Ocarime Network
-              </p>
-              <img src="media/OcarimeLogo.png" class="borderImage hoverOpacity" width= "100%" alt="HTML5 Icon" >
-          </div>
-          </a>
+      </a>
       </div>
 
 
-
-
-      <!-- PORTFOLIO -->
-      <div class="row w3-content w3-center" id="portfolio" style="padding-top: 100px; padding-bottom: 100px;">
-
-        <h2> Recent Works </h2>
-
-
-        <!-- left -->
-        <div class="column">
-
-          <!-- portfolio item -->
-          <div class="item">
-            <a href="PF/ForesthuntDysphoriaDog.html">
-              <div class="container imageContainer">
-                <img src=" Media/foresthunt.png" class=" image " alt="HTML5 Icon" width= "100%" style="  border-radius: 3%;">
-                <div class="overlay" >
-                  <div class="overlayText w3-hide-small" >
-                    Foresthunt
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <!-- portfolio item -->
-          <div class="item">
-            <a href="PF/TransitionFX.html">
-              <div class="container imageContainer">
-                <img src=" media/TFXMain.png" class=" image" alt="HTML5 Icon" width= "100%" style="  border-radius: 3%;">
-                <div class="overlay" >
-                  <div class="overlayText w3-hide-small" >
-                    TransitionFX
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <!-- portfolio item -->
-          <div class="item">
-            <a href="https://soundcloud.com/stijn-de-koning/forzanda-ursa-earths-maze" target="_blank">
-              <div class="container imageContainer">
-                <img src=" media/forzandaposter.png" class=" image" alt="HTML5 Icon" width= "100%" style="  border-radius: 3%;">
-                <div class="overlay" >
-                  <div class="overlayText w3-hide-small" >
-                    Forzanda Ursa, Earths Maze
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <!-- portfolio item -->
-          <div class="item">
-          <a href="PF/LimbLoser.html">
-            <div class="container imageContainer">
-              <img src=" media/Banner-Limb-Loser-Screen.png" class=" image" alt="HTML5 Icon" width= "100%" style="  border-radius: 3%;">
-              <div class="overlay">
-                <div class="overlayText w3-hide-small" >
-                  Limb Loser
-                </div>
-              </div>
+      <!-- portfolio item -->
+      <div class="item">
+      <a href="https://soundcloud.com/stijn-de-koning/new-wave" target="_blank">
+        <div class="container imageContainer">
+          <img src=" media/New_Wave.png" class=" image" alt="HTML5 Icon" width= "100%" style="  border-radius: 3%;">
+          <div class="overlay">
+            <div class="overlayText w3-hide-small" >
+              NEW_WAVE
             </div>
-          </a>
-          </div>
-
-
-          <!-- portfolio item -->
-          <div class="item">
-          <a href="https://soundcloud.com/stijn-de-koning/new-wave" target="_blank">
-            <div class="container imageContainer">
-              <img src=" media/New_Wave.png" class=" image" alt="HTML5 Icon" width= "100%" style="  border-radius: 3%;">
-              <div class="overlay">
-                <div class="overlayText w3-hide-small" >
-                  NEW_WAVE
-                </div>
-              </div>
-            </div>
-          </a>
           </div>
         </div>
-
-      <!-- right -->
-        <div class="column">
-
-          <!-- portfolio item -->
-          <div class="item">
-            <a href="PF/Evasion.html">
-              <div class="container imageContainer">
-                <img src=" Media/Evasion.jpg" class=" image " alt="HTML5 Icon" width= "100%" style="  border-radius: 3%;">
-                <div class="overlay" >
-                  <div class="overlayText w3-hide-small" >
-                    Evasion
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <!-- portfolio item -->
-          <div class="item">
-          <a href="PF/WhoAmI%3F.html">
-            <div class="container imageContainer">
-              <img src=" media/WhoAmI_BoxArt.png" class=" image" alt="HTML5 Icon" width= "100%" style="  border-radius: 3%;">
-              <div class="overlay">
-                <div class="overlayText w3-hide-small" >
-                  Who Am I?
-                </div>
-              </div>
-            </div>
-          </a>
-          </div>
-
-          <!-- portfolio item -->
-          <div class="item">
-          <a href="PF/CultTag.html">
-            <div class="container imageContainer">
-              <img src=" media/Banner-CultTag-Screen.png" class=" image" alt="HTML5 Icon" width= "100%" style="  border-radius: 3%;">
-              <div class="overlay">
-                <div class="overlayText w3-hide-small" >
-                  Cult Tag
-                </div>
-              </div>
-            </div>
-          </a>
-          </div>
-
-          <!-- portfolio item -->
-          <div class="item">
-            <a href="https://soundcloud.com/stijn-de-koning/sentence" target="_blank">
-              <div class="container imageContainer">
-                <img src=" media/sentence_picturev1.png" class="image" alt="HTML5 Icon" width= "100%" style="  border-radius: 3%;">
-                <div class="overlay">
-                  <div class="overlayText w3-hide-small" >
-                    Sentence
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-        </div>
+      </a>
       </div>
+    </div>
+
+  <!-- right -->
+    <div class="column">
+
+      <!-- portfolio item -->
+      <div class="item">
+        <a href="PF/Evasion.html">
+          <div class="container imageContainer">
+            <img src=" Media/Evasion.jpg" class=" image " alt="HTML5 Icon" width= "100%" style="  border-radius: 3%;">
+            <div class="overlay" >
+              <div class="overlayText w3-hide-small" >
+                Evasion
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- portfolio item -->
+      <div class="item">
+      <a href="PF/WhoAmI%3F.html">
+        <div class="container imageContainer">
+          <img src=" media/WhoAmI_BoxArt.png" class=" image" alt="HTML5 Icon" width= "100%" style="  border-radius: 3%;">
+          <div class="overlay">
+            <div class="overlayText w3-hide-small" >
+              Who Am I?
+            </div>
+          </div>
+        </div>
+      </a>
+      </div>
+
+      <!-- portfolio item -->
+      <div class="item">
+      <a href="PF/CultTag.html">
+        <div class="container imageContainer">
+          <img src=" media/Banner-CultTag-Screen.png" class=" image" alt="HTML5 Icon" width= "100%" style="  border-radius: 3%;">
+          <div class="overlay">
+            <div class="overlayText w3-hide-small" >
+              Cult Tag
+            </div>
+          </div>
+        </div>
+      </a>
+      </div>
+
+      <!-- portfolio item -->
+      <div class="item">
+        <a href="https://soundcloud.com/stijn-de-koning/sentence" target="_blank">
+          <div class="container imageContainer">
+            <img src=" media/sentence_picturev1.png" class="image" alt="HTML5 Icon" width= "100%" style="  border-radius: 3%;">
+            <div class="overlay">
+              <div class="overlayText w3-hide-small" >
+                Sentence
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
     </div>
   </div>
 </div>
+</div>
 
+<!-- footer -->
+<footer style="color: white; background-color: black; margin-top: 100px; padding: 50px;" id="contact">
+  <div class="w3-container w3-content" style="max-width: 700px;">
 
-  <!-- footer -->
-  <div class="container" style="margin-top: 100px; padding: 50px; background-color: black" id="contact">
-    <div class="w3-container w3-content " >
-      <div class="w3-row">
-          <div class="column">
-            <img src="Media/LogoSmall.png" width= "30%" alt="HTML5 Icon" id="home" style="float: right; margin-right: 50px;">
-          </div>
-          <div class="column">
-            <h2 style="color: white"> Contact </h2>
-            <h3>sdk.stijn@gmail.com <br>
-            Amsterdam, Netherlands <br>
-            Music & Technology, University of the Arts Utrecht</h3>
-          </div>
+    <div class="row" style="margin-top: 40px;">
+
+      <div class="columnAdaptive middle">  
+        <i class="fa fa-linkedin" style="font-size:40px; padding:10px;"></i>
+        <i class="fa fa-instagram" style="font-size:40px; padding:10px"></i>
+        <i class="fa fa-github" style="font-size:40px; padding:10px;"></i>
+        <p> Copyright © Stijn de Koning, 2020 </p>
       </div>
+
+      <div class="columnAdaptive middle">  
+        <h6>
+          <i class="fa fa-envelope" ></i> sdk.stijn@gmail.com <br>
+          <i class="fa fa-globe"></i> Amsterdam, Netherlands <br>
+          <i class="fa fa-university"></i> Music & Technology, University of the Arts Utrecht
+        </h6>
+      </div>
+
+      <div class="columnAdaptive left">  
+        <img style="width:90%;" src="Media/LogoSmall.png"/>
+      </div>
+
     </div>
   </div>
-</div>
+</footer>
 
 </body>
-
 </html>
 
 <script>

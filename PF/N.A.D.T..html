@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- title -->
+<title>N.A.D.T.</title>
+<!-- icon -->
+<link rel="icon" type="image/png" href="../Media/LogoSmall.png">
+<!-- stylesheets -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+  <style>
+    img {
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+ 
+<!-- Navbar (sit on top) -->
+<div class="w3-top " >
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="../works.html" class="w3-bar-item w3-button w3-xlarge">BACK</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="../works.html" class="w3-bar-item w3-button" onclick="toggleFunction()">BACK</a>
+  </div>
+</div>
+
+<!-- page content -->
+<div class="w3-container w3-content" style="max-width: 900px;">
+
+  <!-- header image -->
+  <img class="page-cover-image" src="../Media/NADT_Screenshot.png" style="object-position:center 50%; margin-top: 40px;"/>
+
+  <!-- title -->
+  <h1> Nonlinear Audio Systems Design Tools </h1>
+  <!-- under title -->
+  <h4> Audio programming, Thesis </h4>
+
+  <hr>
+
+  <p> 
+    <strong>As a game audio designer I am hindered during my creative process, due to the discrepancy between the nonlinearity of my work and the linear character of standard audio production software. </strong>
+  </p>
+
+  <div class="row">
+    <div class="column" style="margin-top: 20px;">  
+      <img style="width:90%;" src="../Media/PI.png"/>
+      <img style="width:90%;" src="../Media/PI.png"/>
+      <img style="width:90%;" src="../Media/PI.png"/>
+    </div>
+
+    <div class="column">    
+      <p>
+        Standard linear audio production tools offer little to none nonlinear sequencing, transitioning, parameter adaption and probability functionalities. Furthermore, linear sequencers are not optimised to provide a visual representation of nonlinear systems. Existing standard middleware solutions focus less on tackling the obstructions in the design stage of a project. These issues cause testing and prototyping to take unnecessary amounts of time and obscures communication with collaborators. This obstructs the workflow and discourages innovation.
+      </p>
+    </div>
+  </div>
+
+  <p>
+    For these reasons I started development on Nonlinear Audio Design Tools or NASDT, a range of experiments in the form of tools and prototypes to tackle these issues, for my thesis on Tools for Designing Nonlinear Audio for Games. By developing and prototyping various tools that tackle  issues caused by the non-linearity of video games in relation to the linearity of audio production software, I hope to improve the process. 
+  </p>
+
+  <h3>
+    Three main issues
+  </h3>
+  <p>
+    The current issues that arise while designing non-linear audio systems for games are divisible into 3 main subjects: 
+    <ul style = "text-transform: lowercase;">
+      <li>Not being able to quickly test and prototype audio systems with their audio</li>
+      <li>The lack of overview current standard tools provide, which also hinders communication</li>
+      <li>The lack of visual and interaction context. When producing audio for a movie, the visuals can be constantly available during production, but with a game this isnt the case and game also has the added context of interaction</li>
+    </ul>
+  </p>
+
+  <h3>
+    Current status
+  </h3>
+
+  <p>
+    So far, three experiments have been done. Each with a different approach to tackling different issues. 
+    For every tool the approach has been to test out certain possible solutions as efficiently and quickly as possible, instead of getting hung up on details per project, to allow for trying different methods and seeing how they do.
+    <ol type="1">
+      <li> <a href="https://github.com/StijndeK/N.A.D.AutomaticSoundloader"> Automatic sound loading and parsing in Pyton </a></li>
+      <li> <a href="https://github.com/StijndeK/N.A.D.VisualParameterAdaption"> Visual Parameter Adaption in Unity </a></li>
+      <li> <a href="https://github.com/StijndeK/N.A.D.ProcederalAudioSystem"> Procedural audio system design and implementation </a></li>
+    </ol>
+  </p>
+
+  <hr>
+
+  <!-- subtitle -->
+  <h2> <a href="https://github.com/StijndeK/N.A.D.AutomaticSoundloader"> Automatic sound loading and parsing</a> </h2>
+
+  <p>
+  </p>
+
+  <div class="row">
+    <div class="column">  
+      <p>
+        The first test was a terminal application that allows the user to quickly test a horizontal nonlinear system that doesn't require any input (doesn't adapt to game parameters). Export audio directly into a folder with specific fil names and it will automatically be sequenced based on the given possibilities.
+        This project tackles the issue of the amount of time and disturbance in workflow caused by the time it takes from creating audio to being able to hear and test it in its nonlinear system. Quick testing by directly bouncing the audio with specific names, saves time and tackles the disruption in workflow. 
+        iets over application rookery
+      </p>
+    </div>
+
+    <div class="column"  style="margin-top: 5px;">    
+      <div class="w3-container w3-content w3-center">
+        <div style="width:90%;height:0px;position:relative;padding-bottom:65.691%;"><iframe src="https://streamable.com/e/reu4v?loop=0" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>          </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- subtitle -->
+  <h2> <a href="https://github.com/StijndeK/N.A.D.VisualParameterAdaption"> Visual Parameter Adaption</a> </h2>
+    
+  <div class="row" style="margin-top: 5px;">
+    <div class="column">  
+      <div style="width:90%;height:0px;position:relative;padding-bottom:66.667%;"><iframe src="https://streamable.com/e/y6rm5e?loop=0" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>      
+    </div>
+
+    <div class="column"  >    
+      <div class="w3-container w3-content w3-center">
+        <p>
+          VPA is a tool designed to improve the process of testing and prototyping nonlinear audio for games with quick sound implementing functionality and a visual representation based interface. The time it takes to implement audio into nonlinear audio systems before being able to test it obstructs the workflow, which reduces the ability to experiment and try different things. Using a visual aproach, VPA allows for quick prototyping and improves interdisciplinary communication. Because audio is a nonvisual medium and is always experienced linearely, it can be hard to fully understand nonlinear audio system designs. Files are loaded automatically from a specific folder with certain parameters based on their names, using a functionality caried over from the previous experiment.
+          - iets over application rookery
+          - iets over dataflow
+        </p>
+      </div>
+    </div>
+  </div>
+
+    <p>
+    </p>
+
+    <div class="w3-container w3-content w3-center">
+      <img style="width:90%;" src="../Media/VASD_Dataflow.png"/>
+    </div>
+
+  <hr>
+
+  <!-- subtitle -->
+  <h2> <a href="https://github.com/StijndeK/N.A.D.ProcederalAudioSystem"> Procedural audio system design and implementation </a> </h2>
+
+    <p>
+      PAS (working title) is a framework/tool designed to improve procedural (game)music systems prototyping and implementing. Even though procedural sound design has become standard in gameaudio, procedural music is still relatively underrepresented. It can be difficult to prototype, test and implement. PAS allows for quick testing and implementing procedural audio, using a sample-based sequencer. 
+    </p>
+    <p>
+      PAS is a general framework/tool for procedural nonlinear audio, but is also simultaneously being used for and tested on 'Procedural Imagination'. A game that is currently being developed, which generates envirnonments whilst exploring.
+    </p>
+
+    <div class="w3-container w3-content w3-center">
+      <img style="padding:10px;" src="../Media/PI.png"/>
+      <img style="padding:10px" src="../Media/PI2.png"/>
+    </div>
+
+    <p>
+      This experiment again uses a adapted functionality carried over from the first expirment to allow for automatic file reading and parsing.
+    </p>
+
+    <h3>
+      Systems Design
+    </h3>
+
+
+  </div>
+</div>
+
+<!-- footer -->
+<footer style="color: white; background-color: black; margin-top: 100px; padding: 50px;" id="contact">
+  <div class="w3-container w3-content" style="max-width: 700px;">
+
+    <div class="row" style="margin-top: 40px;">
+
+      <div class="columnAdaptive middle">  
+        <i class="fa fa-linkedin" style="font-size:40px; padding:10px;"></i>
+        <i class="fa fa-instagram" style="font-size:40px; padding:10px"></i>
+        <i class="fa fa-github" style="font-size:40px; padding:10px;"></i>
+        <p> Copyright © Stijn de Koning, 2020 </p>
+      </div>
+
+      <div class="columnAdaptive middle">  
+        <h6>
+          <i class="fa fa-envelope" ></i> sdk.stijn@gmail.com <br>
+          <i class="fa fa-globe"></i> Amsterdam, Netherlands <br>
+          <i class="fa fa-university"></i> Music & Technology, University of the Arts Utrecht
+        </h6>
+      </div>
+
+      <div class="columnAdaptive left">  
+        <img style="width:90%;" src="../Media/LogoSmall.png"/>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
