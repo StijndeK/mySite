@@ -52,6 +52,13 @@ ul {
   text-transform: uppercase;
 }
 
+.portfolioItem {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 30vh;
+}
+
 .page-cover-image {
   display: block;
   object-fit: cover;
@@ -59,19 +66,20 @@ ul {
   height: 30vh;
 }
 
-.stack-image {
+.imageButton {
   display: block;
   object-fit: cover;
-  width: 90%;
-  height: 10%;
-  padding: 4px;
+  width: 100%;
+  height: 15vh;
 }
+
+
 
 .page-cover-image-header {
   display: block;
   object-fit: cover;
   width: 100%;
-  height: 47vh;
+  height: 50vh;
 }
 
 .button {
@@ -451,6 +459,10 @@ ul.topnav li a.active {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.portfolioItemImg {
+  padding: 10px;
 }
 
 .overlay {
