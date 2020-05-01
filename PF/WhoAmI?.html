@@ -10,39 +10,8 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="../style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<head>
-<style>
-img {
-  width: 100%;
-}
-body, html {
-  background-color: rgb(247, 245, 245);
-  color: rgb(20, 20, 20);
-  font-family: "Futura", Arial, serif;
-}
-p {
-  font-family: "Arial", Arial, serif;
-  color: rgb(20, 20, 20);
-}
-h1 {
-  font-family: "Futura", Arial, serif;
-  color: rgb(40, 40, 40);
-}
-h2 {
-  font-family: "Futura", Arial, serif;
-  color: rgb(40, 40, 40);
-  font-size: 20px;
-}
-i {
-  width: 35px;
-}
 
-</style>
-</head>
 <body>
-
-
-<!-- =================================== -->
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top " >
@@ -50,7 +19,8 @@ i {
     <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
-    <a href="../works.html" class="w3-bar-item w3-button w3-xlarge">BACK</a>  </div>
+    <a href="../works.html" class="w3-bar-item w3-button w3-xlarge">BACK</a>
+  </div>
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
@@ -58,106 +28,116 @@ i {
   </div>
 </div>
 
+<!-- HEADER -->
+<div class="w3-bar w3-black">
+  <div class="w3-bar-item"> <br> </div>
+</div>
 
-<!-- =================================== -->
+<img class="page-cover-image-header" src="../media/WhoAmI_BoxArt.png"/>
 
-<div class = "viewPF ">
-  <!-- portfolio -->
-  <div class="w3-center w3-content" style="padding:10px; ">
+<div class="w3-bar w3-black">
+  <div class="w3-bar-item"> <br> </div>
+</div>
 
-    <!-- Slideshow container -->
-    <div class="slideshow-container ">
+<!-- page content -->
+<div class="w3-container w3-content" style="max-width: 900px; margin-top: 50px;">
 
-      <div class="mySlides fade">
-        <div class="numbertext">1 / 5</div>
-        <img src="../media/WhoAmI_Logo2.png" class=" image" alt="HTML5 Icon" >
-      </div>
+  <!-- title -->
+  <h1> Who am I? </h1>
+  <!-- under title -->
+  <h4> Music, international gamejam Postech <div class="w3-right"> 10/4/2019 </div></h4>
+  <hr>
 
-      <div class="mySlides fade">
-        <div class="numbertext">2 / 5</div>
-        <video width="100%" class="w3-round"  controls controlsList="nodownload">
-          <source src="../media/WhoAmI_Promoclip.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">3 / 5</div>
-        <img src="../media/GameJamGroup.png" class=" image" alt="HTML5 Icon">
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">4 / 5</div>
-        <img src="../media/Uitreiking.png" class=" image" alt="HTML5 Icon" >
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">5 / 5</div>
-        <img src="../media/uitkrijgen3.png" class=" image" alt="HTML5 Icon" >
-      </div>
-
-      <!-- Next and previous buttons -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
-    <br>
-
-    <!-- The dots/circles -->
-    <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
-
-
-    <!-- title -->
-    <div class="w3-container w3-content w3-center box" style="max-width:1400px; padding-top: 30px; padding-bottom: 30px;" id="band">
-      <h1 class="box2" style="font-size: 40px">Who am I?</h1>
-    </div>
-    <div class="box3">
-      <span class="w3-opacity" style="font-size: 16px"> Composition for Game, 10/4/2019 </span> <br>
-      <span class="w3-opacity" style="font-size: 14px"> Global Applied Game Jam, Postech University</span> <br>
-      <span class="w3-opacity" style="font-size: 14px"> South-Korea</span>
-
-      <!-- about -->
-      <p class="w3-center w3-content" style="padding: 25px; opacity: 0.8; max-width: 900px;">
-          Music for an applied game, created at a game jam at Postech University in Pohang, South Korea.
+  <p> 
+    <strong>
+      Music for an applied game, created at a game jam at Postech University in Pohang, South Korea.
           For this game jam we formed 15 teams with 4 or 5 students from Korea, Japan, China and the Netherlands.
           We were then all given 48 hours to create an applied game about the topic: Dementia.
-          <br>
-          <br>
-          My team (D-Minor) and I decided to make a serious and more challenging game for a younger audience, to raise awareness about dementia.
+    </strong>
+  </p>
+
+  <div class="row">
+    <div class="column">  
+
+      <div class="w3-container w3-content w3-center">
+        <div class="slideshow-container" style="margin-top: 20px;">
+    
+          <div class="mySlides fade">
+            <video width="100%" class="w3-round"  controls controlsList="nodownload">
+              <source src="../media/WhoAmI_Promoclip.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+          </div>
+    
+          <div class="mySlides fade">
+            <img src="../media/GameJamGroup.png" width=90%>
+          </div>
+    
+          <div class="mySlides fade">
+            <img src="../media/Uitreiking.png" width=90%>
+          </div>
+    
+          <div class="mySlides fade">
+            <img src="../media/uitkrijgen3.png" width=90%>
+          </div>
+    
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+    
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">    
+      <p>
+        My team (D-Minor) and I decided to make a serious and more challenging game for a younger audience, to raise awareness about dementia.
           We also decided to use puzzle elements to train the memory of the players to help prevent dementia.
-          <br>
-          <br>
           Because of all the elements of the game jam, I fased the interesting challenge of creating a fitting soundtrack in a very short amount of time.
           I decided to focus on the 'happy' artstyle of the game, but also added some sad dramatic music in the final cutscene, with a rising noise respresenting the loss of life.
       </p>
-
-      <!-- links -->
-      <div class="w3-center" style="padding-top: 20px; padding-bottom: 10px;">
-        <h2> REFERENCES</h2>
-      </div>
-      <div  style="opacity: 0.9; font-size: 14px">
-        <a href="https://d-minor.itch.io/who-am-i" target="_blank">download the game</a> <br/>
-        <a href="https://www.youtube.com/watch?v=kqeZGC9fucI" target="_blank">Watch a review</a> <br/>
-        <a href="https://www.facebook.com/VivaceCorp/" target="_blank">D-Minor Development Team</a> <br/>
-        <a href="https://www.facebook.com/GAGJ18/" target="_blank">Global Applied Game Jam Postech</a> <br/>
-      </div>
-      <br><br>
-
-      <a href="works.html" >
-        <h2>More works</h2>
-      </a>
-      <br><br>
-
     </div>
-
   </div>
 </div>
 
+<!-- footer -->
+<footer style="color: white; background-color: black; margin-top: 100px; padding: 50px;" id="contact">
+  <div class="w3-container w3-content" style="max-width: 700px;">
+
+    <div class="row" style="margin-top: 40px;">
+
+      <div class="columnAdaptive middle">  
+        <a href="https://www.linkedin.com/in/stijn-koning-de-196aab133/"><i class="fa fa-linkedin" style="font-size:40px; padding:10px;"></i></a>
+        <a href="https://www.instagram.com/dekoningstijn/"><i class="fa fa-instagram" style="font-size:40px; padding:10px"></i></a>
+        <a href="https://github.com/StijndeK"><i class="fa fa-github" style="font-size:40px; padding:10px;"></i></a>
+        <a href="https://soundcloud.com/stijn-de-koning"><i class="fa fa-soundcloud" style="font-size:30px; padding:10px;"></i></a>
+        <p> Copyright © Stijn de Koning, 2020 </p>
+      </div>
+
+      <div class="columnAdaptive middle">  
+        <h6>
+          <i class="fa fa-envelope" ></i> sdk.stijn@gmail.com <br>
+          <i class="fa fa-globe"></i> Amsterdam, Netherlands <br>
+          <i class="fa fa-university"></i> Music & Technology, University of the Arts Utrecht
+        </h6>
+      </div>
+
+      <div class="columnAdaptive left">  
+        <img style="width:90%;" src="../Media/LogoSmall.png"/>
+      </div>
+
+    </div>
+  </div>
+</footer>
 
 <script>
   var slideIndex = 1;
@@ -187,8 +167,6 @@ i {
     dots[slideIndex-1].className += " active";
   }
 </script>
-
-
 
 </body>
 </html>

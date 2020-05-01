@@ -73,6 +73,11 @@ ul {
   height: 15vh;
 }
 
+.stack-image {
+  width: 90%;
+  height: 10%;
+  padding: 4px;
+}
 
 
 .page-cover-image-header {
@@ -457,7 +462,7 @@ ul.topnav li a.active {
 /* OVERLAY */
 .image {
   display: block;
-  width: 100%;
+  width: 90%;
   height: auto;
 }
 
