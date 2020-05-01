@@ -3,45 +3,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- title -->
-<title>FH/DD</title>
+<title>Foresthunt</title>
 <!-- icon -->
 <link rel="icon" type="image/png" href="../Media/LogoSmall.png">
 <!-- stylesheets -->
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="../style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<head>
-<style>
-img {
-  width: 100%;
-}
-body, html {
-  font-family: "Futura", Arial, serif;
-  background-color: rgb(194, 210, 214, 0.1);
-}
-p {
-  font-family: "Arial", Arial, serif;
-  color: rgb(20, 20, 20);
-}
-h1 {
-  font-family: "Futura", Arial, serif;
-  color: rgb(40, 40, 40);
-}
-h2 {
-  font-family: "Futura", Arial, serif;
-  color: rgb(40, 40, 40);
-  font-size: 20px;
-}
-i {
-  width: 35px;
-}
 
-</style>
-</head>
 <body>
-
-
-<!-- =================================== -->
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top " >
@@ -58,65 +28,64 @@ i {
   </div>
 </div>
 
-<!-- =================================== -->
+<!-- HEADER -->
+<div class="w3-bar w3-black">
+  <div class="w3-bar-item"> <br> </div>
+</div>
 
+<img class="page-cover-image-header" src="../media/foresthunt.png"/>
 
-<div class = "w3-container w3-content w3-center box4"  style="padding-top: 150px; padding-bottom: 25px;">
-  <div class="w3-hide-small">
-    <iframe src="https://player.vimeo.com/video/387261709" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-  </div>
-  <div class="w3-hide-medium w3-hide-large">
-    <iframe src="https://player.vimeo.com/video/387261709" width="320" height="180" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<div class="w3-bar w3-black">
+  <div class="w3-bar-item"> <br> </div>
+</div>
+
+<!-- page content -->
+<div class="w3-container w3-content" style="max-width: 900px; margin-top: 50px;">
+
+  <!-- title -->
+  <h1> Foresthunt </h1>
+  <!-- under title -->
+  <h4> Music, sound design, implementation <div class="w3-right"> 29/1/2020 </div></h4>
+
+  <div class = "w3-container w3-content w3-center box4"  style="padding-top: 150px; padding-bottom: 25px;">
+    <div class="w3-hide-small">
+      <iframe src="https://player.vimeo.com/video/387261709" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    </div>
+    <div class="w3-hide-medium w3-hide-large">
+      <iframe src="https://player.vimeo.com/video/387261709" width="320" height="180" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    </div>
   </div>
 </div>
 
-<!-- title -->
-<div class="w3-container w3-content w3-center box3" style="max-width:1400px;  padding-bottom: 30px;" id="band">
-  <h1 class="box2" style="font-size: 40px">More info soon..</h1>
+<!-- footer -->
+<footer style="color: white; background-color: black; margin-top: 100px; padding: 50px;" id="contact">
+  <div class="w3-container w3-content" style="max-width: 700px;">
 
-  <a href="works.html">
-    <h2>More works</h2>
-  </a>
-</div>
+    <div class="row" style="margin-top: 40px;">
 
+      <div class="columnAdaptive middle">  
+        <a href="https://www.linkedin.com/in/stijn-koning-de-196aab133/"><i class="fa fa-linkedin" style="font-size:40px; padding:10px;"></i></a>
+        <a href="https://www.instagram.com/dekoningstijn/"><i class="fa fa-instagram" style="font-size:40px; padding:10px"></i></a>
+        <a href="https://github.com/StijndeK"><i class="fa fa-github" style="font-size:40px; padding:10px;"></i></a>
+        <a href="https://soundcloud.com/stijn-de-koning"><i class="fa fa-soundcloud" style="font-size:30px; padding:10px;"></i></a>
+        <p> Copyright © Stijn de Koning, 2020 </p>
+      </div>
 
+      <div class="columnAdaptive middle">  
+        <h6>
+          <i class="fa fa-envelope" ></i> sdk.stijn@gmail.com <br>
+          <i class="fa fa-globe"></i> Amsterdam, Netherlands <br>
+          <i class="fa fa-university"></i> Music & Technology, University of the Arts Utrecht
+        </h6>
+      </div>
 
+      <div class="columnAdaptive left">  
+        <img style="width:90%;" src="../Media/LogoSmall.png"/>
+      </div>
 
-
-
-
-
-
-<script>
-  var slideIndex = 1;
-  showSlides(slideIndex);
-
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
-  }
-
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
-  }
-
-  function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-  }
-</script>
-
-
+    </div>
+  </div>
+</footer>
 
 </body>
 </html>
