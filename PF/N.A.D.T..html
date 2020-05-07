@@ -3,7 +3,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- title -->
-<title>N.A.D.T.</title>
+<title>NADT</title>
 <!-- icon -->
 <link rel="icon" type="image/png" href="../Media/LogoSmall.png">
 <!-- stylesheets -->
@@ -40,7 +40,7 @@
   <div class="w3-bar-item"> <br> </div>
 </div>
 
-<img class="page-cover-image-header" src="../Media/NADT.png"/>
+<img class="page-cover-image-header" src="../Media/NADT2.png"/>
 
 <div class="w3-bar w3-black">
   <div class="w3-bar-item"> <br> </div>
@@ -50,23 +50,22 @@
 <!-- page content -->
 <div class="w3-container w3-content" style="max-width: 900px; margin-top: 50px">
 
-  <!-- header image -->
-  <!-- <img class="page-cover-image" src="../Media/NADT_Screenshot4.png" style="object-position:center 50%; margin-top: 40px;"/> -->
-
   <!-- title -->
   <h1> Nonlinear Audio Systems Design Tools </h1>
   <!-- under title -->
-  <h4> Audio programming, Thesis </h4>
+  <h4> Audio programming, nonlinear audio design </h4>
 
   <hr>
 
   <p> 
-    <strong> As a game audio designer I am hindered during my creative process, due to the discrepancy between the nonlinearity of my work and the linear character of standard audio production software. </strong>
+    <strong> 
+      As a game audio designer I am hindered during my creative process, due to the discrepancy between the nonlinearity of my work and the linear character of standard audio production software. 
+    </strong>
   </p>
 
   <div class="row">
-    <div class="column" style="margin-top: 20px;">  
-      <img class="stack-image" src="../Media/terminal.png"/>
+    <div class="column">  
+      <img class="stack-image" src="../Media/RookeryScreencap1.png"/>
       <img class="stack-image" src="../Media/NADT_Screenshot2.png"/>
       <img class="stack-image" src="../Media/PI.png"/>
     </div>
@@ -75,28 +74,44 @@
       <p>
         Standard linear audio production tools offer little to none nonlinear sequencing, transitioning, parameter adaption and probability functionalities. 
         Furthermore, linear sequencers are not optimised to provide a visual representation of nonlinear systems. 
-        Current standard middleware solutions focus less on tackling the obstructions in the design stage of a project. 
-        These issues cause testing and prototyping to take unnecessary long and obscures communication with collaborators. This obstructs the workflow and discourages innovation.
+        Current standard middleware solutions are more focussed on optimising implementation and less on tackling the obstructions in the design stage of a project. 
+        These issues cause testing and prototyping to take unnecessary long and obscures communication with collaborators. 
+        This obstructs the workflow and discourages innovation.
       </p>
     </div>
   </div>
 
   <p>
-    Nonlinear Audio Design Tools or NASDT, is a range of experiments in the form of tools and prototypes to tackle these issues. 
-    By developing and prototyping various tools to tackle issues caused by the non-linearity of video games in relation to the linearity of audio production software, I hope to improve the process. 
-    This project is still running, all features are subject to change.
+
+    Nonlinear Audiosystems Design Tools or NADT, is a range of experiments in the form of tools and prototypes to tackle these issues. 
+    By developing and prototyping various tools to adress issues caused by the nonlinearity of video games in relation to the linearity of audio production software, I hope to improve the process. 
   </p>
 
   <h3>
-    Three main issues
+    Modular 'flexible' tools
+  </h3>
+  <p>
+    A proof of concept on how to tackle the issues needs to be flexible and can't be specific to any one game or phase in gameaudio.
+  </p>
+  <p>
+    <i>'.. the game industry is undergoing constant change .. . The only solution to this unpredictable situation is granularity--that is , the goal to build a flexible set of tools that are constantly able to update, evolve and adapt'
+    </i>  
+    - Florian Füsslin, Audio Director at Crytek
+  </p>
+
+  <h3>
+    Main issues
   </h3>
   <p>
     The current issues that arise when designing non-linear audio systems for games are divisible into 3 main subjects: 
-    <ul style = "text-transform: lowercase;">
-      <li>Not being able to quickly test and prototype audio systems with their audio</li>
-      <li>The lack of overview current standard tools provide, which also hinders communication</li>
-      <li>The lack of context of visuals and interaction</li>
-    </ul>
+    Not being able to quickly test and prototype audio systems with their audio, the lack of overview current standard tools provide (which also hinders communication)
+    and the lack of context of visuals and interaction.
+  </p>
+
+  <p>
+    By using an aproach that favors quick testing and prototyping, I hope to approach the problem from different angles.
+    This should provide a more general sense of what works well and what doesn't, before focussing on specific elements.
+    The disadvantage of this approach is that many interesting details will not (yet) be addressed.
   </p>
 
   <h3>
@@ -104,153 +119,256 @@
   </h3>
 
   <p>
-    This project is still very much in progress. 
-    To be able to take different avenues and test different solutions, 
-    an approach that favors quick testing and het makkelijk mogelijk maken uit te breiden has been taken. 
-    So far, I have worked on 3 experiments. All of which have reached their research goals, but definetly can be further explored.
-    <ol type="1">
+    This project is still in progress.
+    So far, I have worked on 3 experiments. All of which have reached their research goals, but can be much further explored. 
+  </p>
+
+    <!-- <ol type="1">
       <li> <a href="https://github.com/StijndeK/N.A.D.AutomaticSoundloader"> Automatic Sound Loading and parsing in Pyton </a></li>
       <li> <a href="https://github.com/StijndeK/N.A.D.VisualParameterAdaption"> Visual Parameter Adaption in Unity </a></li>
       <li> <a href="https://github.com/StijndeK/N.A.D.ProcederalAudioSystem"> Procedural Audio System design and implementation </a></li>
-    </ol>
-  </p>
+    </ol> -->
 
-  <hr>
-
-  <!-- subtitle -->
-  <h2> <a href="https://github.com/StijndeK/N.A.D.AutomaticSoundloader"> Automatic sound loading and parsing</a> </h2>
-
-  <p>        
-    The first experiment is a terminal application that allows the user to quickly test a horizontal nonlinear system. 
-    Export audio directly into a folder with specific file names and it will automatically be sequenced based with the given possibilities.
-  </p>
-
-  <div class="row">
-    <div class="column">  
-      <p>
-        This project is meant to tackle the amount of time and disturbance caused by the time it takes from creating audio to being able to hear and test it in its nonlinear system. 
-        Quick testing by directly loading the audio with given data in the filename, allows for quicker testing. 
-        The video shows this experiment demonstrated on a early musical concept for Rookery, a game that I am currently working on.
-      </p>
-    </div>
-
-    <div class="column" >    
-      <div class="w3-container w3-content w3-center">
-        <div style="width:90%;height:0px;position:relative;padding-bottom:65.691%;"><iframe src="https://streamable.com/e/reu4v?loop=0" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>          </div>
-    </div>
+  <div style="padding-bottom: 50px;">
+    <p>
+      Click bellow to cycle between the different expirements done so far. Click on their titles to view the projects on github.
+    </p>
+  <div class="w3-bar w3-border" id="myDIV">
+    <a  style="width:33.3%; padding-top: 15px; padding-bottom: 15px; "class="btn w3-bar-item w3-button w3-mobile" onclick="setActive(0)">1. Automatic sound loading</a>
+    <a  style="width:33.3%; padding-top: 15px; padding-bottom: 15px;"class="btn w3-bar-item w3-button w3-mobile" onclick="setActive(1)">2. Visual parameter adaption</a>
+    <a style="width:33.3%; padding-top: 15px; padding-bottom: 15px;"class="btn w3-bar-item w3-button w3-mobile active" onclick="setActive(2)">3. Procedural sequencing</a>
   </div>
-
-  <hr>
-
+</div>
   <!-- subtitle -->
-  <h2> <a href="https://github.com/StijndeK/N.A.D.VisualParameterAdaption"> Visual Parameter Adaption</a> </h2>
-    
-  <div class="row" style="margin-top: 5px;">
-    <div class="column">  
-      <div style="width:90%;height:0px;position:relative;padding-bottom:66.667%;"><iframe src="https://streamable.com/e/y6rm5e?loop=0" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>      
-    </div>
 
-    <div class="column"  >    
-      <div class="w3-container w3-content">
+  <div id="ActiveDiv1">
+    <h2> <a href="https://github.com/StijndeK/N.A.D.AutomaticSoundloader"> Automatic sound loading and parsing</a> </h2>
+
+    <p>        
+      The first experiment is a Python terminal application that allows the user to quickly test quantised horizontal nonlinear audiosystems.
+      Export audio directly into a folder using specific file names and it will automatically be sequenced based on the given possibilities.
+    </p>
+
+    <div class="row">
+      <div class="column">  
         <p>
-          Using a visual approach along with the automatic file loading funcitonality carried over from the previous experiment,  
-          VPA is used to investigate a more visual approach to upgrading the process of prototyping nonlinear systems and improving (interdisciplinary) communication. 
-          Because audio is a nonvisual medium and therefore always is experienced linearely, it can prove difficult to fully understand nonlinear audio systems design.
-          The video shows the project used to test a concept for project Rookery.
+          This project is meant to tackle the disturbance caused by the time it takes from creating audio to being able to hear and test it in its nonlinear system. 
+          Directly loading the audio with given data about transitions and the layer in the filename, allows for quicker testing. 
+          The video shows this experiment demonstrated on a early musical concept for Rookery, a game currently being developed.
         </p>
       </div>
+
+      <div class="column" >    
+        <div class="w3-container w3-content w3-center">
+          <div style="width:90%;height:0px;position:relative;padding-bottom:65.691%;"><iframe src="https://streamable.com/e/reu4v?loop=0" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>          </div>
+      </div>
     </div>
+
+    <h3> Quantised synchronisation</h3>
+    <p>
+      I decided to used quantised grid-based bar synchronisation to start, based on the following quote from Colin Walder:
+    </p>
+    <p> 
+      <i>
+      'For basic synchronization, I start with bars, beats and grid since it is trivial to prepare the interactive music to support these, and because the are they are the most straightforward to understand in terms of mapping to gameplay.'
+      </i>
+    </p>
+
+    <h3> Status</h3>
+    <p> Even though a lot more information can be obtained from 'smart' filenames, the project succeeds in its goal to test if this type of system could improve the process.</p>
+
+    <hr>
+    <a href="https://github.com/StijndeK/N.A.D.AutomaticSoundloader" target="blank"><i class="fa fa-github" style="font-size:40px; padding:10px;"></i></a>
+    <hr>
+
   </div>
 
-  <p>
-    A dynamic system has been used to be able to quickly and easily add and change components. 
-    For now there is the Fileloader, Spawner, Controler and Sequencer as seen in the diagram bellow.
-  </p>
+  <div id="ActiveDiv2">
 
-  <div class="w3-container w3-content w3-center">
-    <img style="width:90%;" src="../Media/VASD_Dataflow.png"/>
+    <h2> <a href="https://github.com/StijndeK/N.A.D.VisualParameterAdaption"> Visual Parameter Adaption</a> </h2>
+
+    <div class="row" style="margin-top: 5px;">
+      <div class="column">  
+        <div style="width:90%;height:0px;position:relative;padding-bottom:66.667%;"><iframe src="https://streamable.com/e/y6rm5e?loop=0" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>      
+      </div>
+
+      <div class="column"  >    
+        <div class="w3-container w3-content">
+          <p>
+            VPA uses a visual overview and interface along with the automatic file loading functionality carried over from the previous experiment,  
+            to look into upgrading the process of prototyping nonlinear systems and improving (interdisciplinary) communication. 
+            Because audio is a nonvisual medium and therefore always is experienced linearely, it can prove difficult to fully understand nonlinear audio systems design.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <h3> Project Rookery </h3>
+    <p>
+      The video shows the project used to test a concept for project Rookery, a game currently under development. 
+      Rookery is a walking simulator set in the Victorian era in London. 
+    </p>
+    <div class = "w3-center">
+      <img src="../Media/RookeryScreencap1.png"/>
+    </div>
+
+    <h3> Systems design </h3>
+
+    <p>
+      The program has 4 main components. 
+      The fileloader loads audiofiles and parses information obtained from the filenames. 
+      The spawner allows the user to spawn Layers containing horizontal loops with variations, that can then be dragged into the sequencer. 
+      The sequencer checks if certain parameters are checked to see if and what sound needs to be played. 
+      The controler eventually calls the audio.
+    </p>
+
+    <div class="w3-container w3-content w3-center">
+      <img  src="../Media/VASD_Dataflow.png"/>
+    </div>
+
+    <p>
+      Because of the need for a visual interfase and the application of N.A.D. on games, VPA is build in Unity using the FMOD Core API. This allows for quick prototyping.
+    </p>
+
+    <h3> Improvements </h3>
+    <p>
+      As an investigation into using a visual approach to upgrade the process of designing nonlinear audio for games and communicating about them, VPA has achieved its goal.
+      However, the project only scratches the surface of nonlinear gameaudio possibilities and its current version conditions the user quite heavily into using certain techniques.
+      Moreover, the current system could be more easily adaptable, mainly due to the Unity based 'objectcomponents approach'. 
+      This is also the reason the next (third) experiment completely steps away from this approach.
+    </p>
+
+    <hr>
+    <a href="https://github.com/StijndeK/N.A.D.VisualParameterAdaption" target="blank"><i class="fa fa-github" style="font-size:40px; padding:10px;"></i></a>
+    <hr>
+
   </div>
 
-  <p>
-    As an investigation into using a visual approach to upgrade the process of designing nonlinear audio for games and communicating about them, VPA has achieved its goal.
-    However, The project only scratches the surface of nonlinear gameaudio possibilities and its current version conditions the user quite heavily into using certain techniques.
-  </p>
+  <div id="ActiveDiv3">
+    <h2> <a href="https://github.com/StijndeK/N.A.D.ProcederalAudioSystem"> Procedural audio systems design and implementation </a> </h2>
 
-  <hr>
+    <div class="row">
+      <div class="column">  
+        <p>
+          The latest experiment is a framework/tool designed to improve procedural music systems prototyping and implementing. 
+          Even though procedural sound design has become somewhat standard in gameaudio, I find procedural music is still relatively underrepresented. 
+          It can be difficult, timeconsuming and expensive to prototype, test and implement. 
+        </p>
+      </div>
 
-  <!-- subtitle -->
-  <h2> <a href="https://github.com/StijndeK/N.A.D.ProcederalAudioSystem"> Procedural audio system design and implementation </a> </h2>
+      <div class="column" >    
+        <div class="w3-content w3-container w3-center">
+          <div style="width:90%;height:0px;position:relative;padding-bottom:52.108%;"><iframe src="https://streamable.com/e/y8uoq6?loop=0" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>    
+        </div>
+      </div>
+    </div>
 
-  <p>
-    The laters experiment is a framework and tool designed to improve procedural music systems prototyping and implementing. 
-    Even though procedural sound design has become standard in gameaudio, I find that procedural music is still relatively underrepresented. 
-    This is partly the case because it can be difficult to prototype, test and implement. 
-    PAS allows for quick testing and implementing procedural audio, using a sample-based sequencer. 
-    The automatic file loading functionally has again been carried over from the first experiment. 
-   Even though the visual approach from last experiment got positive feedback, this project shys away from the visual approach so that more focus can be put on quick implementation and building a general framework.
-  </p>
+    <p>
+      Because it can be difficult to test, it often is a risk to even try out procedural music.
+      Procedural music won't work well for every game, but because it is the most dynamic form of nonlinear audio, I believe it should be easier to try out.
+      Games such as Mini Metro and Monkey Island have succesfully showcased how procedural music can exponentially elevate an entire game.
+    </p>
+    <p>
+      PAS allows for quick testing and implementing procedural audio, using a sample-based sequencer. 
+      
+      The automatic file loading functionally has again been carried over from the first experiment. 
 
-  <div class="w3-container w3-content w3-center">
-    <img style="padding:10px;" src="../Media/PI.png"/>
-    <img style="padding:10px" src="../Media/PI2.png"/>
-  </div>
+      This project shies away from a visual approach, to put more focus on quick implementation and building a general modular framework.
+      PAS's more universal approach and lack of visuals makes it an easy library to implement in any game.
+      This does however lead to the programmer also having to be the composer.
+      For this range of expirements that is fine, but in the future it would be nice to let others test it as well.
+    </p>
 
-  <p>
+    <h3>Procedural Imagination</h3>
+    <p>
     PAS is made as a general framework/tool, but is also used for and tested on 'Procedural Imagination'. 
-    A game that is currently being developed, which generates environments whilst exploring.
+    A procedurally generated game world that dynamically responds to the player's actions.
+    Currently being developed by <a href="http://josienvos.nl/" target="blank">Josien Vos</a>.
   </p>
-
-  <h3>
-    Systems design
-  </h3>
-
-  <p>
-    Parameters received from the game are used to trigger and generate data cycles, which set audio parameters for layers, that are triggered in the sequencer. 
-  </p>
-
-  <div class="row">
-    <div class="columnAdaptive third">  
-      <p> 
-        Musical values for layers are divided into a 'rythm' and a 'tonal' layer. 
-        The rythm decides on which tick audio needs to be played. 
-        The tonal layer decides what notes need to be played based on the layertype and the available samples within the layer. 
-        This data is then parsed to a cycle, which will set layer data when triggered.
-      </p>
+    <div class="w3-center">
+      <img style="padding:10px;" src="../Media/PI.png"/>
+      <img style="padding:10px" src="../Media/PI2.png"/>
     </div>
 
-    <div class="columnAdaptive twothird" style="margin-top: 20px;" >   
-      <img style="width:90%;" src="../Media/PI_musicalValues.png"/>
+    
+    <p>
+      Because this project is directly being used as audio engine for this game, there is a heavier focus on implementation.
+    </p>
+
+    <h3>
+      Systems design
+    </h3>
+
+    <p>
+      External gamedata is used to trigger and generate Cycles. These Cycles set audio parameters for Layers. Layers hold audiofiles and data on when and how to play them. The Sequencer receives ticks from the Clock and checks variables within Layers to trigger audiofiles. For a more intricate audiosystem, checking what to play and calling the sounds should be split to reduce the risk of delays.
+    </p>
+
+    <div class = "w3-center">
+      <img style="width:90%;" src="../Media/PI_Diagram.png"/>
     </div>
+
+    <p>
+      <a href="../Media/PI_DataflowWhite.png"target="_blank" >Click here</a> for a more in depth dataflow overview.
+    </p>
+
+    <h5>Layers</h5>
+      <p>The loaded audio is divided into vertical layers, to be played independently or over each other. A layer can consist of a vertical loop (with variations) or sound effects. A layer holds data on how, when and what variation to play.
+    </p>
+
+    <h5>Generating audiodata</h5>
+    <p>Layers contain 'musical values', among which a rythm and a tonal layer. These rythms and melodys are used in the sequencer to check what and when to play. The rythm calls on what ticks audio needs to be played. The tonal layer decides what notes need to be played based on the Layertype (melody, countermelody, chord, percussion, etc) and the available samples within the layer.
+    </p>
+
+    <h5>Cycles</h5>
+    <div class="row">
+      <div class="column">  
+        <p>A Cycle holds what audio-values to adjust, what values to adjust to and what layers to adjust. Using a Cycle is the only way to adapt audiodata. Cycles can be triggered from game events using a AdaptionMoment or from the sequencer, using a CycleTimer. A DynamicCycle only sets the on/off value of layers. Using a CycleTimer the DynamicCycle can create a natural sounding buildup. For now this buildup is mostly random, in the future specific dynamic structures could be given and/or influenced by external parameters.
+          This cycle is build so that any one parameter or game event can easily be linked to multiple aspects of audiodata. This prevents conditioning the user into using certain systems.
+        </p>
+      </div>
+
+      <div class="column" >    
+        <div class="w3-content w3-container w3-center">
+          <img style="width:90%;" src="../Media/PI_CycleDataflow.png"/>
+        </div>
+      </div>
+    </div>
+
+    <h3>
+      Unity & C#
+    </h3>
+    <p>
+      To allow for quick testing and implementing, PAS is written in C# for Unity. However, because PAS should serve as a general framework, PAS moves away from a component based Unity hierarchy and uses little to none unity specific elements.
+      Only the ProceduralAudio component needs to be placed in a scene. Everything else is done within the code.
+    </p>
+
+    <h3>
+      Improvements
+    </h3>
+
+    <p>
+      The most important goal for this experiment is to investigate improving the audiosystems designing process and encouraging experimentation by removing the obstructions in the workflow.
+      The current MVP for this project have been achieved. However, the project could be further developed indefenitly. The most important features that I'd like to adress in the near future are:
+
+      <ul style="text-transform: lowercase;">
+        <li> easily being able to adapt every single parameter. Probably by converting to C++ to use pointers.</li>
+        <li> (adapative) DSP </li>
+        <li> variation generation </li>
+        <li> AI to check if the audio is adapting well </li>
+        <li> priority system </li>
+        <li> more eleborate dynamics system </li>
+        <li> probability </li>
+        <li> more info from input files </li>
+        <li> more intricate algorythms to generate data from </li>
+        <li> a visual respresentation and UI such as in N.A.D Visual Parameter Adaption in Unity </li>
+      </ul>
+      
+    </p>
+    <hr>
+    <a href="https://github.com/StijndeK/N.A.D.ProcederalAudioSystem" target="blank"><i class="fa fa-github" style="font-size:40px; padding:10px;"></i></a>
+    <hr>
+
   </div>
-
-  <div class="row">
-    <div class="columnAdaptive twothird">  
-      <img style="width:90%;" src="../Media/PI_cycles.png"/>
-    </div>
-
-    <div class="columnAdaptive third" >   
-      <p>
-        A cycle holds the parameters (rythm, On/Off toggle, etc) it needs to adapt and for what layers they need to adapt. Cycles are triggerd by external data, or by the sequencer (timed cycles). An important future functionality is to have cycles hold data on how the parameters need to adapt.
-      </p>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="columnAdaptive third">  
-      <p> 
-        The following diagram depicts the working of the layer classes. A layer can be a vertical looping layer or sound effect. The adaptable data that layers currently hold can be added to in the future, for a more dynamic procedural system.
-      </p>
-    </div>
-
-    <div class="columnAdaptive twothird" style="margin-top: 20px;" >   
-      <img style="width:90%;" src="../Media/PI_layers.png"/>
-    </div>
-  </div>
-
-  <p>
-    For more information find the project on <a href="https://github.com/StijndeK/N.A.D.ProcederalAudioSystem">github</a> or check out <a href="../Media/PI_dataflow.png">the full dataflow diagram</a>.
-  </p>
-
 
 </div>
 
@@ -284,5 +402,28 @@
   </div>
 </footer>
 
+<script>
+  var header = document.getElementById("myDIV");
+  var btns = header.getElementsByClassName("btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+    });
+  }
+
+  window.onload = setActive(2);
+
+  function setActive(int) {
+  var x = [document.getElementById("ActiveDiv1"), document.getElementById("ActiveDiv2"), document.getElementById("ActiveDiv3")];
+  x[int].style.display = "block";
+  for(var object of x){
+    if (object != x[int]){
+      object.style.display = "none";
+    }
+  }
+}
+</script>
 </body>
 </html>
