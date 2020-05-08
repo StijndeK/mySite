@@ -84,19 +84,7 @@
   <p>
 
     Nonlinear Audiosystems Design Tools or NADT, is a range of experiments in the form of tools and prototypes to tackle these issues. 
-    By developing and prototyping various tools to adress issues caused by the nonlinearity of video games in relation to the linearity of audio production software, I hope to improve the process. 
-  </p>
-
-  <h3>
-    Modular 'flexible' tools
-  </h3>
-  <p>
-    A proof of concept on how to tackle the issues needs to be flexible and can't be specific to any one game or phase in gameaudio.
-  </p>
-  <p>
-    <i>'.. the game industry is undergoing constant change .. . The only solution to this unpredictable situation is granularity--that is , the goal to build a flexible set of tools that are constantly able to update, evolve and adapt'
-    </i>  
-    - Florian Füsslin, Audio Director at Crytek
+    By prototyping various tools to adress issues caused by the nonlinearity of video games in relation to the linearity of audio production software, I hope to improve the process. 
   </p>
 
   <h3>
@@ -113,6 +101,19 @@
     This should provide a more general sense of what works well and what doesn't, before focussing on specific elements.
     The disadvantage of this approach is that many interesting details will not (yet) be addressed.
   </p>
+
+  <h3>
+    Modular 'flexible' tools
+  </h3>
+  <p>
+    To be able to function as a proof of concept on how to tackle the issues, the tools need to be flexible and can't be specific to any one game or phase in gameaudio.
+  </p>
+  <p>
+    <i>'.. the game industry is undergoing constant change .. . The only solution to this unpredictable situation is granularity--that is , the goal to build a flexible set of tools that are constantly able to update, evolve and adapt'
+    </i>  
+    - Florian Füsslin, Audio Director at Crytek
+  </p>
+
 
   <h3>
     Current status
@@ -148,7 +149,7 @@
       <div class="column">  
         <p>
           This project is meant to tackle the disturbance caused by the time it takes from creating audio to being able to hear and test it in its nonlinear system. 
-          Directly loading the audio with given data about transitions and the layer in the filename, allows for quicker testing. 
+          Directly loading the audio with given data about transitions and layering in the filename, allows for quicker testing. 
           The video shows this experiment demonstrated on a early musical concept for Rookery, a game currently being developed.
         </p>
       </div>
@@ -221,15 +222,11 @@
       <img  src="../Media/VASD_Dataflow.png"/>
     </div>
 
-    <p>
-      Because of the need for a visual interfase and the application of N.A.D. on games, VPA is build in Unity using the FMOD Core API. This allows for quick prototyping.
-    </p>
-
     <h3> Improvements </h3>
     <p>
       As an investigation into using a visual approach to upgrade the process of designing nonlinear audio for games and communicating about them, VPA has achieved its goal.
       However, the project only scratches the surface of nonlinear gameaudio possibilities and its current version conditions the user quite heavily into using certain techniques.
-      Moreover, the current system could be more easily adaptable, mainly due to the Unity based 'objectcomponents approach'. 
+      Moreover, the current system isn't easily adaptable enough, mainly due to the Unity based 'objectcomponents approach'. 
       This is also the reason the next (third) experiment completely steps away from this approach.
     </p>
 
@@ -245,7 +242,7 @@
     <div class="row">
       <div class="column">  
         <p>
-          The latest experiment is a framework/tool designed to improve procedural music systems prototyping and implementing. 
+          The latest experiment is a prototype for a framework/tool designed to improve procedural music systems prototyping and implementing. 
           Even though procedural sound design has become somewhat standard in gameaudio, I find procedural music is still relatively underrepresented. 
           It can be difficult, timeconsuming and expensive to prototype, test and implement. 
         </p>
@@ -284,11 +281,6 @@
       <img style="padding:10px;" src="../Media/PI.png"/>
       <img style="padding:10px" src="../Media/PI2.png"/>
     </div>
-
-    
-    <p>
-      Because this project is directly being used as audio engine for this game, there is a heavier focus on implementation.
-    </p>
 
     <h3>
       Systems design
@@ -333,7 +325,7 @@
       Unity & C#
     </h3>
     <p>
-      To allow for quick testing and implementing, PAS is written in C# for Unity. However, because PAS should serve as a general framework, PAS moves away from a component based Unity hierarchy and uses little to none unity specific elements.
+      To allow for quick testing and implementing, PAS is written in C# for Unity. However, because PAS should serve as a general framework, PAS moves away from a component based Unity hierarchy and uses little to none Unity-specific elements.
       Only the ProceduralAudio component needs to be placed in a scene. Everything else is done within the code.
     </p>
 
@@ -343,7 +335,7 @@
 
     <p>
       The most important goal for this experiment is to investigate improving the audiosystems designing process and encouraging experimentation by removing the obstructions in the workflow.
-      The current MVP for this project have been achieved. However, the project could be further developed indefenitly. The most important features that I'd like to adress in the near future are:
+      The current MVP for this project have been achieved. However, the project could be further developed indefenitly. The most important features that I'd like to add in the near future are:
 
       <ul style="text-transform: lowercase;">
         <li> easily being able to adapt every single parameter. Probably by converting to C++ to use pointers.</li>
