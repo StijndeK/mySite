@@ -83,7 +83,7 @@
 
   <p>
 
-    Nonlinear Audiosystems Design Tools or NADT, is a range of experiments in the form of tools and prototypes to tackle these issues. 
+    Nonlinear Audiosystems Design Tools or NADT, is a range of experiments in the form of prototypes for tools to tackle these issues. 
     By prototyping various tools to adress issues caused by the nonlinearity of video games in relation to the linearity of audio production software, I hope to improve the process. 
   </p>
 
@@ -91,13 +91,13 @@
     Main issues
   </h3>
   <p>
-    The current issues that arise when designing non-linear audio systems for games are divisible into 3 main subjects: 
-    Not being able to quickly test and prototype audio systems with their audio, the lack of overview current standard tools provide (which also hinders communication)
+    The current issues that arise when designing non-linear audio systems for games are divisible into 3 general subjects: 
+    The inability to quickly test and prototype audio systems with their audio, the lack of overview current standard tools provide (which also hinders communication)
     and the lack of context of visuals and interaction.
   </p>
 
   <p>
-    By using an aproach that favors quick testing and prototyping, I hope to approach the problem from different angles.
+    With an aproach that favors quick testing and prototyping, I hope to approach the problem from different angles.
     This should provide a more general sense of what works well and what doesn't, before focussing on specific elements.
     The disadvantage of this approach is that many interesting details will not (yet) be addressed.
   </p>
@@ -121,7 +121,7 @@
 
   <p>
     This project is still in progress.
-    So far, I have worked on 3 experiments. All of which have reached their research goals, but can be much further explored. 
+    So far, I have worked on 3 experiments. All of which have reached their research goals, but can be much further explored in the future. 
   </p>
 
 
@@ -135,14 +135,13 @@
     <a style="width:33.3%; padding-top: 15px; padding-bottom: 15px;"class="btn w3-bar-item w3-button w3-mobile active" onclick="setActive(2)">3. Procedural sequencing</a>
   </div>
 </div>
-  <!-- subtitle -->
 
   <div id="ActiveDiv1">
     <h2> <a href="https://github.com/StijndeK/N.A.D.AutomaticSoundloader"> Automatic sound loading and parsing</a> </h2>
 
     <p>        
       The first prototype/experiment is a Python terminal application that allows the user to quickly test quantised horizontal nonlinear audiosystems.
-      Export audio directly into a folder using specific file names and it will automatically be sequenced based on the given possibilities.
+      Export audio directly into a folder using specific file names and it will automatically sequence based on the given possibilities.
     </p>
 
     <div class="row">
@@ -162,7 +161,7 @@
 
     <h3> Quantised synchronisation</h3>
     <p>
-      I decided to used quantised grid-based bar synchronisation to start, based on the following quote from Colin Walder:
+      I decided to start with quantised grid-based bar synchronisation, based on the following quote from Colin Walder:
     </p>
     <p> 
       <i>
@@ -171,7 +170,7 @@
     </p>
 
     <h3> Status</h3>
-    <p> Even though a lot more information can be obtained from 'smart' filenames, the project succeeds in its goal to test if this type of system could improve the process.</p>
+    <p> Even though a lot more information can be obtained from filenames, the project succeeds in its goal to test if this type of system can be used to improve the process.</p>
 
     <hr>
     <a href="https://github.com/StijndeK/N.A.D.AutomaticSoundloader" target="blank"><i class="fa fa-github" style="font-size:40px; padding:10px;"></i></a>
@@ -193,7 +192,7 @@
           <p>
             VPA is a prototype tool that uses a visual overview and interface along with the automatic file loading functionality carried over from the previous experiment,  
             to look into upgrading the process of prototyping nonlinear systems and improving (interdisciplinary) communication. 
-            Because audio is a nonvisual medium and therefore always is experienced linearely, it can prove difficult to fully understand nonlinear audio systems design.
+            Because audio is a nonvisual medium and therefore always is experienced linearely, it can prove difficult to fully understand nonlinear audiosystems design.
           </p>
         </div>
       </div>
@@ -201,8 +200,14 @@
 
     <h3> Project Rookery </h3>
     <p>
-      The video shows the project used to test a concept for project Rookery, a game currently under development. 
-      Rookery is a walking simulator set in the Victorian era in London. 
+      The video shows the project used to test a musical concept for project Rookery.
+      Rookery is a walking simulator set in the Victorian era in London, currently under development. 
+      Files are loaded from a given folder location and information on layers and transition-possibilities is obtained from them.
+      Layerboxes can be spawned from the Spawner.
+      A layerbox holds a layer with all its variations.
+      When dragged into the sequencer the Layerbox is given a X and Y parameter.
+      These parameters can be adjusted by moving the X and Y sliders.
+      The possible transitions within layers isn't visualised (yet), but works in the same way as the previous experiment where the numbers at the end of a filename indicate to what variations a variation can transition.
     </p>
     <div class = "w3-center">
       <img style="padding: 10px" src="../Media/RookeryScreencap1.png"/>
@@ -212,10 +217,11 @@
 
     <p>
       The program has 4 main components. 
-      The fileloader loads audiofiles and parses information obtained from the filenames. 
-      The spawner allows the user to spawn Layers containing horizontal loops with variations, that can then be dragged into the sequencer. 
-      The sequencer checks if certain parameters are checked to see if and what sound needs to be played. 
-      The controler eventually calls the audio.
+      The Fileloader loads audiofiles and parses information obtained from their names. 
+      The Spawner allows the user to spawn Layers containing horizontal loops with variations, that can then be dragged into the Sequencer. 
+      The Sequencer checks if certain parameters are checked to see if and what sound needs to be played. 
+      The Controler eventually calls the audio.
+      Below a general overview of the current system.
     </p>
 
     <div class="w3-container w3-content w3-center">
@@ -237,7 +243,7 @@
   </div>
 
   <div id="ActiveDiv3">
-    <h2> <a href="https://github.com/StijndeK/N.A.D.ProcederalAudioSystem"> Procedural audio systems design and implementation </a> </h2>
+    <h2> <a href="https://github.com/StijndeK/N.A.D.ProcederalAudioSystem"> Procedural audiosystems design and implementation </a> </h2>
 
     <div class="row">
       <div class="column">  
@@ -260,14 +266,13 @@
       Games such as Mini Metro and Monkey Island have succesfully showcased how procedural music can exponentially elevate an entire game.
     </p>
     <p>
-      PAS allows for quick testing and implementing procedural audio, using a sample-based sequencer. 
+      PAS allows for quick testing and implementing procedural music, using a sample-based sequencer. 
       
       The automatic file loading functionally has again been carried over from the first experiment. 
 
       This project shies away from a visual approach, to put more focus on quick implementation and building a general modular framework.
       PAS's more universal approach and lack of visuals makes it an easy library to implement in any game.
       This does however lead to the programmer also having to be the composer.
-      For this range of expirements that is fine, but in the future it would be nice to let others test it as well.
     </p>
 
     <h3>Procedural Imagination</h3>
@@ -286,7 +291,7 @@
     </h3>
 
     <p>
-      External gamedata is used to trigger and generate Cycles. These Cycles set audio parameters for Layers. Layers hold audiofiles and data on when and how to play them. The Sequencer receives ticks from the Clock and checks variables within Layers to trigger audiofiles. For a more intricate audiosystem, checking what to play and calling the sounds should be split to reduce the risk of delays.
+      External gamedata is used to trigger and generate Cycles. These Cycles set audio parameters for Layers. Layers hold audiofiles and data on when and how to play them. The Sequencer receives ticks from the Clock and checks variables within Layers to trigger audiofiles. 
     </p>
 
     <div class = "w3-center">
@@ -294,21 +299,22 @@
     </div>
 
     <p>
+      For a more intricate audiosystem, checking what to play and calling the sounds should be split to reduce the risk of delays.
       <a href="../Media/PI_DataflowWhite.png"target="_blank" >Click here</a> for a more in depth dataflow overview.
     </p>
 
     <h5>Layers</h5>
-      <p>The loaded audio is divided into vertical layers, to be played independently or over each other. A layer can consist of a vertical loop (with variations) or sound effects. A layer holds data on how, when and what variation to play.
+      <p>The loaded audio is divided into vertical layers, to be played independently or over each other. A layer can consist of vertical loops or oneshot sound effects. A layer holds data on how, when and what variation to play.
     </p>
 
     <h5>Generating audiodata</h5>
-    <p>Layers contain 'musical values', among which a rythm and a tonal layer. These rythms and melodys are used in the sequencer to check what and when to play. The rythm calls on what ticks audio needs to be played. The tonal layer decides what notes need to be played based on the Layertype (melody, countermelody, chord, percussion, etc) and the available samples within the layer.
+    <p>Layers contain 'musical values', among which a rythm and a tonal layer. These rythms and melodys are used in the sequencer to check what and when to play. The rythm calls on what ticks audio needs to be played. The tonal layer decides what notes need to be played, based on the Layertype (melody, countermelody, chord, percussion, etc) and the available samples within the layer.
     </p>
 
     <h5>Cycles</h5>
     <div class="row">
       <div class="column">  
-        <p> A Cycle holds Parameters to adjust, that hold values to adjust, values to adjust to and what layers to adjust. Using a Cycle is the only way to adapt audiodata. Cycles can be triggered from game events using a AdaptionMoment or from the sequencer, using a CycleTimer. A DynamicCycle only sets the on/off value of layers. Using a CycleTimer the DynamicCycle can create a natural sounding buildup. For now this buildup is mostly random, in the future specific dynamic structures could be given and/or influenced by external parameters.
+        <p> A Cycle holds Parameters, that hold values to adjust, values to adjust to and what layers to adjust. Using a Cycle is the only way to adapt audiodata. Cycles can be triggered from game events using a AdaptionMoment or from the sequencer, using a CycleTimer. A DynamicCycle only sets the on/off value of layers. Using a CycleTimer the DynamicCycle can create a natural sounding buildup. For now this buildup is mostly random. In the future specific dynamic structures could be given and/or influenced by external parameters.
           This system is build so that any one parameter or game event can easily be linked to multiple aspects of audiodata. This prevents conditioning the user into using certain systems.
         </p>
       </div>
@@ -325,7 +331,7 @@
     </h3>
     <p>
       To allow for quick testing and implementing, PAS is written in C# for Unity. However, because PAS should serve as a general framework, PAS moves away from a component based Unity hierarchy and uses little to none Unity-specific elements.
-      Only the ProceduralAudio component needs to be placed in a scene. Everything else is done within the code.
+      Only the ProceduralAudio component needs to be placed in a scene.
     </p>
 
     <h3>
