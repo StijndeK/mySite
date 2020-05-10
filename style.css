@@ -107,6 +107,14 @@ a.buttons {
   padding: 4px;
 }
 
+.stack-image2 {
+  display: block;
+  object-fit: cover;
+  width: 90%;
+  height: 18vh;
+  padding: 4px;
+}
+
 
 .page-cover-image-header {
   display: block;
@@ -140,6 +148,9 @@ a.buttons {
   background-color: #555555;
   color: white;
 }
+
+/* modal images */
+
 
 /* audio player */
 .bottomPlayer {
