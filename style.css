@@ -107,6 +107,14 @@ a.buttons {
   padding: 4px;
 }
 
+.link-image {
+  display: block;
+  object-fit: cover;
+  width: 90%;
+  height: 18vh;
+}
+
+
 .stack-image2 {
   display: block;
   object-fit: cover;
