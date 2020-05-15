@@ -111,7 +111,7 @@
   <p>
     <i>'.. the game industry is undergoing constant change .. . The only solution to this unpredictable situation is granularity--that is , the goal to build a flexible set of tools that are constantly able to update, evolve and adapt'
     </i>  
-    - Florian Füsslin, Audio Director at Crytek
+    - Florian Füsslin, Audio Director at Crytek (Game Audio Programming: Principles and Practices)
   </p>
 
 
@@ -184,6 +184,11 @@
 
     <h2> <a href="https://github.com/StijndeK/N.A.D.VisualParameterAdaption"> Visual Parameter Adaption</a> </h2>
 
+    <p>
+      VPA is a prototype tool that uses a visual overview and interface along with the automatic file loading functionality carried over from the previous experiment,  
+      to look into upgrading the process of prototyping nonlinear systems and improving (interdisciplinary) communication. 
+      Because audio is a nonvisual medium and therefore always is experienced linearely, it can prove difficult to fully understand nonlinear audiosystems design.
+    </p>
     <div class="row" style="margin-top: 5px;">
       <div class="column">  
         <div style="width:90%;height:0px;position:relative;padding-bottom:66.667%;"><iframe src="https://streamable.com/e/y6rm5e?loop=0" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>      
@@ -192,22 +197,45 @@
       <div class="column"  >    
         <div class="w3-container w3-content">
           <p>
-            VPA is a prototype tool that uses a visual overview and interface along with the automatic file loading functionality carried over from the previous experiment,  
-            to look into upgrading the process of prototyping nonlinear systems and improving (interdisciplinary) communication. 
-            Because audio is a nonvisual medium and therefore always is experienced linearely, it can prove difficult to fully understand nonlinear audiosystems design.
+          Files are loaded from a given folder location and information on layers and transition-possibilities is obtained from them.
+          Layerboxes can be spawned from the Spawner.
+          A layerbox holds a layer with all its variations.
+          When dragged into the sequencer the Layerbox is then given a X and Y parameter.
+          These parameters can be set to certain values by moving the X and Y sliders.
+          The transitions between variations within layers aren't visualised (yet), but behave in the same way as the previous experiment where the numbers at the end of a filename indicate to what variations a variation can transition.
           </p>
         </div>
       </div>
     </div>
 
     <p>
-      Files are loaded from a given folder location and information on layers and transition-possibilities is obtained from them.
-      Layerboxes can be spawned from the Spawner.
-      A layerbox holds a layer with all its variations.
-      When dragged into the sequencer the Layerbox is given a X and Y parameter.
-      These parameters can be adjusted by moving the X and Y sliders.
-      The possible transitions within layers aren't visualised (yet), but work in the same way as the previous experiment where the numbers at the end of a filename indicate to what variations a variation can transition.
+      As the current prototype is bound to time restrictions and made to quickly test the most important features,
+      I have created a mockup showcasing future possibilities. 
+      This version still only contains a small portion of possible features to be added, but serves to showcase the concept.
+      The mockup shows how components can dynamically be loaded in, based on what is useful for the project. 
+      This also makes it easier to add components in the future.
     </p>
+
+    <div class="row" style="margin-top: 5px;">
+      <div class="column">  
+        <p>
+          As visual context is an important part of game audio, a component to load in visual context has been added. 
+          In the future I'd like the program to style the entire interface based on input visuals.
+          I'd also like to add some simple 'template' games, so that the audio can be tested with its interactive context as well.
+          The 'Layer Containers' now show which variation of the layer is being played.
+          As oneshots are another important context to test with looping audio, a component to play sound effects has also been added. 
+          In the future I'd like to add sidechaining and randomisation (pitch, gain, etc) functionalities.
+        </p>
+      </div>
+
+      <div class="column"  style="margin-top: 15px;">    
+        <div class="w3-container w3-content">
+          <div style="width:90%;height:0px;position:relative;padding-bottom:56.250%;"><iframe src="https://streamable.com/e/33jgtx?loop=0" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>
+        </div>
+      </div>
+    </div>
+
+
 
     <h3> <a href="Rookery.html">Project Rookery </a></h3>
     <p>
@@ -223,7 +251,7 @@
     <h3> Systems design </h3>
 
     <p>
-      The program has 4 main components. 
+      The current prototype has 4 main components. 
       The Fileloader loads audiofiles and parses information obtained from their names. 
       The Spawner allows the user to spawn Layers containing horizontal loops with variations, that can then be dragged into the Sequencer. 
       The Sequencer checks if certain parameters are checked to see if and what sound needs to be played. 
