@@ -123,6 +123,14 @@ a.buttons {
   padding: 4px;
 }
 
+.cycle-image {
+  /* display: block; */
+  object-fit: cover;
+  width: 95%;
+  height: 40vh;
+}
+
+
 
 .page-cover-image-header {
   display: block;
