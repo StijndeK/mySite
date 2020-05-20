@@ -83,22 +83,22 @@
 
   <p>
     Nonlinear Audiosystems Design Tools or NADT, is a range of experiments in the form of prototypes for tools to tackle these issues. 
-    By prototyping various tools to address issues caused by the nonlinearity of video games in relation to the linearity of audio production software, I hope to improve the process. 
+    By prototyping various tools to address issues caused by the nonlinearity of video games in relation to the linearity of audio production software, I hope to improve the process of designing and testing nonlinear audiosystems. 
   </p>
 
   <h3>
     Main issues
   </h3>
   <p>
-    The current issues that arise when designing nonlinear audiosystems for games are divisible into 3 general subjects: 
+    The current issues that arise are divisible into 3 general subjects: 
     The inability to quickly test and prototype audio systems with their audio, the lack of overview current standard tools provide (which also hinders communication)
-    and the lack of context of visuals and interaction.
+    and the lack of visual and interactive context.
   </p>
 
   <p>
-    With an aproach that favors quick testing and prototyping, I hope to approach the problem from multiple different angles.
+    With an aproach that favors quick testing and prototyping, I hope to approach the problem from multiple angles.
     This should provide a more general sense of what works well and what doesn't, before focussing on specific elements.
-    The disadvantage of this approach is that many interesting details will not (yet) be addressed.
+    The main disadvantage of this approach however, is that many interesting details will not (yet) be addressed.
   </p>
 
   <h3>
@@ -140,14 +140,14 @@
 
     <p>        
       The first prototype/experiment is a Python terminal application that allows the user to quickly test quantised horizontal nonlinear audiosystems.
-      Export audio directly into a folder using specific file names and it will automatically sequence based on the given possibilities.
+      Export audio directly into folders using specific file names and it will automatically sequence based on the given possibilities.
     </p>
 
     <div class="row">
       <div class="column">  
         <p>
           This project is meant to tackle the disturbance caused by the time it takes from creating audio to being able to hear and test it in its nonlinear system. 
-          Directly loading the audio with given data about transitions and layering in the filename, allows for quicker testing. 
+          Directly loading the audio with given data about transitions and layering in the file and folder names, allows for quicker testing. 
           The video shows this experiment demonstrated on a early musical concept for Rookery, a game currently being developed. 
           <a href="Rookery.html"> Click here</a> for more information on the project.
         </p>
@@ -172,7 +172,7 @@
     </p>
 
     <h3> Status</h3>
-    <p> Even though a lot more information can be obtained from filenames, the project succeeds in its goal to test if this type of system can be used to improve the process.</p>
+    <p> Even though a lot more information could be automatically obtained and smarter ways to do this can be implemented, the project succeeds in its goal to test if this type of system can be used to improve the process.</p>
 
     <hr>
     <a href="https://github.com/StijndeK/N.A.D.AutomaticSoundloader" target="blank"><i class="fa fa-github" style="font-size:40px; padding:10px;"></i></a>
@@ -187,7 +187,7 @@
     <p>
       VPA is a prototype tool that uses a visual overview and interface along with the automatic file loading functionality carried over from the previous experiment,  
       to look into upgrading the process of prototyping nonlinear systems and improving (interdisciplinary) communication. 
-      Because audio is a nonvisual medium and therefore always is experienced linearely, it can prove difficult to fully understand nonlinear audiosystems design.
+      Because audio is a nonvisual medium and therefore always is experienced linearely, it can prove difficult to explain or fully understand nonlinear audiosystems design.
     </p>
     <div class="row" style="margin-top: 5px;">
       <div class="column">  
@@ -200,7 +200,7 @@
           Files are loaded from a given folder location and information on layers and transition-possibilities is obtained from them.
           Layerboxes can be spawned from the Spawner.
           A layerbox holds a layer with all its variations.
-          When dragged into the sequencer the Layerbox is then given a X and Y parameter.
+          When dragged into the sequencer the layerbox is given a X and Y parameter.
           These parameters can be set to certain values by moving the X and Y sliders.
           The transitions between variations within layers aren't visualised (yet), but behave in the same way as the previous experiment where the numbers at the end of a filename indicate to what variations a variation can transition.
           </p>
@@ -210,8 +210,7 @@
 
     <p>
       As the current prototype is bound to time restrictions and made to quickly test the most important features,
-      I have created a mockup showcasing future possibilities. 
-      This version still only contains a small portion of possible features to be added, but serves to showcase the concept.
+      I have created a mockup showcasing some future possibilities. 
       The mockup shows how components can dynamically be loaded in, based on what is useful for the project. 
       This also makes it easier to add components in the future.
     </p>
@@ -221,8 +220,8 @@
         <p>
           As visual context is an important part of game audio, a component to load in visual context has been added. 
           In the future I'd like the program to style the entire interface based on input visuals.
-          I'd also like to add some simple 'template' games, so that the audio can be tested with its interactive context as well.
-          The 'Layer Containers' now show which variation of the layer is being played.
+          I'd also like to add some simple 'template' games, so that the audio can be tested in its interactive context as well.
+          The 'Layer Containers' now show what variation of the layer is being played.
           As oneshots are another important context to test with looping audio, a component to play sound effects has also been added. 
           In the future I'd like to add sidechaining and randomisation (pitch, gain, etc) functionalities.
         </p>
@@ -256,7 +255,7 @@
       The Spawner allows the user to spawn Layers containing horizontal loops with variations, that can then be dragged into the Sequencer. 
       The Sequencer checks if certain parameters are checked to see if and what sound needs to be played. 
       The Controler eventually calls the audio.
-      Below a general overview of the current system.
+      Below is a general overview of the current system.
     </p>
 
     <div class="w3-container w3-content w3-center">
@@ -268,7 +267,7 @@
       As an investigation into using a visual approach to upgrade the process of designing nonlinear audio for games and communicating about them, VPA has achieved its goal.
       However, the project only scratches the surface of nonlinear gameaudio possibilities and its current version conditions the user quite heavily into using certain techniques.
       Moreover, the current system isn't easily adaptable enough, mainly due to the Unity based 'objectcomponents approach'. 
-      This is also the reason the next (third) experiment completely steps away from this approach.
+      This is also one of the reasons for the next (third) experiment completely stepping away from this approach.
     </p>
 
     <hr>
@@ -296,7 +295,7 @@
     </div>
 
     <p>
-      Because it can be difficult to test, it often is a risk to even try out procedural music.
+      Because it can be difficult to test, it often is a risk to even attempt procedural music.
       Procedural music won't work well for every game, but because it is the most dynamic form of nonlinear music, I believe it should be easier to try out.
       Games such as Mini Metro and Monkey Island have succesfully showcased how procedural music can exponentially elevate an entire game.
     </p>
@@ -354,7 +353,7 @@
     </p>
 
     <h5>Generating audiodata</h5>
-    <p>Layers contain 'musical values', among which a rythm and a tonal layer. These rythms and melodys are used in the sequencer to check what and when to play. The rythm calls on what ticks audio needs to be played. The tonal layer decides what notes need to be played, based on the Layertype (melody, countermelody, chord, percussion, etc) and the available samples within the layer.
+    <p>Layers contain 'musical values', among which a rythm and a tonal layer. These rythms and melodys are used in the sequencer to check when and what file to play. The rythm calls on what ticks audio needs to be played. The tonal layer decides what notes need to be played, based on the Layertype (melody, countermelody, chord, percussion, etc) and the available samples within the layer.
     </p>
 
     <h5>Cycles</h5>
@@ -386,7 +385,9 @@
 
     <p>
       The most important goal for this experiment is to investigate improving the audiosystems designing process and encouraging experimentation by removing the obstructions in the workflow.
-      The current MVP for this project have been achieved. However, the project could be further developed indefenitly. The most important features that I'd like to add in the near future are:
+      The current MVP for this project have been achieved. However, the project could be further developed indefenitly. 
+      Because the focus lies on quick prototyping a lot of interesting features have been overlooked, 
+      the most important features I'd like to add in the near future are:
 
       <ul style="text-transform: lowercase;">
         <li> easily being able to adapt every single parameter. Probably by converting to C++ to use pointers.</li>
@@ -394,7 +395,7 @@
         <li> variation generation </li>
         <li> AI </li>
         <li> priority system </li>
-        <li> more eleborate dynamics system </li>
+        <li> more eleborate dynamics system (creating sentences) </li>
         <li> probability </li>
         <li> more info from input files </li>
         <li> more intricate algorythms to generate data from </li>
