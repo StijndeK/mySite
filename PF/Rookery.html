@@ -47,6 +47,10 @@
   <!-- under title -->
   <h4> Music, sound design, audio integration </h4>
 
+  <p>
+    Rookery is currently being developed. This blog describes some of the WIP concepts and decisions made. 
+  </p>
+
   <hr>
 
   <p> 
@@ -54,9 +58,10 @@
       Rookery is a walking simulator set in the Victorian era in London.  
         As a poor woman living in the rooks, you journey to the rich neighbourhoods of the city,
         during which you experience more and more hallucinations.
-        The extreme poverty and the feeling of guilt over your lost child are dragging you further and further down.
+        The extreme poverty and feeling of guilt over your lost child are dragging you further and further down.
     </strong>
   </p>
+
 
   <div class="row">
     <div class="column"> 
@@ -65,19 +70,18 @@
     </div>
 
     <div class="column">    
+      
       <p>
         The game should get under your skin and it shouldn't be a 'happy' experience.
-        The audio plays an important role in making the world come to life and supporting the story and setting.
-      </p>
-      <p>
-        <i>‘Ahh, my head hurts. I think I fell. Did I drink too much again? No.. yesterday they took all of my money.. I need to get myself some and get back on the streets.’</i>
-      </p>
-      <p>
-        Rookery is currently being developed. This blog describes some of the concepts and decisions made.
+        Contrary to glorifying this period and place in time, the game depicts the extreme everyday horrors of Victorian London.
+        <br>
+        <br>
+        The audio plays an important part in making the world come to life and supporting the story and setting.
+        Aspects such as the feeling of guilt over your lost child and the widely spread deceases are audible throughout the game.
+        By blending realistic sounds and instrumentation with scary effects and modulation, the audio wants to get on the players nerve.
       </p>
     </div>
   </div>
-
   <hr>
 
   <!-- subtitle -->
@@ -86,8 +90,8 @@
   <div class="row">
     <div class="column">  
       <p>
-        As the project is being developed by a very small team over a short period of time, the audio plays a very important role in making the world and story come to life.
-        The video showcases a WIP version of the current FMOD Studio project.
+        As the project is being developed by a very small team over a short period of time, the audio has a very important role in making the world and story come to life.
+        The video showcases a WIP (April, 2020) version of the FMOD Studio project.
         Adaptable parameters and randomness are used to create a dynamic and interactive world.
         Blending nondiegetic music with diegetic sounds, by blurring the line between music and sound design, improves immersion.
       </p>
@@ -100,10 +104,14 @@
     </div>
   </div>
 
+
   <p>
     The sketches below illustrate the nonlinear audio design.
-    Most information for audio to react to is based on the players position in the world, along with a few triggerd events.
-    Strange sounding DSP effects are modulated over the audio with a constant LFO that increases in intensity the more delirium the main character experiences.
+    As the game mostly consists of walking around, most sounds are constant varying loops (atmosphere, music, etc) or emitted from world objects, with a few sound triggers for certain effects.
+    Music can transition either by (cross)fading or quantised timing.
+    <!-- Different layers in the music and atmosphere with different timings are looped over each other, to create variations and a more random feel. -->
+    Strange sounding DSP effects are modulated over the audio, using a LFO that increases in intensity the more delirium the main character experiences.
+    Using a simple priority system and FMODs snapshot functionality, a simple hierarchy has been created. Sounds such as certain hallucinations or worldobjects lower the amplitude or frequency-range of other sounds lower in the hierarchy.
   </p> 
 
   <div class="row">
@@ -117,6 +125,58 @@
       <img onclick="document.getElementById('id03').style.display='block'"class="image w3-hover-opacity" src="../Media/Page3.jpg"/>
     </div>
   </div>
+
+  <br>
+
+  <div class="row">
+    <div class="column">  
+      <div class="w3-container w3-content w3-center">
+        <img style="width:90%;" src="../Media/RookeryMap.jpg"/>
+      </div>
+    </div>
+
+    <div class="column">    
+      <p>
+        Most game data for audio to react to is based on the players position in the world, along with sounds emitted from objects and creatures in the world.
+        This map showcases al location based triggers for the audio.
+        As the games ark is a constant buildup, from the player start (1) to the final scene (12) the music and atmosphere increase in general intensity.
+        Certain sounds, such as sick children within houses you walk by and scary hallucination sounds, are emitted when the player walks by.
+        At trigger 10 an impactfull visual effect of birds breaking out of a window and flying by is played. 
+        This effect has a strong sound that drowns out most other audio.
+        This is used to transition to the final part of the music.
+        From this point on the more held back, melancholic sound transitions to an extreme and dramatic sonification of the characters emotions.
+      </p>
+    </div>
+  </div>
+
+
+  <!-- <div class="row">
+    <div class="column">  
+      <p>
+        - factory
+      </p>
+    </div>
+
+    <div class="column">    
+      <div class="w3-container w3-content w3-center">
+        <div style="width:90%;height:0px;position:relative;padding-bottom:62.484%;"><iframe src="https://streamable.com/e/5p0oyn?loop=0" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>    
+      </div>
+    </div>
+  </div> -->
+
+    <!-- <div class="row">
+    <div class="column">  
+      <p>
+        - atmosphere
+      </p>
+    </div>
+
+    <div class="column">    
+      <div class="w3-container w3-content w3-center">
+        <div style="width:90%;height:0px;position:relative;padding-bottom:62.484%;"><iframe src="https://streamable.com/e/5p0oyn?loop=0" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>    
+      </div>
+    </div>
+  </div> -->
 
   <div id="id01" class="w3-modal">
     <div class="w3-modal-content">
@@ -152,7 +212,7 @@
 
   <hr>
 
-  <h2> Music </h2>
+  <h2> Composition </h2>
     <p> 
       Because the game has a realistic visual art style and a setting based on real life, I decided to mainly use non-synthetic instruments. 
       For the delirium elements I used some synthesis, but mainly processed the acoustic track.
