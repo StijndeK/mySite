@@ -139,14 +139,15 @@
     <h2> <a href="https://github.com/StijndeK/N.A.D.AutomaticSoundloader"> Automatic sound loading and parsing</a> </h2>
 
     <p>        
-      The first prototype/experiment is a Python terminal application that allows the user to quickly test quantised horizontal nonlinear audiosystems.
-      Export audio directly into folders using specific file names and it will automatically sequence based on the given possibilities.
+      The first experiment is a Python terminal application, that allows the user to quickly test quantised nonlinear audio systems. 
+      The project tackles the disturbance caused by the time and effort spent from creating audio to being able to hear and test it within its nonlinear system (and eventually within the context of the game). 
+      Export audio directly into specific folders using specific file and folder names and it will automatically sequence and layer the audio based on the data obtained from the file and folder titles.
     </p>
 
     <div class="row">
       <div class="column">  
         <p>
-          This project is meant to tackle the disturbance caused by the time it takes from creating audio to being able to hear and test it in its nonlinear system. 
+          The project tackles the disturbance caused by the time and effort spent from creating audio to being able to hear and test it within its nonlinear system (and eventually within the context of the game). 
           Directly loading the audio with given data about transitions and layering in the file and folder names, allows for quicker testing. 
           The video shows this experiment demonstrated on a early musical concept for Rookery, a game currently being developed. 
           <a href="Rookery.html"> Click here</a> for more information on the project.
@@ -171,8 +172,46 @@
       (Game Audio Programming: Principles and Practices)
     </p>
 
+
+    <div class="row">
+      <div class="column"> 
+        <div class="w3-container w3-content w3-center">
+          <img  src="../Media/SN_Exp1Graph.png"/>
+        </div> 
+      </div>
+
+      <div class="column" >    
+        <p>
+          The system to be tested with this tool, is based on layers containing different variations. 
+          Audio is sequenced on a given bpm and loop length. 
+          For every layer a variation is chosen and played. 
+          The data obtained from a filename indicates to what variations a variation within a layer can transition. 
+          This means that every layer transitions independent of each other. 
+          Because of this, every variation of every layer needs to be loopable over each other.
+        </p>
+      </div>
+    </div>
+
+    <h3> File loading </h3>
+    <p>
+      To add a layer, a folder needs to be created in the ‘Bounces’ folder. The title of every folder should end with an underscore followed by the number of the layer. Within every folder, audiofiles containing variation-loops can be put. A variation-loops filename should start with the number of the variation, followed by its title, followed by the numbers of variations it can transition to, all separated by underscores.
+    </p>
+    
+    <div class="w3-container w3-content w3-center">
+      <img  src="../Media/FileLoading.png"/>
+    </div>
+    <br>
+
     <h3> Status</h3>
-    <p> Even though a lot more information could be automatically obtained and smarter ways to do this can be implemented, the project succeeds in its goal to test if this type of system can be used to improve the process.</p>
+
+
+    <p>     
+      Quick testing, by directly bouncing the audio with specific titles, saves time. 
+      However, the options are still very limited and file names do need to be named very specifically. 
+      User input could be completely avoided by obtaining bpm and the amount of beats from the folder or file titles as well. 
+      This system is very simple and can only test a specific type of nonlinear sequencing. 
+      However, it has achieved its goal in testing this type of approach.
+    </p>
 
     <hr>
     <a href="https://github.com/StijndeK/N.A.D.AutomaticSoundloader" target="blank"><i class="fa fa-github" style="font-size:40px; padding:10px;"></i></a>
