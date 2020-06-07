@@ -33,7 +33,7 @@
   <div class="w3-bar-item"> <br> </div>
 </div>
 
-<img class="page-cover-image-header" src="../Media/RookeryScreencap1.png"/>
+<img class="page-cover-video-header" src="../Media/RookScreenshotChurch.png"/>
 
 <div class="w3-bar w3-black">
   <div class="w3-bar-item"> <br> </div>
@@ -43,42 +43,31 @@
 <div class="w3-container w3-content" style="max-width: 900px; margin-top: 50px;">
 
   <!-- title -->
-  <h1> Rookery </h1>
+  <h1> Project Rookery </h1>
   <!-- under title -->
-  <h4> Music, sound design, audio integration <div class="w3-right"> may 29, 2020 </div> </h4>
-
-  <p>
-    Rookery is currently being developed. This blog describes some of the WIP concepts and decisions made. 
-  </p>
-
+  <h4> Music, sound design, audio design & implementation <div class="w3-right"> June 7, 2020 </div> </h4>
   <hr>
 
   <p> 
     <strong>
-      Rookery is a walking simulator set in the Victorian era in London.  
+      Rookery is a walking simulator type game, set in the Victorian era in London.  
         As a poor woman living in the rooks, you journey to the rich neighbourhoods of the city,
         during which you experience more and more hallucinations.
         The extreme poverty and feeling of guilt over your lost child are dragging you further and further down.
     </strong>
   </p>
 
-
   <div class="row">
     <div class="column"> 
-      <img class="stack-image2" src="../Media/RookeryScreencap2.png"/>
-      <img class="stack-image2" src="../Media/RookeryScreencap3.png"/>
+      <div style="width:90%;height:0px;position:relative;padding-bottom:56.250%;"><iframe src="https://streamable.com/e/aim31t?loop=0" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>
     </div>
 
     <div class="column">    
-      
       <p>
         The game should get under your skin and it shouldn't be a 'happy' experience.
         Contrary to glorifying this period and place in time, the game depicts the extreme everyday horrors of Victorian London.
-        <br>
-        <br>
         The audio plays an important part in making the world come to life and supporting the story and setting.
         Aspects such as the feeling of guilt over your lost child and the widely spread deceases are audible throughout the game.
-        By blending realistic sounds and instrumentation with scary effects and modulation, the audio wants to get on the players nerve.
       </p>
     </div>
   </div>
@@ -88,30 +77,40 @@
   <h2> Adaptive audio design </h2>
 
   <div class="row">
-    <div class="column">  
+    <div class="column">    
       <p>
-        As the project is being developed by a very small team over a short period of time, the audio has a very important role in making the world and story come to life.
-        The video showcases a WIP (April, 2020) version of the FMOD Studio project.
-        Adaptable parameters and randomness are used to create a dynamic and interactive world.
-        Blending nondiegetic music with diegetic sounds, by blurring the line between music and sound design, improves immersion.
+        Due to the small team size and the desire to make a high quality vertical slice, the audio took on a number of important roles. For example, much of the character design is done by passing information to the player, through the audio. Information about the main character is obtained through sounds of the character walking around and how she responds to what is happening around her. Through her coughing you hear that she is sick and from her breathing you can hear the fear and unrest she is experiencing. The world is also filled with audio coming from different objects and places around the player, to help make the world come to life. You can hear the sounds of sick children or laughing rich women coming from houses near you. Furthermore, the musics arc communicates the course of the story.
       </p>
     </div>
 
+    <div class="column">  
+      <div class="w3-content w3-container w3-center">
+      <img class="stack-image2" src="../Media/RookScreenshotSpawn.png"/>
+      <img class="stack-image2" src="../Media/RookScreenshotFactory.png"/>
+      <img class="stack-image2" src="../Media/RookScreeshotLantern.png"/>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
     <div class="column">    
       <div class="w3-container w3-content w3-center">
-        <div style="width:90%;height:0px;position:relative;padding-bottom:56.250%;"><iframe src="https://streamable.com/e/jcvk5j?loop=0" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>
+        <div style="width:95%;height:0px;position:relative;padding-bottom:56.250%;"><iframe src="https://streamable.com/e/jcvk5j?loop=0" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>
       </div>
+    </div>
+
+    <div class="column">  
+      <p>
+        This video showcases some of the FMOD Studio project, used to integrate the audio in the UE4 project.
+        Adaptable parameters and randomness are used to create a dynamic and interactive world.
+        Blending nondiegetic music with diegetic sounds, by blurring the line between music and sound design, serves to improve immersion.
+      </p>
     </div>
   </div>
 
 
   <p>
-    The sketches below illustrate the nonlinear audio design.
-    As the game mostly consists of walking around, most sounds are constant varying loops (atmosphere, music, etc) or emitted from world objects, with a few sound triggers for certain effects.
-    Music can transition either by (cross)fading or quantised timing.
-    <!-- Different layers in the music and atmosphere with different timings are looped over each other, to create variations and a more random feel. -->
-    Strange sounding DSP effects are modulated over the audio, using a LFO that increases in intensity the more delirium the main character experiences.
-    Using a simple priority system and FMODs snapshot functionality, a simple hierarchy has been created. Sounds such as certain hallucinations or worldobjects lower the amplitude or frequency-range of other sounds lower in the hierarchy.
+    The sketches below illustrate the non-linear audio design. This design is based on the general knowledge and experience in combination with analysed reference games with corresponding gameplay, time and environment or themes. First, the sound consists of "constant" sounds, such as the atmosphere and music, that adjust based on parameters. Secondly, the audio consists of sounds generated in the environment, such as the sounds of characters (animals, monsters, etc) or buildings. Music can transition through (cross) fading or quantified timing.
   </p> 
 
   <div class="row">
@@ -126,12 +125,17 @@
     </div>
   </div>
 
+  <p>
+    Odd-sounding DSP effects are modulated over the audio, using an LFO that increases in intensity as the main character experiences more delirium. With a priority system and FMOD's snapshot functionality, a simple hierarchy has been created. Sounds such as certain hallucinations or world objects lower the amplitude or frequency range of other sounds lower in the hierarchy. Most of the data that audio can respond to is based on the player's position in the world, along with sounds emitted by objects and creatures in the world.
+  </p>
+
   <br>
 
   <div class="row">
     <div class="column">  
       <div class="w3-container w3-content w3-center">
-        <img style="width:90%;" src="../Media/RookeryMap.jpg"/>
+        <!-- <img style="width:90%;" src="../Media/RookeryMap.jpg"/> -->
+        <img style="width:90%;" onclick="document.getElementById('id04').style.display='block'"class="image w3-hover-opacity" src="../Media/RookeryMap.jpg"/>
       </div>
     </div>
 
@@ -148,35 +152,6 @@
       </p>
     </div>
   </div>
-
-
-  <!-- <div class="row">
-    <div class="column">  
-      <p>
-        - factory
-      </p>
-    </div>
-
-    <div class="column">    
-      <div class="w3-container w3-content w3-center">
-        <div style="width:90%;height:0px;position:relative;padding-bottom:62.484%;"><iframe src="https://streamable.com/e/5p0oyn?loop=0" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>    
-      </div>
-    </div>
-  </div> -->
-
-    <!-- <div class="row">
-    <div class="column">  
-      <p>
-        - atmosphere
-      </p>
-    </div>
-
-    <div class="column">    
-      <div class="w3-container w3-content w3-center">
-        <div style="width:90%;height:0px;position:relative;padding-bottom:62.484%;"><iframe src="https://streamable.com/e/5p0oyn?loop=0" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>    
-      </div>
-    </div>
-  </div> -->
 
   <div id="id01" class="w3-modal">
     <div class="w3-modal-content">
@@ -208,7 +183,16 @@
       </div>
     </div>
   </div>
-
+  <div id="id04" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container" >
+        <span onclick="document.getElementById('id04').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+        <div class="w3-center">
+          <img width = 80% style="padding: 20px;" src="../Media/RookeryMap.jpg"/>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <hr>
 
@@ -227,7 +211,7 @@
   <div class="row">
     <div class="column">  
       <p>
-        The concept for the music and its nonlinear system has been conceptualised and tested using a tool I am developing for a range of experiments called <a href="N.A.D.T..html">NADT</a>.
+        The concept for the music and its nonlinear system has been conceptualised and tested using a prototyped tool developed for a range of experiments called <a href="N.A.D.T..html">Nonlinear Audio systems Design Tool</a>.
         The video shows how the music can quickly be tested, which saves a lot of time implementing and switching back and forth between programs.
       </p>
     </div>
