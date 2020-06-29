@@ -5,152 +5,166 @@
 <!-- title -->
 <title>TransitionFX</title>
 <!-- icon -->
-<link rel="icon" type="image/png" href="../Media/LogoSmall.png">
+<link rel="icon" type="image/png" href="../Media/Logo/LogoSmall.png">
 <!-- stylesheets -->
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="../style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<body>
+<head>
+  <style>
+    img {
+      width: 100%;
+    }
+    p, h1, h2, h3, h4, h5 {
+      color:black;
+    }
+  </style>
+</head>
+<body style="background-color: white;">
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top " >
-  <div class="w3-bar" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
-    <a href="../works.html" class="w3-bar-item w3-button w3-xlarge">BACK</a>
+  <!-- menu -->
+  <ul class="topnav w3-hide-small" id="navbar">
+    <li><a href="../index.html">Home</a></li>
+  </ul>
+
+  <!-- header -->
+  <!-- <video class="pageCover pfCover" autoplay muted loop >
+    <source src="../Media/Rook/Rookery_headerVideo.mp4" type="video/mp4">
+  </video> -->
+
+  <img class="pageCover pfCover" src="../media/TransitionFX/TFXMain.png"/>
+
+  
+  <div class="w3-bar" style="background-color: rgb(27, 27, 31);">
+    <div class="w3-bar-item"> <br> </div>
   </div>
+ 
+  <!-- page content -->
+  <div class="w3-container w3-content pfPageContent">
+    <!-- title -->
+    <h1> TransitionFX </h1>
+    <!-- under title -->
+    <h4> DSP programming <div class="w3-right">1/2/2019</div></h4>
 
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="../works.html" class="w3-bar-item w3-button" onclick="toggleFunction()">BACK</a>
-  </div>
-</div>
+    <hr>
 
-<!-- HEADER -->
-<div class="w3-bar w3-black">
-  <div class="w3-bar-item"> <br> </div>
-</div>
-
-<img class="page-cover-image-header" src="../media/TFXMain.png"/>
-
-<div class="w3-bar w3-black">
-  <div class="w3-bar-item"> <br> </div>
-</div>
-
-<!-- page content -->
-<div class="w3-container w3-content" style="max-width: 900px; margin-top: 50px;">
-
-  <!-- title -->
-  <h1> TransitionFX </h1>
-  <!-- under title -->
-  <h4> DSP programming <div class="w3-right">1/2/2019</div></h4>
-
-  <hr>
-
-  <p> 
-    <strong>During my internship at audio-software company Audio Ease, I designed and worked on TransitionFX,
-      a synthesiser optimised for 'riser' type effects such as: whooshes, sweeps, risers, etc.
-    </strong>
-  </p>
-
-  <p>
-    The synthesiser is being developed in C++ using the JUCE framework.
-  </p>
-
-  <div class="row">
-    <div class="column" style="margin-top: 20px;">  
-
-      <div class="w3-container w3-content w3-center">
-
-        <div class="slideshow-container">
-
-          <div class="mySlides">
-            <img src="../media/TransitionFX.png" class="cycle-image">
+    <p> 
+      <strong> 
+        During my internship at audio-software company Audio Ease, I designed and worked on TransitionFX,
+        a synthesiser optimised for 'riser' type effects such as whooshes, sweeps and risers.
+      </strong>
+    </p>
+  
+    <div class="row">
+      <div class="column" style="margin-top: 20px;">  
+  
+        <div class="w3-container w3-content w3-center">
+  
+          <div class="slideshow-container">
+  
+            <div class="mySlides">
+              <img src="../media/TransitionFX/TransitionFX.png" class="cycleImage">
+            </div>
+  
+            <div class="mySlides">
+              <img src="../media/TransitionFX/TFX1.png" class="cycleImage" >
+            </div>
+  
+            <div class="mySlides">
+              <img src="../media/TransitionFX/TFX2.png" class="cycleImage">
+            </div>
+  
+            <div class="mySlides">
+              <img src="../media/TransitionFX/TFX3.png" class="cycleImage">
+            </div>
+  
+            <div class="mySlides">
+              <img src="../media/TransitionFX/TFX4.png" class="cycleImage">
+            </div>
+  
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
           </div>
-
-          <div class="mySlides">
-            <img src="../media/TFX1.png" class="cycle-image" >
+  
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
           </div>
-
-          <div class="mySlides">
-            <img src="../media/TFX2.png" class="cycle-image">
-          </div>
-
-          <div class="mySlides">
-            <img src="../media/TFX3.png" class="cycle-image">
-          </div>
-
-          <div class="mySlides">
-            <img src="../media/TFX4.png" class="cycle-image">
-          </div>
-
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
         </div>
+      </div>
+  
+      <div class="column">    
+        <p>
+          The synthesiser is being developed in C++ using the JUCE framework.
+        </p>
+        <p>
+          Developing a synthesiser from the ground up was a very interesting but challenging task, which I had grossly underestimated.
+          After the 3 month internship it was of no surprise that I hadn't been able to finish the synthesiser to the point that I wanted to.
+          However I am still continuing to develop it and am currently testing with some sound designers and refactoring the code.
+        </p>
+        <a href="Stageverslag_AudioEase_SdKoning_3.pdf" target="_blank">
+          <p> Internship Audio Ease </hp>
+        </a>
+        <a href="https://github.com/StijndeK/TransitionFX-ALPHA" target="_blank">
+          <br>
+          <br>
+          <i class="fa fa-github" style="font-size:40px; padding:10px;"></i>
+        </a>
+      </div>
+    </div>
+  
+  </div>
 
-        <!-- The dots/circles -->
-        <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-          <span class="dot" onclick="currentSlide(4)"></span>
-          <span class="dot" onclick="currentSlide(5)"></span>
+  <!-- footer -->
+  <footer class="footerStyle" id="contact">
+    <div class="w3-container w3-content" style="max-width: 700px;">
+  
+      <div class="row" style="margin-top: 40px;" style="padding: 10px;">
+  
+        <div class="columnAdaptive middle" style="font-size:27px;">  
+          <a href="https://www.linkedin.com/in/stijn-koning-de-196aab133/"><i class="fa fa-linkedin footerIcon"></i></a>
+          <a href="https://www.instagram.com/dekoningstijn/"><i class="fa fa-instagram footerIcon"></i></a>
+          <a href="https://github.com/StijndeK"><i class="fa fa-github footerIcon"></i></a>
+          <a href="https://soundcloud.com/stijn-de-koning"><i class="fa fa-soundcloud footerIcon"></i></a>
+          <a href="https://twitter.com/StijnKoning"><i class="fa fa-twitter footerIcon"></i></a>
+          <p style="color: white;"> Copyright © Stijn de Koning, 2020 </p>
         </div>
-
+  
+        <div class="columnAdaptive middle" style="padding: 10px;">  
+          <h6>
+            <i class="fa fa-envelope" ></i> sdk.stijn@gmail.com <br>
+            <i class="fa fa-globe"></i> Amsterdam, Netherlands <br>
+            <i class="fa fa-university"></i> Music & Technology, University of the Arts Utrecht
+          </h6>
+        </div>
+  
+        <div class="columnAdaptive left" style="padding: 10px;">  
+          <img style="width:90%;" src="../Media/Logo/LogoSmall.png"/>
+        </div>
+  
       </div>
     </div>
-
-    <div class="column">    
-      <p>
-        Developing a synthesiser from the ground up was a very interesting but challenging task, which I had grossly underestimated.
-        After the 3 month internship it was of no surprise that I hadn't been able to finish the synthesiser to the point that I wanted to.
-        However I am still continuing to develop it and am currently testing with some sound designers and refactoring the code.
-      </p>
-      <a href="Stageverslag_AudioEase_SdKoning_3.pdf" target="_blank">
-        <p> Internship Audio Ease </hp>
-      </a>
-      <a href="https://github.com/StijndeK/TransitionFX-ALPHA" target="_blank">
-        <br>
-        <br>
-        <i class="fa fa-github" style="font-size:40px; padding:10px;"></i>
-      </a>
-    </div>
-  </div>
-
-</div>
-
-<!-- footer -->
-<footer style="color: white; background-color: black; margin-top: 100px; padding: 50px;" id="contact">
-  <div class="w3-container w3-content" style="max-width: 700px;">
-
-    <div class="row" style="margin-top: 40px;">
-
-      <div class="columnAdaptive middle">  
-        <a href="https://www.linkedin.com/in/stijn-koning-de-196aab133/"><i class="fa fa-linkedin" style="font-size:40px; padding:10px;"></i></a>
-        <a href="https://www.instagram.com/dekoningstijn/"><i class="fa fa-instagram" style="font-size:40px; padding:10px"></i></a>
-        <a href="https://github.com/StijndeK"><i class="fa fa-github" style="font-size:40px; padding:10px;"></i></a>
-        <a href="https://soundcloud.com/stijn-de-koning"><i class="fa fa-soundcloud" style="font-size:30px; padding:10px;"></i></a>
-        <p> Copyright © Stijn de Koning, 2020 </p>
-      </div>
-
-      <div class="columnAdaptive middle">  
-        <h6>
-          <i class="fa fa-envelope" ></i> sdk.stijn@gmail.com <br>
-          <i class="fa fa-globe"></i> Amsterdam, Netherlands <br>
-          <i class="fa fa-university"></i> Music & Technology, University of the Arts Utrecht
-        </h6>
-      </div>
-
-      <div class="columnAdaptive left">  
-        <img style="width:90%;" src="../Media/LogoSmall.png"/>
-      </div>
-
-    </div>
-  </div>
-</footer>
+  </footer>
+</body>
+</html>
 
 <script>
+  // When the user scrolls down 20px from the top of the document, slide down the navbar
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("navbar").style.top = "0";
+    } else {
+      document.getElementById("navbar").style.top = "-50px";
+    }
+  }
+  
   var slideIndex = 1;
   showSlides(slideIndex);
 
@@ -178,6 +192,3 @@
     dots[slideIndex-1].className += " active";
   }
 </script>
-
-</body>
-</html>

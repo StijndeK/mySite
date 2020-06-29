@@ -1,24 +1,26 @@
 body, html {
   font-family: "Lucida Grande", sans-serif;
   background-color: rgba(231, 236, 238, 0.1);
+  scroll-behavior: smooth;
+  background-color: rgb(32, 38, 40);
 }
 p {
   font-family: "Lucida Grande", sans-serif;
   font-size: 16px;
   padding-bottom: 5px;
-  /* color: white; */
+  color:rgb(184, 204, 208)
 }
 h1 {
   font-family: "Lucida Grande", sans-serif;
   font-size: 40px;
-  color: black;
+  color: white;
   padding-bottom: 15px;
   font-weight: bold;
 }
 h2 {
   font-family: "Lucida Grande", sans-serif;
   font-size: 32px;
-  color: black;
+  color:white;
   padding-bottom: 5px;
   font-weight: bold;
   opacity: 0.8;
@@ -27,31 +29,38 @@ h3 {
   font-family: "Lucida Grande", sans-serif;
   font-size: 20px;
   font-weight: bold;
+  color: white;
 }
 h4 {
   font-family: "Lucida Grande", sans-serif;
   font-size: 15px;
-  color: grey;
+  color:rgb(184, 204, 208);
   font-style: italic;
 }
 h5 {
   font-family:  "Roboto", "Lucida Grande", sans-serif;
-  color: black;
-  opacity: 0.7;
+  color:rgb(184, 204, 208);
 }
 h6 {
   font-family: "Lucida Grande", sans-serif;
   font-size: 16px;
+  color:rgb(184, 204, 208)
 }
 li {
   font-family:  "Lucida Grande", sans-serif;
   font-size: 16px;
+}
+span {
+  font-family:  "Lucida Grande", sans-serif;
+  color:rgb(214, 224, 228);
+  font-size: 14px;
 }
 ul {
   font-family: "Lucida Grande", sans-serif;
   font-size: 18px;
   text-transform: uppercase;
 }
+
 a.buttons {
   font-family: "Lucida Grande", sans-serif;
   font-size: 16px;
@@ -61,66 +70,66 @@ a.buttons {
   border-style: solid;
 }
 
-.pageContentColor {
-  /* background-color: rgb(32, 32, 36); */
+/* menu */
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(27, 27, 31);
+  position: fixed;
+  width: 100%;
+  top: -60px;
+  transition: top 0.3s;
 }
 
-.barItem {
+ul.topnav li {
+  float: left;
+}
+
+ul.topnav li a {
+  display: block;
   color: white;
-  background-color: black;
-  opacity: 0.5;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-.btn {
+ul.topnav li a:hover:not(.active) {
+  background-color: #111;
+}
+
+ul.topnav li a.active {
+  background-color: rgb(92, 110, 114);
+}
+
+/* buttons */
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.pageSelectButton {
   border: none;
   outline: none;
   padding: 10px 16px;
-  /* background-color: #f1f1f1; */
   cursor: pointer;
   font-size: 18px;
 }
 
-.active, .btn:hover {
-  background-color:black;
+.active, .pageSelectButton:hover {
+  background-color: rgb(32, 38, 40);
   color: white;
 }
 
-.portfolioItem {
-  display: block;
-  object-fit: cover;
-  width: 100%;
-  height: 30vh;
-}
-
-.page-cover-image {
-  display: block;
-  object-fit: cover;
-  width: 100%;
-  height: 30vh;
-}
-
-.imageButton {
-  display: block;
-  object-fit: cover;
-  width: 100%;
-  height: 15vh;
-}
-
-.stack-image {
-  width: 90%;
-  height: 10%;
-  padding: 4px;
-}
-
-.link-image {
-  display: block;
-  object-fit: cover;
-  width: 90%;
-  height: 18vh;
-}
-
-
-.stack-image2 {
+/* images */
+.stackImage {
   display: block;
   object-fit: cover;
   width: 90%;
@@ -128,160 +137,191 @@ a.buttons {
   padding: 4px;
 }
 
-.cycle-image {
-  /* display: block; */
+.cycleImage {
   object-fit: cover;
   width: 95%;
-  height: 40vh;
+  height: 500px;
 }
 
-.page-cover-video-header {
+/* page content */
+.pageContent {
+  max-width: 1300px;
+}
+
+.pfPageContent {
+  max-width: 1100px;
+  margin-top: 50px
+}
+
+.aboutContent{
+  opacity: 0.7;
+  max-width: 700px; 
+  margin-top: 100px;
+}
+
+.portfolioContent {
+  margin-top: 100px;
+}
+
+.portfolioText {
+  padding: 15px;
+}
+
+.portfolioItem {
+  background-color: rgb(40, 44, 44);
+  margin: 1.5%;
+}
+
+.portfolioItemImg {
   display: block;
   object-fit: cover;
   width: 100%;
-  height: 70vh;
+  height: 25vh;
 }
 
-.page-cover-image-header {
-  display: block;
-  object-fit: cover;
-  width: 100%;
-  height: 50vh;
-}
-
-.button {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
+.portfolioItemImg:hover {
+  /* TODO: add hover effect */
 }
 
 
-.button1 {
-  background-color: white;
-  color: black;
-  border: 2px solid #555555;
+.heightTextPortfolio{
+  min-height: 200px;
 }
 
-.button1:hover {
-  background-color: #555555;
-  color: white;
+.spanText{
+  font-family:  "Lucida Grande", sans-serif;
+  color:rgb(214, 224, 228);
+  font-size: 14px;
+  min-height: 20px;
 }
 
-/* modal images */
-
-
-/* audio player */
-.bottomPlayer {
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  bottom: 0;
+.descriptionText{
+  min-height: 130px;
 }
 
-/* SIZING */
-/* For Mobile */
-@media screen and (max-width: 740px) {
-    .view {
-      padding-left: 0px;
-      padding-right: 0px;    }
+/* Footer */
+.footerStyle {
+  color: aliceblue;
+  background-color: rgb(27, 27, 31);
+  margin-top: 100px; 
+  padding: 50px;
 }
 
-/* For Tablets */
-@media screen and (min-width: 740px) {
-    .view {
-        padding-left: 200px;
-        padding-right: 200px;
-      }
+.footerIcon {
+  padding:5px;
 }
 
-/* For Mobile */
-@media screen and (max-width: 740px) {
-    .viewWorks {
-      padding-left: 0px;
-      padding-right: 0px;    }
+/* Rows & colums */
+.columnAdaptive {
+  float: left;
+  /* padding: 10px; */
 }
-
-/* For Tablets */
-@media screen and (min-width: 740px) {
-    .viewWorks {
-        padding-left: 400px;
-        padding-right: 400px;
-      }
-}
-
-/* For Mobile */
-@media screen and (max-width: 740px) {
-    .fontView {
-      font-size: 10px;
-    }
-}
-
-/* For Tablets */
-@media screen and (min-width: 740px) {
-    .fontView {
-        font-size: 25px;
-      }
-}
-
-.item {
-   padding:15px;
-}
-/*  IMAGE CONTAINERS */
-
-/* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
   float: left;
   width: 100%;
-  /* padding:15px; */
-}
-.columnAdaptive {
-  float: left;
-  padding: 10px;
-}
-
-.left, .right {
-  width: 20%;
-}
-
-.third {
-  width: 33%;
-}
-
-.twothird {
-  width: 64%;
 }
 
 .middle {
   width: 40%;
 }
+.left, .right {
+  width: 20%;
+}
+.third {
+  width: 30%;
+}
 
-/* Clear floats after image containers */
+.oneThird {
+  width: 33%;
+}
+
+.twoThird {
+  width: 66%;
+}
+
 .row::after {
   content: "";
   clear: both;
   display: table;
 }
 
-@media (min-width: 500px) {
-  .column {
-    float: left;
-    width: 50%;
-  }
-}
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .columnAdaptive {
     width: 100%;
   }
 }
 
-/* SLIDESHOW */
+@media (min-width: 800px) {
+  .column {
+    float: left;
+    width: 50%;
+  }
+}
+
+/* headers */
+.pageCover {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+.pfCover {
+  height: 70vh;
+}
+
+.videoCover {
+  height: 80vh;
+  width: 100%;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.textCover {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 40vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 60%;
+  padding: 20px;
+  text-align: center;
+}
+
+/* colors */
+.color1 {
+  background-color: #1A7493;
+}
+
+.color2 {
+  background-color: #274F53;
+}
+
+.color3 {
+  background-color: #175474;
+}
+
+.color4 {
+  background-color: #175474;
+}
+
+.color5 {
+  background-color: #274F53;
+}
+
+.color6 {
+  background-color: #1A7493;
+}
+
+/* slideshow */
 
 * {box-sizing:border-box}
 
@@ -323,245 +363,4 @@ a.buttons {
 .prev {
   left: 0;
   border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(120,120,120,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 30px;
-  padding: 8px 12px;
-  letter-spacing: 4px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 18px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 10px;
-  width: 10px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 3.5s;
-  animation-name: fade;
-  animation-duration: 3.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-/* text reveal */
-@keyframes mymove2 {
-  0%   {    color: white;}
-}
-@-webkit-keyframes mymove2 {
-  0%   {    color: white;}
-}
-
-.box2 {
-  position :relative;
-  -webkit-animation: mymove2 4s ; /* Safari 4.0 - 8.0 */
-  animation: mymove2 4s ;
-}
-
-/* title reveal */
-@keyframes mymove {
-  0%   {    letter-spacing: .0em;}
-  100% {    letter-spacing: .1.2em;}
-}
-
-}
-@-webkit-keyframes mymove {
-  from {top: 0px;}
-  to {top: 25px;}
-}
-
-.box {
-  position :relative;
-  -webkit-animation: mymove 2s ; /* Safari 4.0 - 8.0 */
-  animation: mymove 2s ;
-}
-
-/* NAVBAR */
-ul.topnav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: rgb(27, 27, 31);
-  position: fixed;
-  width: 100%;
-  top: -60px;
-  transition: top 0.3s;
-}
-
-
-ul.topnav li {
-  float: left;
-}
-
-ul.topnav li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-ul.topnav li a:hover:not(.active) {
-  background-color: #111;
-}
-
-ul.topnav li a.active {
-  background-color: rgb(92, 110, 114);
-}
-
-/* @media screen and (max-width: 740px) {
-  ul.topnav li.right,
-  ul.topnav li {float: none;}
-  ul.topnav {position: relative;}
-} */
-
-/* IMAGES */
-/* zet opacity wanneer met muis over plaatje hoveren */
-.hoverOpacity:hover {
-  opacity: 0.8;
-}
-
-.borderImage {
-  border:3px solid black;
-}
-
-/* TEXT OVER IMAGE */
-/* Container holding the image and the text */
-.container {
-  position: relative;
-  /* text-align: center; */
-  color: white;
-}
-
-/* Top left text */
-.top-left {
-  position: absolute;
-  top: 46px;
-  left: 46px;
-}
-
-/* Centered text */
-.contactAlign {
-  position: absolute;
-  top: 50%;
-  left: 60%;
-  transform: translate(-50%, -50%);
-}
-
-.contactPicAlign {
-  position: absolute;
-  top: 50%;
-  left: 40%;
-  transform: translate(-50%, -50%);
-}
-
-/* Bottom left text */
-.bottom-left {
-  position: absolute;
-  bottom: 8px;
-  left: 36px;
-}
-
-.bottom-right {
-  position: absolute;
-  bottom: 8px;
-  right: 36px;
-}
-/* ANIMATION */
-/* image reveal */
-@keyframes mymove3 {
-  0%   {    opacity: 0;}
-  50%   {    opacity: 0;}
-}
-@-webkit-keyframes mymove3 {
-  0%   {    color: white;}
-}
-
-.box3 {
-  position :relative;
-  -webkit-animation: mymove3 4s ; /* Safari 4.0 - 8.0 */
-  animation: mymove3 4s ;
-}
-
-/* OVERLAY */
-.image {
-  display: block;
-  width: 90%;
-  height: auto;
-}
-
-.portfolioItemImg {
-  padding: 10px;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: rgba(0,0,0,0.8)
-}
-
-.imageContainer:hover .overlay {
-  opacity: 1;
-}
-
-.overlayText {
-  color: white;
-  font-size: 20px;
-  letter-spacing: 4px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
 }
