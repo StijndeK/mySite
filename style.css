@@ -61,6 +61,10 @@ ul {
   text-transform: uppercase;
 }
 
+a {
+  font-size: 17px;
+}
+
 a.buttons {
   font-family: "Lucida Grande", sans-serif;
   font-size: 16px;
@@ -143,9 +147,22 @@ ul.topnav li a.active {
   height: 500px;
 }
 
+.rookImage {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 300px;
+  /* padding: 4px; */
+}
+
 /* page content */
 .pageContent {
   max-width: 1300px;
+}
+
+.pageSlideShow {
+  max-width: 880px;
+  padding-top: 100px;
 }
 
 .pfPageContent {
@@ -169,7 +186,7 @@ ul.topnav li a.active {
 
 .portfolioItem {
   background-color: rgb(40, 44, 44);
-  margin: 1.5%;
+  margin: 3%;
 }
 
 .portfolioItemImg {
@@ -229,6 +246,10 @@ ul.topnav li a.active {
 }
 .third {
   width: 30%;
+}
+
+.half {
+  width: 44%;
 }
 
 .oneThird {
