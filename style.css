@@ -116,6 +116,38 @@ a.buttons {
 }
 
 /* menu */
+ul.noScrollTopnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(27, 27, 31);
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  transition: top 0.3s;
+}
+
+ul.noScrollTopnav li {
+  float: left;
+}
+
+ul.noScrollTopnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.noScrollTopnav li a:hover:not(.active) {
+  background-color: #111;
+}
+
+ul.noScrollTopnav li a.active {
+  background-color: rgb(92, 110, 114);
+}
+
 ul.topnav {
   list-style-type: none;
   margin: 0;
