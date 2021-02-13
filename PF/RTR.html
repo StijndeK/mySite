@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- title -->
+<title>RTR</title>
+<!-- icon -->
+<link rel="icon" type="image/png" href="../Media/Logo/LogoSmall.png">
+<!-- stylesheets -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+  <style>
+    img {
+      width: 100%;
+    }
+    p, h1, h2, h3, h4, h5 {
+      color:black;
+    }
+  </style>
+</head>
+<body style="background-color:rgb(232, 234, 236);">
+
+  <!-- menu -->
+  <ul class="topnav w3-hide-small" id="navbar">
+    <li><a href="../index.html">Home</a></li>
+  </ul>
+
+  <!-- header ADD VIDEO -->
+  <!-- <video class="pageCover pfCover" autoplay muted loop >
+    <source src="../Media/NADT/NADT_headerVideo.mp4" type="video/mp4">
+  </video> -->
+  
+  <img class="pageCover pfCover" src="../Media/RTR/RTR_Screencap.png"/>
+
+  <div class="w3-bar" style="background-color: rgb(27, 27, 31);">
+    <div class="w3-bar-item"> <br> </div>
+  </div>
+ 
+  <!-- page content -->
+  <div class="w3-container w3-content pfPageContent">
+    <!-- title -->
+    <h1> REAL-TIME RISERS </h1>
+    <!-- under title -->
+    <h4> <div class="w3-right"> february 12, 2021 </div></h4>
+
+    <hr>
+
+    <p> 
+      <strong> 
+        Adapting parameters of audio in real-time instead of playing cutup pieces of the audio based on game state and events, could be a practical and efficient game audio design method. 
+      </strong>
+    </p>
+
+    <br/>
+
+    <div class="row">
+      <div class="column">  
+        <img style="width:90%;" src="../Media/RTR/RTR_Screencap2.png"/>
+        <!-- <iframe width="90%" height="270" src="https://www.youtube.com/embed/oW4NuA8ZmE4?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+      </div>
+  
+      <div class="column">   
+        <div style="padding-right: 40px;"> 
+          <p>
+            Time and energy can be saved by using adaptive risers instead of other currently standard nonlinear audio development techniques. 
+            RTR is a prototype for an adaptive audio tool that lets the user design a riser that adapts to game data in real time. 
+            Not only does this provide an original adapting riser effect it also saves time and energy in the audio design workflow. 
+            RTR is made in C++ using a combination of FMOD low-level API and OpenFrameworks. The GUI has been developed using ofxDatGui.
+            Find the <a href="https://github.com/StijndeK/RTR">Editor Tool</a> and its <a href="https://github.com/StijndeK/RTR_UE4Integration">UE4 Plugin</a> on GitHub <a href="https://github.com/StijndeK"><i class="fa fa-github footerIcon"></i></a>.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <br/> <br/> <br/>
+
+    <div class="row">
+      <div class="column">  
+        <div style="padding-right: 40px;">
+          <h3>
+            Workflow
+          </h3>
+          <p>
+            The tool has been designed similarly to standard audio middleware using a seperate studio solution and engine integration plugin, that are both build on the same low-level audio system.
+            This way the tool can be easily integrated in any engine and is not restricted in any way.
+          </p>
+        </div>
+      </div>
+      <div class="column">
+        <br/>
+        <img style="width:95%; padding-right: 10px;" src="../Media/RTR/RTR_Workflow.png"/>  
+      </div>
+    </div>
+
+    <br/> <br/> <br/>
+
+    <div class="row">
+      <div class="column">  
+        <img style="width:90%;" src="../Media/RTR/RTR_Screencap2.png"/>
+      </div>
+      <div class="column">
+        <div style="padding-right: 40px;">
+          <h3>
+            Editor Tool
+          </h3>
+          <p>
+            The tool is divided into different components.
+            In the Sound component, the audio can be designed. 
+            In the Adaption component, control over the general adaption is provided.
+            In the Mock component, the riser can be tested outside of its integration.
+            In the multiple Modulation components, more precise control over the timing of the adaption of the riser is provided.
+            Finally, visual feedback is provided in the top-right corner.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <br/> <br/> <br/>
+
+    <div class="row">
+      <div class="column">  
+        <div style="padding-right: 40px;">
+          <h3>
+            Risers
+          </h3>
+          <p>
+            Risers are an interesting audio effect to implement in an adaptive system because they are often synchronised to their impact point instead of their start. 
+            Risers generally consist of three dynamic elements: the attack, the impact, and the release. 
+            The blue linehighlights the attack of the riser of which any parameter such as the amplitude, pitch and panning can be adapted. 
+            By modulating the audio data in between the start and impact, the riser can go on for a longer or shorter amount of time
+          </p>
+        </div>
+      </div>
+      <div class="column">
+        <img style="width:90%;" src="../Media/RTR/RTR_Risers.png"/>  
+      </div>
+    </div>
+
+    <br/> <br/> <br/>
+
+    <div class="row">
+      <div class="column">  
+        <br/>
+        <img style="width:90%;" src="../Media/RTR/RTR_Implementation.png"/>
+      </div>
+      <div class="column">  
+        <div style="padding-right: 40px;">
+          <h3>
+            Integration (UE4 Plugin)
+          </h3>    
+          <p>
+            For the integration in UE4, a plugin with 2 blueprints as well as 2 actors is provided.
+            The two actors serve as the start and stop location of the riser, and can be placed anywhere in the level (if the start and stop are not a fysical location, they can also be called using blueprints).
+            The blueprints provide game data on the players position.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <br/> <br/> <br/>
+
+    <div class="row">
+      <div class="column">  
+        <div style="padding-right: 40px;">
+          <h3>
+            Sound Design
+          </h3>
+          <p>
+            The sound for the prototype is handled with a looping sy stem.
+            Riser samples are deconstructed to static loop-able samples without any modulation. 
+            They are then looped and modulated by the tool during playback to have them rise in intensity.
+            The tool has been mocked FMOD Studio to start testing the sound and adaption early, experiment with features, and to gain insight in the current difficulties that arise when making procedural risers with existing tools. 
+          </p>
+        </div>
+      </div>
+      <div class="column">  
+        <img style="width:90%; padding-left: 10px;" src="../Media/RTR/RTR_Mock.png"/>
+      </div>
+    </div>
+  
+    <br/> <br/> <br/>
+
+    <div class="row">
+      <div class="column">  
+        <br/>
+        <img style="width:80%;;" src="../Media/RTR/RTR_Adaption.png"/>
+      </div>
+      <div class="column">  
+        <div style="padding-right: 40px;">
+          <h3>
+            Adaption
+          </h3>
+          <p>
+            To adapt parameters of the audio live based on game data, the riser are subdivided into different layers that can be modulated separately.
+            The tool uses 3 types of modulation.
+            Position Modulation is directly modulated by the position the riser needs to get to.
+            Action Modulation is influenced by the amount of action happening (thus the player is for example not standing still for 5 minutes).
+            Time Modulation reduses intensity after a certain amount of time is spent without the impact being reached.
+          </p>
+        </div>
+      </div>
+    </div>
+  
+    <br/> <br/> <br/>
+
+    <div class="row">
+      <div class="column">  
+        <div style="padding-right: 40px;">
+          <h3>
+            Future Updates
+          </h3>
+          <p>
+            This prototype contains the minimum functionality necessary to be able to sufficiently test the procedural game audio approach. 
+            There are a lot of relevant future developments. 
+            For example, the user can be provided with more control over the design and modulation of the sound, for example being able to select certain sounds per layer. 
+            Furthermore, randomisation is often used in game audio to generate material and keep audio from sounding repetitive. 
+            More can be randomised in the tool as it currently only randomises the impact. 
+          </p>
+        </div>
+      </div>
+      <div class="column">  
+        <br/>
+        <img style="width:90%; padding-left: 10px;" src="../Media/RTR/RTR_Trello.png"/>
+      </div>
+    </div>  
+  </div>
+
+  <!-- footer -->
+    <footer class="footerStyle" id="contact">
+    <div class="w3-container w3-content" style="max-width: 700px;">
+  
+      <div class="row" style="margin-top: 40px;" style="padding: 10px;">
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+
+<script>
+  // When the user scrolls down 20px from the top of the document, slide down the navbar
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("navbar").style.top = "0";
+    } else {
+      document.getElementById("navbar").style.top = "-50px";
+    }
+  }
+  
+  var header = document.getElementById("myDIV");
+  var btns = header.getElementsByClassName("pageSelectButton");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+    });
+  }
+
+  window.onload = setActive(2);
+
+  function setActive(int) {
+    var x = [document.getElementById("ActiveDiv1"), document.getElementById("ActiveDiv2"), document.getElementById("ActiveDiv3")];
+    x[int].style.display = "block";
+    for(var object of x){
+      if (object != x[int]){
+        object.style.display = "none";
+      }
+    }
+  }
+</script>
