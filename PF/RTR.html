@@ -65,8 +65,8 @@
         <div style="padding-right: 40px;"> 
           <p>
             Time and energy can be saved by using adaptive risers instead of other currently standard nonlinear audio development techniques. 
-            RTR is a prototype for an adaptive audio tool that lets the user design a riser that adapts to game data in real time. 
-            Not only does this provide an original adapting riser effect it also saves time and energy in the audio design workflow. 
+            RTR is a prototype for an adaptive audio tool that lets the user design a riser that adapts to game data in real-time. 
+            Not only does this provide an original adapting riser effect, it also saves time and energy in the audio design workflow. 
             RTR is made in C++ using a combination of FMOD low-level API and OpenFrameworks. The GUI has been developed using ofxDatGui.
             Find the <a href="https://github.com/StijndeK/RTR">Editor Tool</a> and its <a href="https://github.com/StijndeK/RTR_UE4Integration">UE4 Plugin</a> on GitHub <a href="https://github.com/StijndeK"><i class="fa fa-github footerIcon"></i></a>.
           </p>
@@ -111,7 +111,6 @@
             In the Adaption component, control over the general adaption is provided.
             In the Mock component, the riser can be tested outside of its integration.
             In the multiple Modulation components, more precise control over the timing of the adaption of the riser is provided.
-            Finally, visual feedback is provided in the top-right corner.
           </p>
         </div>
       </div>
@@ -128,7 +127,7 @@
           <p>
             Risers are an interesting audio effect to implement in an adaptive system because they are often synchronised to their impact point instead of their start. 
             Risers generally consist of three dynamic elements: the attack, the impact, and the release. 
-            The blue linehighlights the attack of the riser of which any parameter such as the amplitude, pitch and panning can be adapted. 
+            The blue line highlights the attack of the riser of which any parameter such as the amplitude, pitch and panning can be adapted. 
             By modulating the audio data in between the start and impact, the riser can go on for a longer or shorter amount of time
           </p>
         </div>
@@ -151,9 +150,9 @@
             Integration (UE4 Plugin)
           </h3>    
           <p>
-            For the integration in UE4, a plugin with 2 blueprints as well as 2 actors is provided.
-            The two actors serve as the start and stop location of the riser, and can be placed anywhere in the level (if the start and stop are not a fysical location, they can also be called using blueprints).
-            The blueprints provide game data on the players position.
+            For the integration in UE4, a plugin with blueprint nodes and 2 actors is provided.
+            The actors serve as the start and stop location of the riser and can be placed anywhere in the level (if the start and stop are not a fysical location, they can also be called using blueprints).
+            The blueprints provide game data to the riser, for example on the player's position.
           </p>
         </div>
       </div>
@@ -168,9 +167,9 @@
             Sound Design
           </h3>
           <p>
-            The sound for the prototype is handled with a looping sy stem.
+            The sound for the prototype is handled with a looping system.
             Riser samples are deconstructed to static loop-able samples without any modulation. 
-            They are then looped and modulated by the tool during playback to have them rise in intensity.
+            They are then looped and modulated in the tool during playback to have them rise in intensity.
             The tool has been mocked FMOD Studio to start testing the sound and adaption early, experiment with features, and to gain insight in the current difficulties that arise when making procedural risers with existing tools. 
           </p>
         </div>
@@ -193,7 +192,7 @@
             Adaption
           </h3>
           <p>
-            To adapt parameters of the audio live based on game data, the riser are subdivided into different layers that can be modulated separately.
+            To adapt parameters of the audio live based on game data, risers are subdivided into different layers that can be modulated separately.
             The tool uses 3 types of modulation.
             Position Modulation is directly modulated by the position the riser needs to get to.
             Action Modulation is influenced by the amount of action happening (thus the player is for example not standing still for 5 minutes).
