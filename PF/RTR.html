@@ -28,11 +28,11 @@
   </ul>
 
   <!-- header ADD VIDEO -->
-  <video class="pageCover pfCover" autoplay muted loop >
-    <source src="../Media/RTR/RTR_Header.mp4" type="video/mp4">
-  </video>
+  <!-- <video class="pageCover pfCover" autoplay muted loop >
+    <source src="../Media/NADT/NADT_headerVideo.mp4" type="video/mp4">
+  </video> -->
   
-  <!-- <img class="pageCover pfCover" src="../Media/RTR/RTR_Screencap.png"/> -->
+  <img class="pageCover pfCover" src="../Media/RTR/RTR_Screencap.png"/>
 
   <div class="w3-bar" style="background-color: rgb(27, 27, 31);">
     <div class="w3-bar-item"> <br> </div>
@@ -57,7 +57,8 @@
 
     <div class="row">
       <div class="column">  
-        <iframe width="90%" height="270" src="https://www.youtube.com/embed/6BYCXga01ck" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <img style="width:90%;" src="../Media/RTR/RTR_Screencap2.png"/>
+        <!-- <iframe width="90%" height="270" src="https://www.youtube.com/embed/oW4NuA8ZmE4?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
       </div>
   
       <div class="column">   
@@ -67,7 +68,7 @@
             RTR is a prototype for an adaptive audio tool that lets the user design a riser that adapts to game data in real-time. 
             Not only does this provide an original adapting riser effect, it also saves time and energy in the audio design workflow. 
             RTR is made in C++ using a combination of FMOD low-level API and OpenFrameworks. The GUI has been developed using ofxDatGui.
-            Find the <a href="https://github.com/StijndeK/RTR">Editor Tool</a> and its <a href="https://github.com/StijndeK/RTR_UE4Integration">UE4 Plugin</a> on <a href="https://github.com/StijndeK">GitHub<i class="fa fa-github footerIcon"></i></a>.
+            Find the <a href="https://github.com/StijndeK/RTR">Editor Tool</a> and its <a href="https://github.com/StijndeK/RTR_UE4Integration">UE4 Plugin</a> on GitHub <a href="https://github.com/StijndeK"><i class="fa fa-github footerIcon"></i></a>.
           </p>
         </div>
       </div>
@@ -177,60 +178,47 @@
         <img style="width:90%; padding-left: 10px;" src="../Media/RTR/RTR_Mock.png"/>
       </div>
     </div>
-  
-    <br/> <br/> <br/>
-
-    <!-- <div class="row">
-      <div class="column">  
-        <br/>
-        <img style="width:80%;;" src="../Media/RTR/RTR_Adaption.png"/>
-      </div>
-      <div class="column">  
-        <div style="padding-right: 40px;">
-          <h3>
-            Adaption
-          </h3>
-          <p>
-            To adapt parameters of the audio live based on game data, risers are subdivided into different layers that can be modulated separately.
-            The tool uses 3 types of modulation.
-            Position Modulation is directly modulated by the position the riser needs to get to.
-            Action Modulation is influenced by the amount of action happening (thus the player is for example not standing still for 5 minutes).
-            Time Modulation reduses intensity after a certain amount of time is spent without the impact being reached.
-          </p>
-        </div>
-      </div>
-    </div>
-  
-    <br/> <br/> <br/>
-
-    <div class="row">
-      <div class="column">  
-        <div style="padding-right: 40px;">
-          <h3>
-            Future Updates
-          </h3>
-          <p>
-            This prototype contains the minimum functionality necessary to be able to sufficiently test the procedural game audio approach. 
-            There are a lot of relevant future developments. 
-            For example, the user can be provided with more control over the design and modulation of the sound, for example being able to select certain sounds per layer. 
-            Furthermore, randomisation is often used in game audio to generate material and keep audio from sounding repetitive. 
-            More can be randomised in the tool as it currently only randomises the impact. 
-          </p>
-        </div>
-      </div>
-      <div class="column">  
-        <br/>
-        <img style="width:90%; padding-left: 10px;" src="../Media/RTR/RTR_Trello.png"/>
-      </div>
-    </div>   -->
-
   </div>
 
+
   <!-- footer -->
-    <footer class="footerStyle" id="contact">
+    <!-- <footer class="footerStyle" id="contact">
     <div class="w3-container w3-content" style="max-width: 700px;">
   
       <div class="row" style="margin-top: 40px;" style="padding: 10px;">
+      </div>
+    </div>
+  </footer> -->
+
+  <footer class="footerStyle" id="contact">
+    <div class="w3-container w3-content" style="max-width: 700px;">
+  
+      <div class="row" style="margin-top: 40px;" style="padding: 10px;">
+  
+        <div class="columnAdaptive middlePos" style="font-size:27px;">  
+          <a href="https://www.linkedin.com/in/stijn-koning-de-196aab133/"><i class="fa fa-linkedin footerIcon"></i></a>
+          <a href="https://www.instagram.com/dekoningstijn/"><i class="fa fa-instagram footerIcon"></i></a>
+          <a href="https://github.com/StijndeK"><i class="fa fa-github footerIcon"></i></a>
+          <a href="https://soundcloud.com/stijn-de-koning"><i class="fa fa-soundcloud footerIcon"></i></a>
+          <a href="https://twitter.com/StijnKoning"><i class="fa fa-twitter footerIcon"></i></a>
+          <h6>
+            <i class="fa fa-envelope" ></i> sdk.stijn@gmail.com <br>
+            <i class="fa fa-globe"></i> Amsterdam, Netherlands <br>
+            Copyright © Stijn de Koning, 2020
+          </h6>
+        </div>
+  
+        <div class="columnAdaptive middlePos" style="padding: 10px;">  
+          <h6>
+            <i class="fa fa-university"></i> Music & Technology, University of the Arts Utrecht
+            <i class="fa fa-university"></i> Master Game Technology, Breda University of Applied Sciences
+          </h6>
+        </div>
+  
+        <div class="columnAdaptive leftPos" style="padding: 10px;">  
+          <img style="width:90%;" src="../Media/Logo/LogoSmall.png"/>
+        </div>
+  
       </div>
     </div>
   </footer>
@@ -246,28 +234,6 @@
       document.getElementById("navbar").style.top = "0";
     } else {
       document.getElementById("navbar").style.top = "-50px";
-    }
-  }
-  
-  var header = document.getElementById("myDIV");
-  var btns = header.getElementsByClassName("pageSelectButton");
-  for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-    });
-  }
-
-  window.onload = setActive(2);
-
-  function setActive(int) {
-    var x = [document.getElementById("ActiveDiv1"), document.getElementById("ActiveDiv2"), document.getElementById("ActiveDiv3")];
-    x[int].style.display = "block";
-    for(var object of x){
-      if (object != x[int]){
-        object.style.display = "none";
-      }
     }
   }
 </script>
