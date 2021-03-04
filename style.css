@@ -379,8 +379,8 @@ ul.topnav li a.active {
 .videoCover {
   height: 40vh;
   width: 100%;
-  filter: blur(3px);
-  -webkit-filter: blur(3px);
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
 
   background-position: center;
   background-repeat: no-repeat;
