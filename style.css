@@ -6,7 +6,7 @@ body, html {
 }
 p {
   font-family: "Lucida Grande", sans-serif;
-  font-size: 16px;
+  font-size: 17px;
   padding-bottom: 5px;
   color:rgb(184, 204, 208)
 }
@@ -256,11 +256,11 @@ ul.topnav li a.active {
 .aboutContent{
   opacity: 0.7;
   max-width: 700px; 
-  margin-top: 30px;
+  margin-top: 60px;
 }
 
 .portfolioContent {
-  margin-top: 60px;
+  margin-top: 120px;
 }
 
 .portfolioText {
