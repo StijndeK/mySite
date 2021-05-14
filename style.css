@@ -376,6 +376,16 @@ ul.topnav li a.active {
   height: 70vh;
 }
 
+.pageCoverH {
+  display: block;
+  object-fit: cover;
+  width: 80%;
+}
+
+.pfCoverH {
+  height: 40vh;
+}
+
 .videoCover {
   height: 40vh;
   width: 100%;
@@ -408,12 +418,24 @@ ul.topnav li a.active {
   background-color: #1A7493;
 }
 
+.textColor1 {
+  color: #1A7493;
+}
+
 .color2 {
   background-color: #274F53;
 }
 
+.textColor2 {
+  color: #274F53;
+}
+
 .color3 {
   background-color: #175474;
+}
+
+.textColor3 {
+  color: #175474;
 }
 
 .color4 {

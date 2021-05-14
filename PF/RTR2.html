@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- title -->
+<title>RTR</title>
+<!-- icon -->
+<link rel="icon" type="image/png" href="../Media/Logo/LogoSmall.png">
+<!-- stylesheets -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+  <style>
+    img {
+      width: 100%;
+    }
+    p, h1, h2, h3, h4, h5 {
+      color:black;
+    }
+  </style>
+</head>
+<body style="background-color:rgb(232, 234, 236);">
+
+  <!-- menu -->
+  <ul class="topnav w3-hide-small" id="navbar">
+    <li><a href="../index.html">Home</a></li>
+  </ul>
+
+  <video class="pageCover pfCover" autoplay muted loop >
+    <source src="../Media/RTR/RTR_Header.mp4" type="video/mp4">
+  </video>
+  
+  <div class="w3-bar" style="background-color: rgb(27, 27, 31);">
+    <div class="w3-bar-item"> <br> </div>
+  </div>
+ 
+  <!-- page content -->
+  <div class="w3-container w3-content pfPageContent">
+    <!-- title -->
+    <h1> REAL-TIME RISERS </h1>
+    <!-- under title -->
+    <h4> <div class="w3-right"> february 12, 2021 </div></h4>
+
+    <hr>
+
+    <p> 
+      <strong> 
+        Adapting parameters of audio in real-time instead of playing cutup pieces of the audio based on game state and events, could be a practical and efficient game audio design method. 
+      </strong>
+    </p>
+
+    <br/>
+
+    <div class="row">
+      <div class="column">  
+        <iframe width="90%" height="270" src="https://www.youtube.com/embed/U3TnRka32z4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <!-- <iframe width="90%" height="270" src="https://www.youtube.com/embed/6BYCXga01ck" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+      </div>
+  
+      <div class="column">   
+        <div style="padding-right: 40px;"> 
+          <p>
+            Time and energy can be saved by using adaptive risers instead of other currently standard nonlinear audio development techniques. 
+            RTR is a prototype for an adaptive audio tool that lets the user design a riser that adapts to game data in real-time. 
+            Not only does this provide an original adapting riser effect, it also saves time and energy in the audio design workflow. 
+            RTR is made in C++ using a combination of FMOD low-level API and OpenFrameworks. The GUI has been developed using ofxDatGui.
+            Find the <a href="https://github.com/StijndeK/RTR">Editor Tool</a> and its <a href="https://github.com/StijndeK/RTR_UE4Integration">UE4 Plugin</a> on GitHub <a href="https://github.com/StijndeK"><i class="fa fa-github footerIcon"></i></a>.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <br/> <br/> <br/>
+
+    <div class="row">
+      <div class="column">  
+        <div style="padding-right: 40px;">
+          <h3>
+            Workflow
+          </h3>
+          <p>
+            The tool has been designed similarly to standard audio middleware using a seperate studio solution and engine integration plugin, that are both build on the same low-level audio system.
+            This way the tool can be easily integrated in any engine and is not restricted in any way.
+          </p>
+        </div>
+      </div>
+      <div class="column">
+        <br/>
+        <img style="width:95%; padding-right: 10px;" src="../Media/RTR/RTR_Workflow.png"/>  
+      </div>
+    </div>
+
+    <br/> <br/> <br/>
+
+    <div class="row">
+      <div class="column">  
+        <img style="width:90%;" src="../Media/RTR/RTR_Screencap2.png"/>
+      </div>
+      <div class="column">
+        <div style="padding-right: 40px;">
+          <h3>
+            Editor Tool
+          </h3>
+          <p>
+            The tool is divided into different components.
+            In the Sound component, the audio can be designed. 
+            In the Adaption component, control over the general adaption is provided.
+            In the Mock component, the riser can be tested outside of its integration.
+            In the multiple Modulation components, more precise control over the timing of the adaption of the riser is provided.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <br/> <br/> <br/>
+
+    <div class="row">
+      <div class="column">  
+        <div style="padding-right: 40px;">
+          <h3>
+            Risers
+          </h3>
+          <p>
+            Risers are an interesting audio effect to implement in an adaptive system because they are often synchronised to their impact point instead of their start. 
+            Risers generally consist of three dynamic elements: the attack, the impact, and the release. 
+            The blue line highlights the attack of the riser of which any parameter such as the amplitude, pitch and panning can be adapted. 
+            By modulating the audio data in between the start and impact, the riser can go on for a longer or shorter amount of time
+          </p>
+        </div>
+      </div>
+      <div class="column">
+        <img style="width:90%;" src="../Media/RTR/RTR_Risers.png"/>  
+      </div>
+    </div>
+
+    <br/> <br/> <br/>
+
+    <div class="row">
+      <div class="column">  
+        <br/>
+        <img style="width:90%;" src="../Media/RTR/RTR_Implementation.png"/>
+      </div>
+      <div class="column">  
+        <div style="padding-right: 40px;">
+          <h3>
+            Integration (UE4 Plugin)
+          </h3>    
+          <p>
+            For the integration in UE4, a plugin with blueprint nodes and actors is provided.
+            The actors serve as the start and stop location of the riser and can be placed anywhere in the level.
+            Alternatively, blueprints can be used, for example when the start and/or stop position are not physical locations.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <br/> <br/> <br/>
+
+    <div class="row">
+      <div class="column">  
+        <div style="padding-right: 40px;">
+          <h3>
+            Sound Design
+          </h3>
+          <p>
+            The sound for the prototype is handled with a looping system.
+            Riser samples are deconstructed to static loop-able samples without any modulation. 
+            They are then looped and modulated in the tool during playback to have them rise in intensity.
+            The tool has been mocked FMOD Studio to start testing the sound and adaption early, experiment with features, and to gain insight in the current difficulties that arise when making procedural risers with existing tools. 
+          </p>
+        </div>
+      </div>
+      <div class="column">  
+        <img style="width:90%; padding-left: 10px;" src="../Media/RTR/RTR_Mock.png"/>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- footer -->
+    <!-- <footer class="footerStyle" id="contact">
+    <div class="w3-container w3-content" style="max-width: 700px;">
+  
+      <div class="row" style="margin-top: 40px;" style="padding: 10px;">
+      </div>
+    </div>
+  </footer> -->
+
+  <footer class="footerStyle" id="contact">
+    <div class="w3-container w3-content" style="max-width: 700px;">
+  
+      <div class="row" style="margin-top: 40px;" style="padding: 10px;">
+  
+        <div class="columnAdaptive middlePos" style="font-size:27px;">  
+          <a href="https://www.linkedin.com/in/stijn-koning-de-196aab133/"><i class="fa fa-linkedin footerIcon"></i></a>
+          <a href="https://www.instagram.com/dekoningstijn/"><i class="fa fa-instagram footerIcon"></i></a>
+          <a href="https://github.com/StijndeK"><i class="fa fa-github footerIcon"></i></a>
+          <a href="https://soundcloud.com/stijn-de-koning"><i class="fa fa-soundcloud footerIcon"></i></a>
+          <a href="https://twitter.com/StijnKoning"><i class="fa fa-twitter footerIcon"></i></a>
+          <h6>
+            <i class="fa fa-envelope" ></i> sdk.stijn@gmail.com <br>
+            <i class="fa fa-globe"></i> Amsterdam, Netherlands <br>
+            Copyright © Stijn de Koning, 2020
+          </h6>
+        </div>
+  
+        <div class="columnAdaptive middlePos" style="padding: 10px;">  
+          <h6>
+            <i class="fa fa-university"></i> Music & Technology, University of the Arts Utrecht
+            <i class="fa fa-university"></i> Master Game Technology, Breda University of Applied Sciences
+          </h6>
+        </div>
+  
+        <div class="columnAdaptive leftPos" style="padding: 10px;">  
+          <img style="width:90%;" src="../Media/Logo/LogoSmall.png"/>
+        </div>
+  
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+
+<script>
+  // When the user scrolls down 20px from the top of the document, slide down the navbar
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("navbar").style.top = "0";
+    } else {
+      document.getElementById("navbar").style.top = "-50px";
+    }
+  }
+</script>
