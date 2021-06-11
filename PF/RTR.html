@@ -64,9 +64,10 @@
       <h1 class="w3-jumbo w3-text-black"><b>Real-Time Risers</b></h1>
       <h1 class="w3-xxxlarge textColor3"><b>A reactive game audio solution</b></h1>
       <p class="w3-text-black"><span class="w3-xlarge w3-text-black">
-        Adapting parameters riser audio effects in real time improves synchronicity and workflow. </span>
-        RTR is a prototype for an adaptive audio tool that allows the user design and implement a riser that adapts to game data in real-time. 
-        The tool has been developed for my master's research into adressing certain issues in the common game audio development pipeline.
+        Adapting parameters of riser audio effects in real-time  </span>
+        based on game action and events improves synchronicity and workflow.
+        RTR is a prototype tool that allows its users to design and efficiently implement a riser that adapts to game data in real-time. 
+        The tool has been developed for my master's research into: Real-Time Procedural Risers in Games: Mapping Riser Audio Effects to Game Data.
       </p>
       <button class="w3-button w3-light-grey w3-padding-large w3-section w3-hide-small">
         <a href=""><i class="fa fa-book"></i> Download full research </a>
@@ -123,7 +124,7 @@
     <div class="w3-col l8 m6">
       <h1 class="w3-jumbo w3-text-black"><b>Pipeline</b></h1>
       <p class="w3-text-black"><span class="w3-xlarge w3-text-black"> A fast and optimised workflow  </span>
-        allows the user to make changes to the riser and immediatly hear the riser back in game.
+        allows the user to make changes to the riser and immediatly hear the riser back in-game.
         The tool is designed similarly to standard audio middleware, using a seperate studio solution and engine integration plugin
         that are build on the same low-level audio system. This way the tool can be easily integrated in any engine and is not restricted in any way.
       </p>
@@ -137,8 +138,10 @@
     <div class="w3-col l8 m6">
       <h1 class="w3-jumbo"><b>Risers</b></h1>
       <p class="w3-text-darkgrey"><span class="w3-xlarge w3-text-darkgrey">Risers are efficient low-cost audio effects. </span> 
-        However, because risers are synchronised to their start as well as their point of impact, they are difficult to implement in an adaptive system. 
-        Risers generally consist of three dynamic elements: the attack, the impact, and the release. 
+        But because risers are synchronised to their start as well as their point of impact, they are difficult to implement in an adaptive system. 
+        , risers generally consist of three dynamic elements: the attack, the impact, and the release. 
+        Most emphasis is put on the attack as risers are often used to build up to something. 
+        The release serves to build the audio down so that it does not abruptly stop.  
         By modulating the audio data in between the start and impact, the riser can go on for a longer or shorter amount of time.
          </p>
     </div>
@@ -159,12 +162,11 @@
     </div>
     <div class="w3-col l8 m6">
       <h1 class="w3-jumbo w3-text-black"><b>Integration</b></h1>
-      <p class="w3-text-black"><span class="w3-xlarge w3-text-black"> Easy-to-use and quick implementation. </span> 
-        An Unreal Engine 4 plugin with blueprint nodes and actors is provided. 
-        The actors serve as the start and stop location of the riser and can be placed anywhere in the level. 
-        This way implementing the riser will only take a few seconds.
+      <p class="w3-text-black"><span class="w3-xlarge w3-text-black"> An Unreal Engine 4 plugin allows for quick and efficient implementaiton.  </span> 
+        For the integration in UE4, two different methods have been developed.
+        First, two actors have been developed, one for the start and one for the impact position of the riser. 
+        By dragging these to their desired locations in the level, the riser can be quickly and efficiently implemented.
         Alternatively, blueprints can be used, for example when the start and/or stop position are not physical locations.
-
       </p>
     </div>
   </div>
