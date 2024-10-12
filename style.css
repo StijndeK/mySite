@@ -1,15 +1,24 @@
-body, html {
+body,
+html {
   font-family: "Lucida Grande", sans-serif;
-  background-color: rgba(231, 236, 238, 0.1);
   scroll-behavior: smooth;
-  background-color: rgb(32, 38, 40);
+  /* background-color: rgb(255, 255, 255);
+  background-image: url("Media/SLOFF/face2.png");
+  background-position: 0% 10%;
+  background-size: contain; */
+  /* background-color: rgb(1, 19, 5);   */
+  /* background-image: url("Media/SLOFF/body2.jpg"); */
+  background-repeat: no-repeat;
+  background-size: contain;
 }
+
 p {
   font-family: "Lucida Grande", sans-serif;
   font-size: 17px;
   padding-bottom: 5px;
-  color:rgb(184, 204, 208)
+  color: rgb(184, 204, 208)
 }
+
 h1 {
   font-family: "Lucida Grande", sans-serif;
   font-size: 40px;
@@ -17,44 +26,52 @@ h1 {
   padding-bottom: 15px;
   font-weight: bold;
 }
+
 h2 {
   font-family: "Lucida Grande", sans-serif;
   font-size: 32px;
-  color:white;
+  color: white;
   padding-bottom: 5px;
   font-weight: bold;
   opacity: 0.8;
 }
+
 h3 {
   font-family: "Lucida Grande", sans-serif;
   font-size: 22px;
   font-weight: bold;
   color: white;
 }
+
 h4 {
   font-family: "Lucida Grande", sans-serif;
   font-size: 15px;
-  color:rgb(184, 204, 208);
+  color: rgb(184, 204, 208);
   font-style: italic;
 }
+
 h5 {
-  font-family:  "Roboto", "Lucida Grande", sans-serif;
-  color:rgb(184, 204, 208);
+  font-family: "Roboto", "Lucida Grande", sans-serif;
+  color: rgb(184, 204, 208);
 }
+
 h6 {
   font-family: "Lucida Grande", sans-serif;
   font-size: 16px;
-  color:rgb(184, 204, 208)
+  color: rgb(184, 204, 208)
 }
+
 li {
-  font-family:  "Lucida Grande", sans-serif;
+  font-family: "Lucida Grande", sans-serif;
   font-size: 16px;
 }
+
 span {
-  font-family:  "Lucida Grande", sans-serif;
-  color:rgb(214, 224, 228);
+  font-family: "Lucida Grande", sans-serif;
+  color: rgb(214, 224, 228);
   font-size: 14px;
 }
+
 ul {
   font-family: "Lucida Grande", sans-serif;
   font-size: 18px;
@@ -74,46 +91,164 @@ a.buttons {
   border-style: solid;
 }
 
-.btn-group button {
-  background-color: #04AA6D; /* Green background */
-  border: 1px solid green; /* Green border */
-  color: white; /* White text */
-  padding: 10px 24px; /* Some padding */
-  cursor: pointer; /* Pointer/hand icon */
-  float: left; /* Float the buttons side by side */
-}
-
-/* Clear floats (clearfix hack) */
-.btn-group:after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.btn-group button:not(:last-child) {
-  border-right: none; /* Prevent double borders */
-}
-
-/* Add a background color on hover */
-.btn-group button:hover {
-  background-color: #3e8e41;
-}
-
-
 .iconStyle {
-  color: aliceblue;
   font-size: 30px;
 }
 
 .headerIcon {
   padding: 15px;
   opacity: 0.8;
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2px white;
+}
+
+/* modal */
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content,
+#caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+
+/* grid */
+.grid-container {
+  display: grid;
+  /* grid-template-columns: 33% 33% 33%; */
+  grid-template-columns: 100%;
+  /* grid-template-columns: 50% 50%; */
+  padding: 50px;
+  overflow: hidden;
+}
+
+.grid-item {
+  padding: 30px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.grid-item2 {
+  padding: 30px;
+  font-size: 30px;
+  text-align: center;
+  grid-column: span 2;
+}
+
+.grid-item3 {
+  padding: 30px;
+  font-size: 30px;
+  text-align: center;
+  grid-column: span 3;
+}
+
+/* centeredImage */
+.centeredImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* filter */
+.filterDiv {
+  display: none;
+  /* Hidden by default */
+}
+
+.show {
+  display: block;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #e6dcdc00;
+  /* opacity: 0; */
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
 }
 
 /* image overlay */
 .container {
   position: relative;
-  width: 100%;
 }
 
 .image {
@@ -137,7 +272,13 @@ a.buttons {
 }
 
 .container:hover .portfolioItemImg {
-  opacity: 0.3;
+  opacity: 1.0;
+  filter: grayscale(0%);
+}
+
+.container:hover .portfolioItemImg3 {
+  opacity: 1.0;
+  filter: grayscale(0%);
 }
 
 .container:hover .middle {
@@ -146,9 +287,16 @@ a.buttons {
 
 .text {
   /* background-color: #274F53; */
-  color: white;
-  font-size: 24px;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
   padding: 16px 32px;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+  text-shadow: 2px 2px black;
+  /* text-shadow: -1px 1px 0 #000,
+  1px 1px 0 #000,
+  1px -1px 0 #000,
+  -1px -1px 0 #000; */
 }
 
 /* menu */
@@ -157,7 +305,7 @@ ul.noScrollTopnav {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: rgb(27, 27, 31);
+  background-color: rgb(0, 0, 0);
   position: fixed;
   width: 100%;
   top: 0px;
@@ -189,10 +337,22 @@ ul.topnav {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: rgb(27, 27, 31);
+  background-color: rgb(0, 0, 0);
   position: fixed;
   width: 100%;
   top: -60px;
+  transition: top 0.3s;
+}
+
+ul.topnavStatic {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  width: 100%;
+  top: 0px;
   transition: top 0.3s;
 }
 
@@ -218,7 +378,8 @@ ul.topnav li a.active {
 
 /* buttons */
 .button {
-  background-color: #4CAF50; /* Green */
+  background-color: #4CAF50;
+  /* Green */
   border: none;
   color: white;
   padding: 15px 32px;
@@ -236,42 +397,15 @@ ul.topnav li a.active {
   font-size: 18px;
 }
 
-.active, .pageSelectButton:hover {
+.active,
+.pageSelectButton:hover {
   background-color: rgb(32, 38, 40);
   color: white;
 }
 
-/* images */
-.stackImage {
-  display: block;
-  object-fit: cover;
-  width: 90%;
-  height: 13vh;
-  padding: 4px;
-}
-
-.cycleImage {
-  object-fit: cover;
-  width: 95%;
-  height: 500px;
-}
-
-.rookImage {
-  display: block;
-  object-fit: cover;
-  width: 100%;
-  height: 300px;
-  /* padding: 4px; */
-}
-
 /* page content */
 .pageContent {
-  max-width: 1300px;
-}
-
-.pageSlideShow {
-  max-width: 980px;
-  padding-top: 100px;
+  max-width: 900px;
 }
 
 .pfPageContent {
@@ -279,14 +413,17 @@ ul.topnav li a.active {
   margin-top: 50px
 }
 
-.aboutContent{
+.aboutContent {
+  color: rgb(0, 0, 0);
+  /* text-shadow: 2px 2px red; */
   opacity: 0.7;
-  max-width: 700px; 
+  max-width: 700px;
   margin-top: 60px;
+  letter-spacing: 1em;
 }
 
 .portfolioContent {
-  margin-top: 120px;
+  margin-top: 50px;
 }
 
 .portfolioText {
@@ -302,42 +439,62 @@ ul.topnav li a.active {
   display: block;
   object-fit: cover;
   width: 100%;
-  height: 20vh;
+  height: 30vh;
   transition: .5s ease;
   backface-visibility: hidden;
-  margin-top: 20px;
+  border-style: solid;
+  border-color: black;
+  opacity: 0.7;
+  filter: grayscale(100%);
+  border-radius: 5px;
+}
+
+.portfolioItemImg2 {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 40vh;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  border-style: solid;
+  opacity: 0.7;
+  filter: grayscale(100%);
+}
+
+.portfolioItemImg3 {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 30vh;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  border-style: solid;
+  opacity: 0.7;
+  filter: grayscale(100%);
 }
 
 .portfolioItemImg:hover {
   /* TODO: add hover effect */
 }
 
-
-.heightTextPortfolio{
+.heightTextPortfolio {
   min-height: 200px;
 }
 
-.spanText{
-  font-family:  "Lucida Grande", sans-serif;
-  color:rgb(214, 224, 228);
-  font-size: 14px;
-  min-height: 20px;
-}
-
-.descriptionText{
+.descriptionText {
   min-height: 130px;
 }
 
 /* Footer */
 .footerStyle {
   color: aliceblue;
-  background-color: rgb(27, 27, 31);
-  margin-top: 100px; 
+  background-color: rgb(0, 0, 0);
+  margin-top: 100px;
   padding: 50px;
 }
 
 .footerIcon {
-  padding:5px;
+  padding: 5px;
 }
 
 /* Rows & colums */
@@ -345,31 +502,10 @@ ul.topnav li a.active {
   float: left;
   /* padding: 10px; */
 }
+
 .column {
   float: left;
   width: 100%;
-}
-
-.middlePos {
-  width: 40%;
-}
-.leftPos, .right {
-  width: 20%;
-}
-.third {
-  width: 30%;
-}
-
-.half {
-  width: 44%;
-}
-
-.oneThird {
-  width: 33%;
-}
-
-.twoThird {
-  width: 66%;
 }
 
 .row::after {
@@ -424,8 +560,8 @@ ul.topnav li a.active {
 }
 
 .textCover {
-  background-color: rgb(0,0,0); 
-  background-color: rgba(0,0,0, 0.4);
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
   color: white;
   font-weight: bold;
   border: 3px solid #f1f1f1;
@@ -478,7 +614,9 @@ ul.topnav li a.active {
 
 /* slideshow */
 
-* {box-sizing:border-box}
+* {
+  box-sizing: border-box
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -493,7 +631,8 @@ ul.topnav li a.active {
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 100%;
@@ -506,16 +645,4 @@ ul.topnav li a.active {
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
-
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.prev {
-  left: 0;
-  border-radius: 3px 0 0 3px;
 }

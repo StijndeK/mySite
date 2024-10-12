@@ -3,221 +3,222 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>RTR</title>
-<link rel="icon" type="image/png" href="../Media/Logo/LogoSmall.png">
+<link rel="icon" type="image/png" href="../Media/SLOFF/ghost2.png">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="../style.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="../script.js"></script>
 <style>
-  body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif;}
-  a {text-decoration: none;}
-  body {font-size: 16px;}
-  img {margin-bottom: -8px;}
-  .mySlides {display: none;}
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: "Poppins", sans-serif;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  body {
+    font-size: 16px;
+  }
+
+  img {
+    margin-bottom: -8px;
+  }
 </style>
 
 
 <body class="w3-content w3-black" style="max-width:1500px;">
 
-<ul class="noScrollTopnav w3-hide-small">
-  <li><a href="../index.html">Home</a></li>
-</ul>
+    <!-- menu -->
+    <ul class="topnav w3-hide-small" id="navbar">
+      <li><a href="../index.html">Home</a></li>
+    </ul>
   
-<!-- Header with Slideshow -->
-<header class="w3-display-container w3-center">
-  <div class="mySlides w3-animate-opacity">
-    <!-- <img class="w3-image pageCover pfCover" src="../Media/RTR/RTR_Screencap2H.png" alt="Image 1" style="min-width:500px" width="1500" height="800"> -->
+    <!-- Header with Slideshow -->
     <video class="pageCover pfCover" autoplay muted loop >
       <source src="../Media/RTR/RTR_Header.mp4" type="video/mp4">
     </video>
-    <!-- <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
-      <div class="w3-black  w3-padding-large w3-round-large">
-        <h1 class="w3-xlarge ">Design and implement procedural risers</h1>
-        <hr class="w3-opacity">
-      </div>
-    </div> -->
-  </div>
-  <!-- <div class="mySlides w3-animate-opacity">
-    <img class="w3-image pageCover pfCover" src="../Media/RTR/RTR_Implementation.png" alt="Image 2" style="min-width:500px" width="1500" height="800">
-    <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
-      <div class="w3-black  w3-padding-large w3-round-large">
-        <h1 class="w3-xlarge "> Fast and efficient Unreal Engine 4 implementation</h1>
-        <hr class="w3-opacity">
-      </div>
-    </div>
-  </div>
-  <a class="w3-button w3-black w3-display-right w3-margin-right w3-round w3-hide-small w3-hover-light-grey" onclick="plusDivs(1)">> <i class="fa fa-angle-right"></i></a>
-  <a class="w3-button w3-block w3-black w3-hide-large w3-hide-medium" onclick="plusDivs(1)">> <i class="fa fa-angle-right"></i></a> -->
-</header>
-<!-- 
-<div class="btn-group w3-hide-small" style="width:100%">
-  <button style="width:25%">Apple</button>
-  <button style="width:25%">Samsung</button>
-  <button style="width:25%">Sony</button>
-  <button style="width:25%">HTC</button>
-</div> -->
 
-<!-- The App Section -->
-<div class="w3-padding-64 w3-white">
-  <div class="w3-row-padding">
-    <div class="w3-col l8 m6">
-      <h1 class="w3-jumbo w3-text-black"><b>Real-Time Risers</b></h1>
-      <h1 class="w3-xxxlarge textColor3"><b>A reactive game audio solution</b></h1>
-      <p class="w3-text-black"><span class="w3-xlarge w3-text-black">
-        Adapting parameters of riser audio effects in real-time  </span>
-        improves synchronicity and workflow.
-        RTR is a prototype tool that allows its users to design and efficiently implement a riser that adapts to game data in real-time. 
-        The tool has been developed for my master's research into <a href="" style="font-weight: bold">Real-Time Procedural Risers in Games</a>.
-      </p>
-      <button class="w3-button w3-light-grey w3-padding-large w3-section w3-hide-small" onclick="document.getElementById('read').style.display='block'">
-        <i class="fa fa-book"></i> Read full research
-        <!-- <a href="Real-Time_Procedural_Risers_in_Games.pdf"><i class="fa fa-book"></i> Read full research </a> -->
-      </button>
-      <button class="w3-button w3-light-grey w3-padding-large w3-section w3-hide-small">
-        <a href="../Media/RTR/Real-TimeRisers_Poster.png"><i class="fa fa-map"></i> View poster </a>
-      </button>
-      <button class="w3-button w3-light-grey w3-padding-large w3-section w3-hide-small" onclick="document.getElementById('download').style.display='block'">
-        <i class="fa fa-youtube"></i> Watch showcase
-      </button>
-      <button class="w3-button w3-light-grey w3-padding-large w3-section w3-hide-small">
-        <a href="https://github.com/StijndeK/RTR"><i class="fa fa-github"></i> View on Github </a>
-      </button>
-      
-    </div>
-    <div class="w3-col l4 m6">
-      <img src="../Media/RTR/RTR.gif" class="w3-image w3-right w3-hide-small pageCoverH pfCoverH w3-round-large" width="335" height="471">
-      <div class="w3-center w3-hide-large w3-hide-medium">
-        <button class="w3-button w3-block w3-padding-large"  onclick="document.getElementById('read').style.display='block'">
+    
+  <!-- The App Section -->
+  <div class="w3-padding-64 w3-white">
+    <div class="w3-row-padding">
+      <div class="w3-col l8 m6">
+        <h1 class="w3-jumbo w3-text-black"><b>Real-Time Risers</b></h1>
+        <h1 class="w3-xxxlarge textColor3"><b>A reactive game audio solution</b></h1>
+        <p class="w3-text-black"><span class="w3-xlarge w3-text-black">
+            Adapting parameters of riser audio effects in real-time </span>
+          improves synchronicity and workflow.
+          RTR is a prototype tool that allows its users to design and efficiently implement a riser that adapts to game
+          data in real-time.
+          The tool has been developed for my master's research into <a href="" style="font-weight: bold">Real-Time
+            Procedural Risers in Games</a>.
+        </p>
+        <button class="w3-button w3-light-grey w3-padding-large w3-section w3-hide-small"
+          onclick="document.getElementById('read').style.display='block'">
           <i class="fa fa-book"></i> Read full research
+          <!-- <a href="Real-Time_Procedural_Risers_in_Games.pdf"><i class="fa fa-book"></i> Read full research </a> -->
         </button>
-        <button class="w3-button w3-block w3-padding-large">
-          <a href="../Media/RTR/Real-TimeRisers_Poster.png"><i class="fa fa-book"></i> View poster </a>
+        <button class="w3-button w3-light-grey w3-padding-large w3-section w3-hide-small">
+          <a href="../Media/RTR/Real-TimeRisers_Poster.png"><i class="fa fa-map"></i> View poster </a>
         </button>
-        <button class="w3-button w3-block w3-padding-large" onclick="document.getElementById('download').style.display='block'">
+        <button class="w3-button w3-light-grey w3-padding-large w3-section w3-hide-small"
+          onclick="document.getElementById('download').style.display='block'">
           <i class="fa fa-youtube"></i> Watch showcase
         </button>
-        <button class="w3-button w3-block w3-padding-large" >
-          <a href="https://github.com/StijndeK/RTR"><i class="fa fa-github"></i> Available on Github </a>
+        <button class="w3-button w3-light-grey w3-padding-large w3-section w3-hide-small">
+          <a href="https://github.com/StijndeK/RTR"><i class="fa fa-github"></i> View on Github </a>
         </button>
-        <img src="../Media/RTR/RTR.gif" class="w3-image w3-margin-top w3-round-large" width="335" height="471">
+
+      </div>
+      <div class="w3-col l4 m6">
+        <img src="../Media/RTR/RTR.gif" class="w3-image w3-right w3-hide-small pageCoverH pfCoverH w3-round-large"
+          width="335" height="471">
+        <div class="w3-center w3-hide-large w3-hide-medium">
+          <button class="w3-button w3-block w3-padding-large"
+            onclick="document.getElementById('read').style.display='block'">
+            <i class="fa fa-book"></i> Read full research
+          </button>
+          <button class="w3-button w3-block w3-padding-large">
+            <a href="../Media/RTR/Real-TimeRisers_Poster.png"><i class="fa fa-book"></i> View poster </a>
+          </button>
+          <button class="w3-button w3-block w3-padding-large"
+            onclick="document.getElementById('download').style.display='block'">
+            <i class="fa fa-youtube"></i> Watch showcase
+          </button>
+          <button class="w3-button w3-block w3-padding-large">
+            <a href="https://github.com/StijndeK/RTR"><i class="fa fa-github"></i> Available on Github </a>
+          </button>
+          <img src="../Media/RTR/RTR.gif" class="w3-image w3-margin-top w3-round-large" width="335" height="471">
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<!-- Modal -->
-<div id="download" class="w3-modal w3-animate-opacity">
-  <div class="w3-modal-content" style="padding:32px; width:654px">
-    <div class="w3-container w3-white">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/PmLmYN4H45w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <button type="button" class="w3-button w3-block w3-padding-large w3-margin-bottom" onclick="document.getElementById('download').style.display='none'">Close</button>
-    </div>
-  </div>
-</div>
-
-<div id="read" class="w3-modal w3-animate-opacity">
-  <div class="w3-modal-content" style="padding:32px; width:654px">
-    <div class="w3-container w3-white">
-      <a href="Real-Time_Procedural_Risers_in_Games.pdf"><button type="button" class="w3-button w3-block w3-padding-large w3-margin-bottom">
-        View the article
-      </button> </a>
-      <a href="Real-Time_Procedural_Risers_in_Games_Thesis.pdf"><button type="button" class="w3-button w3-block w3-padding-large w3-margin-bottom">
-        View the full-length thesis
-      </button></a>
-      <button type="button" class="w3-button w3-block w3-padding-large w3-margin-bottom" onclick="document.getElementById('read').style.display='none'">Close</button>
-    </div>
-  </div>
-</div>
-
-
-<!-- Workflow Section -->
-<div class="w3-padding-64 w3-light-grey">
-  <div class="w3-row-padding">
-    <div class="w3-col l4 m6">
-      <img class="w3-image w3-round-large w3-hide-small pageCoverH pfCoverH" src="../Media/RTR/RTR_Flow902.png" alt="App" width="335" height="471">
-    </div>
-    <div class="w3-col l8 m6">
-      <h1 class="w3-jumbo w3-text-black"><b>Pipeline</b></h1>
-      <p class="w3-text-black"><span class="w3-xlarge w3-text-black"> A fast and optimised workflow  </span>
-        allows the user to make changes to the riser and immediatly hear the riser back in-game.
-        The tool works similar to standard audio middleware, using a seperate studio solution and engine integration plugin
-        that are build on the same low-level audio system. An alternative approach of implementing the tool directly into Unreal Engine is currently being explored.
-      </p>
-    </div>
-  </div>
-</div>
-
-<!-- Risers Section -->
-<div class="w3-container w3-padding-64 w3-dark-grey">
-  <div class="w3-row-padding">
-    <div class="w3-col l8 m6">
-      <h1 class="w3-jumbo"><b>Risers</b></h1>
-      <p class="w3-text-darkgrey"><span class="w3-xlarge w3-text-darkgrey">Risers are efficient low-cost audio effects. </span> 
-        But because risers are synchronised to their start as well as their point of impact, they are difficult to implement in an adaptive system. 
-        Risers consist of three dynamic elements: the attack, the impact, and the release. 
-        Most emphasis is put on the attack as risers are often used to build up to something. 
-        The release serves to build the audio down so that it does not abruptly stop.  
-        By modulating the audio data in between the start and impact, the riser can go on for a longer or shorter amount of time.
-         </p>
-    </div>
-    <div class="w3-col l4 m6">
-      <img src="../Media/RTR/RTR_RiserSimpleNW.png" class="w3-image w3-right w3-hide-small pageCoverH pfCoverH" width="335" height="471">
-      <div class="w3-center w3-hide-large w3-hide-medium">
-        <img src="../Media/RTR/RTR_RiserSimpleNW.png" class="w3-image w3-margin-top" width="335" height="471">
+  <!-- Modal -->
+  <div id="download" class="w3-modal w3-animate-opacity">
+    <div class="w3-modal-content" style="padding:32px; width:654px">
+      <div class="w3-container w3-white">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/PmLmYN4H45w" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+        <button type="button" class="w3-button w3-block w3-padding-large w3-margin-bottom"
+          onclick="document.getElementById('download').style.display='none'">Close</button>
       </div>
     </div>
   </div>
-</div>
 
-<!-- Integration Section -->
-<div class="w3-padding-64 w3-white">
-  <div class="w3-row-padding">
-    <div class="w3-col l4 m6">
-      <img class="w3-image w3-round-large w3-hide-small pageCoverH pfCoverH" src="../Media/RTR/RTR_Implementation.png" alt="App" width="335" height="471">
-    </div>
-    <div class="w3-col l8 m6">
-      <h1 class="w3-jumbo w3-text-black"><b>Integration</b></h1>
-      <p class="w3-text-black"><span class="w3-xlarge w3-text-black"> Implement the riser effect quickly and efficiently,  </span> 
-        using an Unreal Engine 4 Plugin.
-        Two different integration methods are available.
-        First, actors can be placed in the level. One for the start and one for the impact position of the riser. 
-        By dragging these to their desired locations in the level, the riser can be quickly and efficiently implemented.
-        Alternatively, blueprints can be used, for example when the start and/or stop position are not physical locations.
-      </p>
+  <div id="read" class="w3-modal w3-animate-opacity">
+    <div class="w3-modal-content" style="padding:32px; width:654px">
+      <div class="w3-container w3-white">
+        <a href="Real-Time_Procedural_Risers_in_Games.pdf"><button type="button"
+            class="w3-button w3-block w3-padding-large w3-margin-bottom">
+            View the article
+          </button> </a>
+        <a href="Real-Time_Procedural_Risers_in_Games_Thesis.pdf"><button type="button"
+            class="w3-button w3-block w3-padding-large w3-margin-bottom">
+            View the full-length thesis
+          </button></a>
+        <button type="button" class="w3-button w3-block w3-padding-large w3-margin-bottom"
+          onclick="document.getElementById('read').style.display='none'">Close</button>
+      </div>
     </div>
   </div>
-</div>
 
-<!-- Footer -->
-<footer class="w3-container w3-padding-32 w3-light-grey w3-center w3-xlarge">
-  <div class="w3-section">
-    <a href="https://github.com/StijndeK/RTR" style="font-size:27px;"><i class="fa fa-github w3-hover-opacity"></i></a>
-    <a href="https://twitter.com/StijnKoning" style="font-size:27px;"> <i class="fa fa-twitter w3-hover-opacity"></i></a>
-    <a href="https://www.linkedin.com/in/stijn-koning-de-196aab133/" style="font-size:27px;"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-  </div>
-  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-</footer>
 
-<script>
-// Slideshow
-var slideIndex = 1;
-showDivs(slideIndex);
+  <!-- Workflow Section -->
+  <!-- <div class="w3-padding-64 w3-light-grey">
+    <div class="w3-row-padding">
+      <div class="w3-col l4 m6">
+        <img class="w3-image w3-round-large w3-hide-small pageCoverH pfCoverH" src="../Media/RTR/RTR_Flow902.png"
+          alt="App" width="335" height="471">
+      </div>
+      <div class="w3-col l8 m6">
+        <h1 class="w3-jumbo w3-text-black"><b>Pipeline</b></h1>
+        <p class="w3-text-black"><span class="w3-xlarge w3-text-black"> A fast and optimised workflow </span>
+          allows the user to make changes to the riser and immediatly hear the riser back in-game.
+          The tool works similar to standard audio middleware, using a seperate studio solution and engine integration
+          plugin
+          that are build on the same low-level audio system. An alternative approach of implementing the tool directly
+          into Unreal Engine is currently being explored.
+        </p>
+      </div>
+    </div>
+  </div> -->
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
+  <!-- Risers Section -->
+  <!-- <div class="w3-container w3-padding-64 w3-dark-grey">
+    <div class="w3-row-padding">
+      <div class="w3-col l8 m6">
+        <h1 class="w3-jumbo"><b>Risers</b></h1>
+        <p class="w3-text-darkgrey"><span class="w3-xlarge w3-text-darkgrey">Risers are efficient low-cost audio
+            effects. </span>
+          But because risers are synchronised to their start as well as their point of impact, they are difficult to
+          implement in an adaptive system.
+          Risers consist of three dynamic elements: the attack, the impact, and the release.
+          Most emphasis is put on the attack as risers are often used to build up to something.
+          The release serves to build the audio down so that it does not abruptly stop.
+          By modulating the audio data in between the start and impact, the riser can go on for a longer or shorter
+          amount of time.
+        </p>
+      </div>
+      <div class="w3-col l4 m6">
+        <img src="../Media/RTR/RTR_RiserSimpleNW.png" class="w3-image w3-right w3-hide-small pageCoverH pfCoverH"
+          width="335" height="471">
+        <div class="w3-center w3-hide-large w3-hide-medium">
+          <img src="../Media/RTR/RTR_RiserSimpleNW.png" class="w3-image w3-margin-top" width="335" height="471">
+        </div>
+      </div>
+    </div>
+  </div> -->
 
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
-</script>
+  <!-- Integration Section -->
+  <!-- <div class="w3-padding-64 w3-white">
+    <div class="w3-row-padding">
+      <div class="w3-col l4 m6">
+        <img class="w3-image w3-round-large w3-hide-small pageCoverH pfCoverH" src="../Media/RTR/RTR_Implementation.png"
+          alt="App" width="335" height="471">
+      </div>
+      <div class="w3-col l8 m6">
+        <h1 class="w3-jumbo w3-text-black"><b>Integration</b></h1>
+        <p class="w3-text-black"><span class="w3-xlarge w3-text-black"> Implement the riser effect quickly and
+            efficiently, </span>
+          using an Unreal Engine 4 Plugin.
+          Two different integration methods are available.
+          First, actors can be placed in the level. One for the start and one for the impact position of the riser.
+          By dragging these to their desired locations in the level, the riser can be quickly and efficiently
+          implemented.
+          Alternatively, blueprints can be used, for example when the start and/or stop position are not physical
+          locations.
+        </p>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-light-grey w3-center w3-xlarge">
+    <div class="w3-section">
+      <a href="https://github.com/StijndeK/RTR" style="font-size:27px;"><i
+          class="fa fa-github w3-hover-opacity"></i></a>
+      <a href="https://www.linkedin.com/in/stijn-koning-de-196aab133/" style="font-size:27px;"><i
+          class="fa fa-linkedin w3-hover-opacity"></i></a>
+    </div>
+    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"
+        class="w3-hover-text-green">w3.css</a></p>
+  </footer>
+
+  <script>
+    // When the user scrolls down 20px from the top of the document, slide down the navbar
+    window.onscroll = function() {scrollFunction()};
+  </script>
 
 </body>
+
 </html>
