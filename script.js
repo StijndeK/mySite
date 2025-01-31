@@ -14,6 +14,7 @@ var colors = ["rgb(1, 19, 5)", "rgb(255, 255, 255)"];
 function SetRandomBackground() 
 {
 var num = Math.ceil( Math.random() * totalCount) - 1;
+num = 1;
 document.body.background = images[num];
 // document.body.style.backgroundColor = colors[num];
 var style = document.getElementById("sloff").style;
