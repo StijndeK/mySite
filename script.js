@@ -27,7 +27,7 @@ if (num == 0)
 else if (num == 1)
 {
   document.body.style.backgroundAttachment = "fixed";
-  document.body.style.backgroundPosition = "center";
+  document.body.style.backgroundPosition = "top";
   // document.body.style.backgroundPosition = "0% 30%"
 }
 }
